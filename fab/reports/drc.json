@@ -1,0 +1,4349 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-11T11:37:55",
+    "ignored_checks": [
+        {
+            "description": "Track has unconnected end",
+            "key": "track_dangling"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "meenie.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1090 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [+3V3] of C8 on B.Cu",
+                    "pos": {
+                        "x": 112.185,
+                        "y": 97.25
+                    },
+                    "uuid": "0b34c0ef-abd7-407f-8022-a0cf96d7c038"
+                },
+                {
+                    "description": "Micro via [LED_A] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.689,
+                        "y": 97.3266
+                    },
+                    "uuid": "45e48e77-7142-4751-a077-ef3471f6326e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.28] on RF_GND_L7, length 4.4886 mm",
+                    "pos": {
+                        "x": 111.9108,
+                        "y": 97.6634
+                    },
+                    "uuid": "0456b348-136b-48d4-b18a-a847be99c892"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.1556,
+                        "y": 96.6628
+                    },
+                    "uuid": "9b153bd1-603b-4655-9e3f-4a8e47693cb3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.02] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.0884,
+                        "y": 98.539
+                    },
+                    "uuid": "34fd1b65-06da-4c89-8183-76fb70020f9d"
+                },
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 96.8125
+                    },
+                    "uuid": "ec50128d-0f8a-4c79-b4d1-a82f27f7af56"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBUS_MCU] of R1 on B.Cu",
+                    "pos": {
+                        "x": 112.9975,
+                        "y": 98.68
+                    },
+                    "uuid": "2d15ab8f-8c34-4eb2-b4a4-a7ce7716aa40"
+                },
+                {
+                    "description": "Micro via [SWCLK] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.6701,
+                        "y": 99.1593
+                    },
+                    "uuid": "5b0d16ec-37f3-496b-805f-ce871f9ccf99"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0892 mm)",
+            "items": [
+                {
+                    "description": "Pad Y23 [P0.13] of U1 on B.Cu",
+                    "pos": {
+                        "x": 103.77,
+                        "y": 93.15
+                    },
+                    "uuid": "1d65f1a9-1972-433d-ab8f-1ab2a0247bb9"
+                },
+                {
+                    "description": "Micro via [SWCLK] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.431,
+                        "y": 93.1625
+                    },
+                    "uuid": "5163f719-f3eb-4d5d-b439-5bef0dd69983"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0906 mm)",
+            "items": [
+                {
+                    "description": "Track [LED_A] on RF_GND_L7, length 1.7724 mm",
+                    "pos": {
+                        "x": 112.9966,
+                        "y": 99.0721
+                    },
+                    "uuid": "42f554e6-bf20-4759-abf7-77654a2d034c"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "e49d65f1-6001-40ab-b3ed-1588fdf0c5d0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0906 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "134cf44b-849f-47e4-9e11-3fcff01fbce9"
+                },
+                {
+                    "description": "Track [LED_A] on RF_GND_L7, length 1.7724 mm",
+                    "pos": {
+                        "x": 112.9966,
+                        "y": 99.0721
+                    },
+                    "uuid": "42f554e6-bf20-4759-abf7-77654a2d034c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Pad B5 [DEC4_6] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "28e8808b-fb30-44f2-90a9-37705dc2f08d"
+                },
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R3 on B.Cu",
+                    "pos": {
+                        "x": 111.418,
+                        "y": 98.986
+                    },
+                    "uuid": "b22325df-0e93-426d-8ff4-2531869a26d3"
+                },
+                {
+                    "description": "Micro via [SWDIO] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "f61425b0-884c-4142-acfc-69bf442552bb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.131,
+                        "y": 95.9071
+                    },
+                    "uuid": "176978c5-79c8-4fd6-86f2-3b40011836a8"
+                },
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 96.8125
+                    },
+                    "uuid": "ec50128d-0f8a-4c79-b4d1-a82f27f7af56"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0872 mm)",
+            "items": [
+                {
+                    "description": "Pad B19 [P1.12] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 94.4
+                    },
+                    "uuid": "7fdb93cb-d46f-4aba-8ed4-3079a3f489f5"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.409,
+                        "y": 94.7184
+                    },
+                    "uuid": "da3af843-5d36-40bf-ab85-9fbfadfb4428"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.152,
+                        "y": 93.261
+                    },
+                    "uuid": "64505de4-88ea-4850-b6c9-b668b7396ece"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0913 mm)",
+            "items": [
+                {
+                    "description": "Pad AD23 [+3V3] of U1 on B.Cu",
+                    "pos": {
+                        "x": 102.52,
+                        "y": 93.15
+                    },
+                    "uuid": "d4da6b82-3418-4a02-bbde-279ec5e0e7b9"
+                },
+                {
+                    "description": "Micro via [P1.00] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.8018,
+                        "y": 93.3426
+                    },
+                    "uuid": "da84461a-10c9-49fd-9e43-60ff231b787a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+                },
+                {
+                    "description": "Pad 2 [GND] of C15 on B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "b67a3dc0-1ebe-411e-bc0e-3ca58bef7781"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad A18 [unconnected-(U1-DEC2-PadA18)] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 94.65
+                    },
+                    "uuid": "49ea414b-bdfc-4475-b76d-5466434a3fd0"
+                },
+                {
+                    "description": "Micro via [P1.15] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0874,
+                        "y": 94.9822
+                    },
+                    "uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1647 mm)",
+            "items": [
+                {
+                    "description": "Track [DEC4_6] on GPIO_ROUTE_L6, length 0.6161 mm",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 93.01
+                    },
+                    "uuid": "4135b7a1-9ea5-4a11-a8fd-96f1f10d0383"
+                },
+                {
+                    "description": "Micro via [DEC3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "e26f9537-5e80-4fb3-b795-3614102b740a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1647 mm)",
+            "items": [
+                {
+                    "description": "Track [DEC4_6] on GPIO_ROUTE_L6, length 0.6161 mm",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 93.01
+                    },
+                    "uuid": "4135b7a1-9ea5-4a11-a8fd-96f1f10d0383"
+                },
+                {
+                    "description": "Micro via [DEC3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "adf7d405-7103-4619-8e81-934ea21e0e72"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.03] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.6065,
+                        "y": 92.466
+                    },
+                    "uuid": "8e31ab9d-d8a6-42e4-8852-b09ffdf71e44"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on B.Cu",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 92.93
+                    },
+                    "uuid": "90e521a9-a342-4155-a572-394d9ff9f73d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0885 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.6846,
+                        "y": 95.1956
+                    },
+                    "uuid": "196b159d-7f01-4476-a17e-adc4d45486d7"
+                },
+                {
+                    "description": "Pad A16 [P1.15] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 95.15
+                    },
+                    "uuid": "d0580e05-206a-4338-b1da-2749b9db67e9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on B.Cu",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 92.93
+                    },
+                    "uuid": "90e521a9-a342-4155-a572-394d9ff9f73d"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.251,
+                        "y": 92.827
+                    },
+                    "uuid": "971ea6df-588c-4d93-8218-37ec1e3c5f82"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "73e6bebc-51c0-4a1e-adff-a8e455a1b814"
+                },
+                {
+                    "description": "Track [P1.14] on RF_GND_L7, length 1.8802 mm",
+                    "pos": {
+                        "x": 108.6846,
+                        "y": 95.1956
+                    },
+                    "uuid": "bf0c0231-1d9c-493b-94c1-443c84a7b23e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0817 mm)",
+            "items": [
+                {
+                    "description": "Track [DEC1] on GPIO_ROUTE_L6, length 1.6230 mm",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 99.15
+                    },
+                    "uuid": "63c4ebc1-89a5-4863-b64d-fedb98815b5e"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.4678,
+                        "y": 99.5466
+                    },
+                    "uuid": "956a3264-e1c8-4042-97d9-86c87ba7fa73"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
+                },
+                {
+                    "description": "Track [DEC4_6] on GPIO_ROUTE_L6, length 1.0110 mm",
+                    "pos": {
+                        "x": 108.82,
+                        "y": 93.34
+                    },
+                    "uuid": "bbe2843c-e994-435f-afaf-9cc6fcb41c8e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
+                },
+                {
+                    "description": "Track [P1.14] on RF_GND_L7, length 1.8802 mm",
+                    "pos": {
+                        "x": 108.6846,
+                        "y": 95.1956
+                    },
+                    "uuid": "bf0c0231-1d9c-493b-94c1-443c84a7b23e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'USB' clearance 0.1500 mm; actual 0.0999 mm)",
+            "items": [
+                {
+                    "description": "Track [USB_D+] on CORE_ROUTE_L5, length 7.7994 mm",
+                    "pos": {
+                        "x": 103.9871,
+                        "y": 97.2009
+                    },
+                    "uuid": "1bd50b8f-e03c-4e63-a7c0-f62584d5b7e7"
+                },
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "a4d0fc91-f2ea-4877-b8f9-1242bf043d48"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0817 mm)",
+            "items": [
+                {
+                    "description": "Track [DEC1] on GPIO_ROUTE_L6, length 1.6230 mm",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 99.15
+                    },
+                    "uuid": "63c4ebc1-89a5-4863-b64d-fedb98815b5e"
+                },
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 108.4678,
+                        "y": 99.5466
+                    },
+                    "uuid": "8a688933-68bb-4c62-9b3d-26017cb410d6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "7baa01c4-8dd1-49b1-acaa-54a6b24f14b1"
+                },
+                {
+                    "description": "Track [DEC4_6] on GPIO_ROUTE_L6, length 1.0110 mm",
+                    "pos": {
+                        "x": 108.82,
+                        "y": 93.34
+                    },
+                    "uuid": "bbe2843c-e994-435f-afaf-9cc6fcb41c8e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0866 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.10] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.2596,
+                        "y": 95.3864
+                    },
+                    "uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+                },
+                {
+                    "description": "Pad A16 [P1.15] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 95.15
+                    },
+                    "uuid": "d0580e05-206a-4338-b1da-2749b9db67e9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P0.27] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 105.6207,
+                        "y": 93.261
+                    },
+                    "uuid": "8733b468-cb55-4b6e-97c9-869953c09b77"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1827 mm)",
+            "items": [
+                {
+                    "description": "Track [P1.02] on GPIO_ROUTE_L6, length 0.6798 mm",
+                    "pos": {
+                        "x": 104.70791,
+                        "y": 93.31094
+                    },
+                    "uuid": "b0435dad-a089-48f3-ab51-9e5ea5718f49"
+                },
+                {
+                    "description": "Micro via [P1.04] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "1ec9363a-96e4-43d1-afaa-08fd436fe730"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1827 mm)",
+            "items": [
+                {
+                    "description": "Track [P1.02] on GPIO_ROUTE_L6, length 0.6798 mm",
+                    "pos": {
+                        "x": 104.70791,
+                        "y": 93.31094
+                    },
+                    "uuid": "b0435dad-a089-48f3-ab51-9e5ea5718f49"
+                },
+                {
+                    "description": "Micro via [P1.04] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "539cd515-ff15-407a-b609-b1fcd102f788"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1091 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P1.04] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "62aee16f-4195-4597-a6c9-bfe68d6b0670"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1350 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC2] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "58fd4dff-dce1-4658-9086-83919931a946"
+                },
+                {
+                    "description": "Buried via [+3V3] on HDI_PWR - CORE_ROUTE_L5",
+                    "pos": {
+                        "x": 109.2488,
+                        "y": 94.0156
+                    },
+                    "uuid": "f2604fc1-2f00-46ab-81b7-769d6c6c5320"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'USB' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D-] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.6152,
+                        "y": 95.309
+                    },
+                    "uuid": "1ab395fe-f696-4c8e-bc08-a3dc3bd11731"
+                },
+                {
+                    "description": "Micro via [P1.10] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.2596,
+                        "y": 95.3864
+                    },
+                    "uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'USB' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D-] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.6152,
+                        "y": 95.309
+                    },
+                    "uuid": "1ab395fe-f696-4c8e-bc08-a3dc3bd11731"
+                },
+                {
+                    "description": "Micro via [P1.10] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.2596,
+                        "y": 95.3864
+                    },
+                    "uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'USB' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D+] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.4377,
+                        "y": 94.8837
+                    },
+                    "uuid": "947a200e-ccd3-44c6-bb3f-490980c8948a"
+                },
+                {
+                    "description": "Micro via [P1.15] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0874,
+                        "y": 94.9822
+                    },
+                    "uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'VBUS' clearance 0.1500 mm; actual 0.0820 mm)",
+            "items": [
+                {
+                    "description": "Track [CC2] on HDI_PWR, length 1.4288 mm",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "5ca9c553-8109-4016-81eb-f375fc734d9d"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 109.72,
+                        "y": 93.3
+                    },
+                    "uuid": "b7121be1-05bd-4a33-8589-650b64a9d1ec"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'USB' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D+] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.4377,
+                        "y": 94.8837
+                    },
+                    "uuid": "947a200e-ccd3-44c6-bb3f-490980c8948a"
+                },
+                {
+                    "description": "Micro via [P1.15] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0874,
+                        "y": 94.9822
+                    },
+                    "uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_A] of D3 on B.Cu",
+                    "pos": {
+                        "x": 113.105,
+                        "y": 96.935
+                    },
+                    "uuid": "6f408a71-fdef-4090-a6e1-2104014b571b"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.0172,
+                        "y": 97.524
+                    },
+                    "uuid": "d6a3142c-a13a-4b7d-bb99-00853e59cb32"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Track [LED_A] on RF_GND_L7, length 1.7724 mm",
+                    "pos": {
+                        "x": 112.9966,
+                        "y": 99.0721
+                    },
+                    "uuid": "42f554e6-bf20-4759-abf7-77654a2d034c"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.0172,
+                        "y": 97.524
+                    },
+                    "uuid": "d6a3142c-a13a-4b7d-bb99-00853e59cb32"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1256 mm)",
+            "items": [
+                {
+                    "description": "Track [P1.15] on RF_GND_L7, length 2.0967 mm",
+                    "pos": {
+                        "x": 108.9296,
+                        "y": 95.009
+                    },
+                    "uuid": "393c3d74-6698-4d4e-b63f-538897a1bbaa"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.782,
+                        "y": 92.8304
+                    },
+                    "uuid": "a8d546bf-590d-489c-96cd-ada8915a3414"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0855 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.28] on RF_GND_L7, length 4.4886 mm",
+                    "pos": {
+                        "x": 111.9108,
+                        "y": 97.6634
+                    },
+                    "uuid": "0456b348-136b-48d4-b18a-a847be99c892"
+                },
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.6438,
+                        "y": 96.8591
+                    },
+                    "uuid": "a200ef23-ccf6-4340-ae4f-66763e2455ee"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0855 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.28] on RF_GND_L7, length 4.4886 mm",
+                    "pos": {
+                        "x": 111.9108,
+                        "y": 97.6634
+                    },
+                    "uuid": "0456b348-136b-48d4-b18a-a847be99c892"
+                },
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1548,
+                        "y": 96.8518
+                    },
+                    "uuid": "57759008-1b76-4ff1-bcf4-32cae132befd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.28] on RF_GND_L7, length 4.4886 mm",
+                    "pos": {
+                        "x": 111.9108,
+                        "y": 97.6634
+                    },
+                    "uuid": "0456b348-136b-48d4-b18a-a847be99c892"
+                },
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1138,
+                        "y": 93.72
+                    },
+                    "uuid": "13e0b093-341f-4059-9bb5-94983e1fa8a1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.28] on RF_GND_L7, length 4.4886 mm",
+                    "pos": {
+                        "x": 111.9108,
+                        "y": 97.6634
+                    },
+                    "uuid": "0456b348-136b-48d4-b18a-a847be99c892"
+                },
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.5958,
+                        "y": 93.7273
+                    },
+                    "uuid": "0fa358ef-4eb2-4813-81a9-ec078cddad76"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0988 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "f6e40b98-b932-402f-8ff8-59273f68072e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1479 mm)",
+            "items": [
+                {
+                    "description": "Track [P0.13] on GPIO_ROUTE_L6, length 0.7099 mm",
+                    "pos": {
+                        "x": 103.5271,
+                        "y": 92.3164
+                    },
+                    "uuid": "6a9cad6d-7652-419c-a90f-bea8db096582"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "f6e40b98-b932-402f-8ff8-59273f68072e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.1480 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.296,
+                        "y": 92.043
+                    },
+                    "uuid": "5944cac7-b2bf-42bf-a763-d22373c11842"
+                },
+                {
+                    "description": "Track [P0.13] on GPIO_ROUTE_L6, length 0.7099 mm",
+                    "pos": {
+                        "x": 103.5271,
+                        "y": 92.3164
+                    },
+                    "uuid": "6a9cad6d-7652-419c-a90f-bea8db096582"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.1500 mm; actual 0.0988 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "f6e40b98-b932-402f-8ff8-59273f68072e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_A] of D3 on B.Cu",
+                    "pos": {
+                        "x": 113.105,
+                        "y": 96.935
+                    },
+                    "uuid": "6f408a71-fdef-4090-a6e1-2104014b571b"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.0172,
+                        "y": 97.524
+                    },
+                    "uuid": "d6a3142c-a13a-4b7d-bb99-00853e59cb32"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1840 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [+3V3] of C8 on B.Cu",
+                    "pos": {
+                        "x": 112.185,
+                        "y": 97.25
+                    },
+                    "uuid": "0b34c0ef-abd7-407f-8022-a0cf96d7c038"
+                },
+                {
+                    "description": "Micro via [LED_A] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.689,
+                        "y": 97.3266
+                    },
+                    "uuid": "45e48e77-7142-4751-a077-ef3471f6326e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on B.Cu",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 92.93
+                    },
+                    "uuid": "90e521a9-a342-4155-a572-394d9ff9f73d"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.251,
+                        "y": 92.827
+                    },
+                    "uuid": "971ea6df-588c-4d93-8218-37ec1e3c5f82"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on B.Cu",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 92.93
+                    },
+                    "uuid": "90e521a9-a342-4155-a572-394d9ff9f73d"
+                },
+                {
+                    "description": "Micro via [P0.03] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.6065,
+                        "y": 92.466
+                    },
+                    "uuid": "8e31ab9d-d8a6-42e4-8852-b09ffdf71e44"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R3 on B.Cu",
+                    "pos": {
+                        "x": 111.418,
+                        "y": 98.986
+                    },
+                    "uuid": "b22325df-0e93-426d-8ff4-2531869a26d3"
+                },
+                {
+                    "description": "Micro via [SWDIO] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "f61425b0-884c-4142-acfc-69bf442552bb"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 106.6025,
+                        "y": 94.72
+                    },
+                    "uuid": "a375e3fc-562a-416d-bcbb-d3fc73651a0a"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.409,
+                        "y": 94.7184
+                    },
+                    "uuid": "da3af843-5d36-40bf-ab85-9fbfadfb4428"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [VBUS] of R1 on B.Cu",
+                    "pos": {
+                        "x": 112.1375,
+                        "y": 98.68
+                    },
+                    "uuid": "088a5829-2d59-4060-8c4a-7ed6c1b54691"
+                },
+                {
+                    "description": "Micro via [SWDIO] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "f61425b0-884c-4142-acfc-69bf442552bb"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBUS_MCU] of R1 on B.Cu",
+                    "pos": {
+                        "x": 112.9975,
+                        "y": 98.68
+                    },
+                    "uuid": "2d15ab8f-8c34-4eb2-b4a4-a7ce7716aa40"
+                },
+                {
+                    "description": "Micro via [SWCLK] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.6701,
+                        "y": 99.1593
+                    },
+                    "uuid": "5b0d16ec-37f3-496b-805f-ce871f9ccf99"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [SWDIO] of S1 on B.Cu",
+                    "pos": {
+                        "x": 112.16,
+                        "y": 99.5
+                    },
+                    "uuid": "8282c38f-38e1-416c-ab29-d67ea7414f9e"
+                },
+                {
+                    "description": "Micro via [SWCLK] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.6701,
+                        "y": 99.1593
+                    },
+                    "uuid": "5b0d16ec-37f3-496b-805f-ce871f9ccf99"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 96.8125
+                    },
+                    "uuid": "ec50128d-0f8a-4c79-b4d1-a82f27f7af56"
+                },
+                {
+                    "description": "Micro via [P1.02] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.0884,
+                        "y": 98.539
+                    },
+                    "uuid": "34fd1b65-06da-4c89-8183-76fb70020f9d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C15 on B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "b67a3dc0-1ebe-411e-bc0e-3ca58bef7781"
+                },
+                {
+                    "description": "Micro via [P0.12] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 96.8125
+                    },
+                    "uuid": "ec50128d-0f8a-4c79-b4d1-a82f27f7af56"
+                },
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.131,
+                        "y": 95.9071
+                    },
+                    "uuid": "176978c5-79c8-4fd6-86f2-3b40011836a8"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.152,
+                        "y": 93.261
+                    },
+                    "uuid": "64505de4-88ea-4850-b6c9-b668b7396ece"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P0.27] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 105.6207,
+                        "y": 93.261
+                    },
+                    "uuid": "8733b468-cb55-4b6e-97c9-869953c09b77"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1841 mm)",
+            "items": [
+                {
+                    "description": "Pad 0 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 93.8075
+                    },
+                    "uuid": "0ce2bd51-1572-4d1e-a4db-95186e1a09bb"
+                },
+                {
+                    "description": "Micro via [P1.04] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "62aee16f-4195-4597-a6c9-bfe68d6b0670"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1635 mm)",
+            "items": [
+                {
+                    "description": "Pad A16 [P1.15] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 95.15
+                    },
+                    "uuid": "d0580e05-206a-4338-b1da-2749b9db67e9"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.6846,
+                        "y": 95.1956
+                    },
+                    "uuid": "196b159d-7f01-4476-a17e-adc4d45486d7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1616 mm)",
+            "items": [
+                {
+                    "description": "Pad A16 [P1.15] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 95.15
+                    },
+                    "uuid": "d0580e05-206a-4338-b1da-2749b9db67e9"
+                },
+                {
+                    "description": "Micro via [P1.10] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.2596,
+                        "y": 95.3864
+                    },
+                    "uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1640 mm)",
+            "items": [
+                {
+                    "description": "Pad A18 [unconnected-(U1-DEC2-PadA18)] of U1 on B.Cu",
+                    "pos": {
+                        "x": 109.02,
+                        "y": 94.65
+                    },
+                    "uuid": "49ea414b-bdfc-4475-b76d-5466434a3fd0"
+                },
+                {
+                    "description": "Micro via [P1.15] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0874,
+                        "y": 94.9822
+                    },
+                    "uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1663 mm)",
+            "items": [
+                {
+                    "description": "Pad AD23 [+3V3] of U1 on B.Cu",
+                    "pos": {
+                        "x": 102.52,
+                        "y": 93.15
+                    },
+                    "uuid": "d4da6b82-3418-4a02-bbde-279ec5e0e7b9"
+                },
+                {
+                    "description": "Micro via [P1.00] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.8018,
+                        "y": 93.3426
+                    },
+                    "uuid": "da84461a-10c9-49fd-9e43-60ff231b787a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1639 mm)",
+            "items": [
+                {
+                    "description": "Pad B5 [DEC4_6] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "28e8808b-fb30-44f2-90a9-37705dc2f08d"
+                },
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1618 mm)",
+            "items": [
+                {
+                    "description": "Pad B7 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.4
+                    },
+                    "uuid": "ef538f82-9448-4c01-87b7-b510e99a891d"
+                },
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1633 mm)",
+            "items": [
+                {
+                    "description": "Pad B17 [P1.11] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 94.9
+                    },
+                    "uuid": "a88d076b-6c00-4ece-aadb-b7a23a366128"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.6846,
+                        "y": 95.1956
+                    },
+                    "uuid": "196b159d-7f01-4476-a17e-adc4d45486d7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1622 mm)",
+            "items": [
+                {
+                    "description": "Pad B19 [P1.12] of U1 on B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 94.4
+                    },
+                    "uuid": "7fdb93cb-d46f-4aba-8ed4-3079a3f489f5"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.409,
+                        "y": 94.7184
+                    },
+                    "uuid": "da3af843-5d36-40bf-ab85-9fbfadfb4428"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1622 mm)",
+            "items": [
+                {
+                    "description": "Pad D2 [unconnected-(U1-P0.00/XL1-PadD2)] of U1 on B.Cu",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 98.65
+                    },
+                    "uuid": "f91fce1b-2b4e-4d0a-b807-cfc38ba636bb"
+                },
+                {
+                    "description": "Micro via [P1.02] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.0884,
+                        "y": 98.539
+                    },
+                    "uuid": "34fd1b65-06da-4c89-8183-76fb70020f9d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1642 mm)",
+            "items": [
+                {
+                    "description": "Pad Y23 [P0.13] of U1 on B.Cu",
+                    "pos": {
+                        "x": 103.77,
+                        "y": 93.15
+                    },
+                    "uuid": "1d65f1a9-1972-433d-ab8f-1ab2a0247bb9"
+                },
+                {
+                    "description": "Micro via [SWCLK] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.431,
+                        "y": 93.1625
+                    },
+                    "uuid": "5163f719-f3eb-4d5d-b439-5bef0dd69983"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on GND - GND2",
+                    "pos": {
+                        "x": 111.533,
+                        "y": 92.568
+                    },
+                    "uuid": "9e054b20-c185-42c1-9311-817a3d26a1d8"
+                },
+                {
+                    "description": "Micro via [XC1] on F.Cu - GND",
+                    "pos": {
+                        "x": 111.533,
+                        "y": 92.568
+                    },
+                    "uuid": "f7d5b55e-c554-4379-95fc-7c2108df6ecf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 111.533,
+                        "y": 92.568
+                    },
+                    "uuid": "10eddcce-7b00-49d3-b844-cea7ffeef848"
+                },
+                {
+                    "description": "Micro via [XC1] on GND - GND2",
+                    "pos": {
+                        "x": 111.533,
+                        "y": 92.568
+                    },
+                    "uuid": "9e054b20-c185-42c1-9311-817a3d26a1d8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.36,
+                        "y": 94.275
+                    },
+                    "uuid": "d73649c6-7c5c-40f0-8ae1-afe80e3eec69"
+                },
+                {
+                    "description": "Micro via [XC1] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 111.36,
+                        "y": 94.275
+                    },
+                    "uuid": "f3e3b7ab-19cc-46be-8df5-831c2c7a4fc2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.4805,
+                        "y": 92.643
+                    },
+                    "uuid": "cdeef5d9-5f9b-4490-8cad-7b984ca0a2db"
+                },
+                {
+                    "description": "Micro via [XC1] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 108.4805,
+                        "y": 92.643
+                    },
+                    "uuid": "fb988a67-60c2-40e5-86b7-b6dadd72ae8d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.4805,
+                        "y": 92.643
+                    },
+                    "uuid": "22dee90b-bd6f-4f83-8750-c19c539b9e73"
+                },
+                {
+                    "description": "Micro via [XC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.4805,
+                        "y": 92.643
+                    },
+                    "uuid": "cdeef5d9-5f9b-4490-8cad-7b984ca0a2db"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC1] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.36,
+                        "y": 94.275
+                    },
+                    "uuid": "5a0272a1-d210-4eb3-84f3-715b506b090c"
+                },
+                {
+                    "description": "Micro via [XC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.36,
+                        "y": 94.275
+                    },
+                    "uuid": "d73649c6-7c5c-40f0-8ae1-afe80e3eec69"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0988 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "f6e40b98-b932-402f-8ff8-59273f68072e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0988 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.454,
+                        "y": 92.043
+                    },
+                    "uuid": "f6e40b98-b932-402f-8ff8-59273f68072e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on GND - GND2",
+                    "pos": {
+                        "x": 106.4154,
+                        "y": 92.835
+                    },
+                    "uuid": "2305f691-7ab0-4681-aab7-6b2317c62e21"
+                },
+                {
+                    "description": "Micro via [GND] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 106.4154,
+                        "y": 92.835
+                    },
+                    "uuid": "d9991e3b-67c6-4f1a-8086-35c56fa1594e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Buried via [GND] on HDI_PWR - CORE_ROUTE_L5",
+                    "pos": {
+                        "x": 106.4154,
+                        "y": 92.835
+                    },
+                    "uuid": "484029b2-3a47-4512-ae63-e07e58116524"
+                },
+                {
+                    "description": "Micro via [GND] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 106.4154,
+                        "y": 92.835
+                    },
+                    "uuid": "d9991e3b-67c6-4f1a-8086-35c56fa1594e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 106.4265,
+                        "y": 93.1829
+                    },
+                    "uuid": "10980a8c-a635-4f7d-8653-4eec93aaae72"
+                },
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 106.4265,
+                        "y": 93.1829
+                    },
+                    "uuid": "a921166b-475a-4a92-ae1e-76c5b35c74c4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0858 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1548,
+                        "y": 96.8518
+                    },
+                    "uuid": "57759008-1b76-4ff1-bcf4-32cae132befd"
+                },
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "d00b4396-f94b-46ff-8a1a-01918a7df35b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0858 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1548,
+                        "y": 96.8518
+                    },
+                    "uuid": "57759008-1b76-4ff1-bcf4-32cae132befd"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "5b991bb9-c340-4572-8560-5567a3544960"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0858 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1548,
+                        "y": 96.8518
+                    },
+                    "uuid": "57759008-1b76-4ff1-bcf4-32cae132befd"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "9e8d657c-dff9-43d7-9ba9-997fbaeec4f5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [GND] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.1548,
+                        "y": 96.8518
+                    },
+                    "uuid": "57759008-1b76-4ff1-bcf4-32cae132befd"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.1556,
+                        "y": 96.6628
+                    },
+                    "uuid": "9b153bd1-603b-4655-9e3f-4a8e47693cb3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1330 mm)",
+            "items": [
+                {
+                    "description": "Micro via [LED_A] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.689,
+                        "y": 97.3266
+                    },
+                    "uuid": "45e48e77-7142-4751-a077-ef3471f6326e"
+                },
+                {
+                    "description": "Micro via [GND] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.0172,
+                        "y": 97.524
+                    },
+                    "uuid": "d6a3142c-a13a-4b7d-bb99-00853e59cb32"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on F.Cu - GND",
+                    "pos": {
+                        "x": 109.72,
+                        "y": 93.3
+                    },
+                    "uuid": "30cea297-38a6-4462-95c2-8a42f6c69c92"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 109.72,
+                        "y": 93.3
+                    },
+                    "uuid": "5ad4a519-e4d4-476f-a437-2cb30b98ede8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on F.Cu - GND",
+                    "pos": {
+                        "x": 105.1418,
+                        "y": 93.5891
+                    },
+                    "uuid": "a4b5b604-9e78-47b9-963b-4cb31e8681d5"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 105.1418,
+                        "y": 93.5891
+                    },
+                    "uuid": "d27efb50-d65e-4f70-8f6d-d626c4c0186f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 112.715,
+                        "y": 96.88
+                    },
+                    "uuid": "759a12a6-00a6-422f-9b76-ddf346da71ed"
+                },
+                {
+                    "description": "Micro via [VBUS] on F.Cu - GND",
+                    "pos": {
+                        "x": 112.715,
+                        "y": 96.88
+                    },
+                    "uuid": "a678beeb-7536-4c87-949c-56469387bb8b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 109.72,
+                        "y": 93.3
+                    },
+                    "uuid": "5ad4a519-e4d4-476f-a437-2cb30b98ede8"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 109.72,
+                        "y": 93.3
+                    },
+                    "uuid": "b7121be1-05bd-4a33-8589-650b64a9d1ec"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 112.715,
+                        "y": 96.88
+                    },
+                    "uuid": "759a12a6-00a6-422f-9b76-ddf346da71ed"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 112.715,
+                        "y": 96.88
+                    },
+                    "uuid": "ed72943b-5c64-4243-be10-1423c24e884d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 105.1418,
+                        "y": 93.5891
+                    },
+                    "uuid": "739c3392-46d5-4ada-bce8-01a0a2ce856c"
+                },
+                {
+                    "description": "Micro via [VBUS] on GND - GND2",
+                    "pos": {
+                        "x": 105.1418,
+                        "y": 93.5891
+                    },
+                    "uuid": "d27efb50-d65e-4f70-8f6d-d626c4c0186f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3179,
+                        "y": 98.5452
+                    },
+                    "uuid": "98d95b0a-4a82-47f0-9e79-f6a7f8999339"
+                },
+                {
+                    "description": "Micro via [VBUS] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 112.3179,
+                        "y": 98.5452
+                    },
+                    "uuid": "e381f00a-2123-4ba2-ad74-31a4a4527cbf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.3179,
+                        "y": 98.5452
+                    },
+                    "uuid": "504b3dde-f624-4b48-b54f-66b33849b418"
+                },
+                {
+                    "description": "Micro via [VBUS] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3179,
+                        "y": 98.5452
+                    },
+                    "uuid": "98d95b0a-4a82-47f0-9e79-f6a7f8999339"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC1] on GND - GND2",
+                    "pos": {
+                        "x": 104.585,
+                        "y": 92.568
+                    },
+                    "uuid": "4f4a51a2-cc0e-4f50-8814-a9faeea09e89"
+                },
+                {
+                    "description": "Micro via [CC1] on F.Cu - GND",
+                    "pos": {
+                        "x": 104.585,
+                        "y": 92.568
+                    },
+                    "uuid": "5fe098e6-591f-4c2f-8594-2aa3965bab1e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC1] on F.Cu - GND",
+                    "pos": {
+                        "x": 106.07,
+                        "y": 93.63
+                    },
+                    "uuid": "ebf7b936-f355-41cc-930b-c3e9dfe095d7"
+                },
+                {
+                    "description": "Micro via [CC1] on GND - GND2",
+                    "pos": {
+                        "x": 106.07,
+                        "y": 93.63
+                    },
+                    "uuid": "ede8e942-9339-4fd1-bf10-1df5c15632bb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on F.Cu - GND",
+                    "pos": {
+                        "x": 107.07,
+                        "y": 93.63
+                    },
+                    "uuid": "28468cdf-fde4-4554-b35c-b2bcc5f74258"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GND - GND2",
+                    "pos": {
+                        "x": 107.07,
+                        "y": 93.63
+                    },
+                    "uuid": "458744be-3652-43ba-93fd-378376269d28"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D+] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.4377,
+                        "y": 94.8837
+                    },
+                    "uuid": "947a200e-ccd3-44c6-bb3f-490980c8948a"
+                },
+                {
+                    "description": "Micro via [P1.15] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0874,
+                        "y": 94.9822
+                    },
+                    "uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on F.Cu - GND",
+                    "pos": {
+                        "x": 108.07,
+                        "y": 93.63
+                    },
+                    "uuid": "a864f593-2cb4-4fe7-94c3-b8879f26a0d9"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GND - GND2",
+                    "pos": {
+                        "x": 108.07,
+                        "y": 93.63
+                    },
+                    "uuid": "c3e65ffc-68ec-4f2a-bd95-6d4e5b54aa8e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 107.07,
+                        "y": 93.63
+                    },
+                    "uuid": "201f4eb4-423e-41ce-ac9f-e119f4941f16"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GND - GND2",
+                    "pos": {
+                        "x": 107.07,
+                        "y": 93.63
+                    },
+                    "uuid": "458744be-3652-43ba-93fd-378376269d28"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 108.07,
+                        "y": 93.63
+                    },
+                    "uuid": "9f56269b-7e11-4cb0-b440-9c70a4d72cb6"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GND - GND2",
+                    "pos": {
+                        "x": 108.07,
+                        "y": 93.63
+                    },
+                    "uuid": "c3e65ffc-68ec-4f2a-bd95-6d4e5b54aa8e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 97.955
+                    },
+                    "uuid": "2359172a-ac30-45b3-a4f9-64ff19d18d90"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 97.955
+                    },
+                    "uuid": "a69611d7-8797-4097-acf7-517d4ec80a06"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 102.504,
+                        "y": 97.7
+                    },
+                    "uuid": "5c36f345-a86d-4385-9f60-12cab70f4a04"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.504,
+                        "y": 97.7
+                    },
+                    "uuid": "b3e27571-c4ae-44dd-9f1c-669ddf31bad1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 97.955
+                    },
+                    "uuid": "12fe5f0e-eef7-43fa-9528-3643f0bfc907"
+                },
+                {
+                    "description": "Micro via [USB_D+] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 97.955
+                    },
+                    "uuid": "a69611d7-8797-4097-acf7-517d4ec80a06"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D+] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.504,
+                        "y": 97.7
+                    },
+                    "uuid": "b3e27571-c4ae-44dd-9f1c-669ddf31bad1"
+                },
+                {
+                    "description": "Micro via [USB_D+] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.504,
+                        "y": 97.7
+                    },
+                    "uuid": "e77c97a6-d896-4cae-8688-0403b595a092"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_D-] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.6152,
+                        "y": 95.309
+                    },
+                    "uuid": "1ab395fe-f696-4c8e-bc08-a3dc3bd11731"
+                },
+                {
+                    "description": "Micro via [P1.10] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.2596,
+                        "y": 95.3864
+                    },
+                    "uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D-] on F.Cu - GND",
+                    "pos": {
+                        "x": 107.57,
+                        "y": 93.63
+                    },
+                    "uuid": "4ab5216c-7195-472a-85f3-a3f1324d57a2"
+                },
+                {
+                    "description": "Micro via [USB_D-] on GND - GND2",
+                    "pos": {
+                        "x": 107.57,
+                        "y": 93.63
+                    },
+                    "uuid": "a280e1bd-c29a-4164-a653-021bf35537ef"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D-] on GND - GND2",
+                    "pos": {
+                        "x": 106.57,
+                        "y": 93.63
+                    },
+                    "uuid": "64ee7e8b-2cc3-4564-a39d-6a3f1a399c28"
+                },
+                {
+                    "description": "Micro via [USB_D-] on F.Cu - GND",
+                    "pos": {
+                        "x": 106.57,
+                        "y": 93.63
+                    },
+                    "uuid": "a4a63683-9a9d-488e-88f4-6ace7def9c39"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D-] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.52,
+                        "y": 98.15
+                    },
+                    "uuid": "3466f3ae-98d7-4952-8c1a-1a0a148bced8"
+                },
+                {
+                    "description": "Micro via [USB_D-] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.52,
+                        "y": 98.15
+                    },
+                    "uuid": "9538781c-3460-4028-925c-738f656e0963"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [USB_D-] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 110.14,
+                        "y": 99.235
+                    },
+                    "uuid": "116fb517-7c46-446a-831c-a769820b1816"
+                },
+                {
+                    "description": "Micro via [USB_D-] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 110.14,
+                        "y": 99.235
+                    },
+                    "uuid": "d66a9e30-7028-4096-b337-8614de152961"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC2] on GND - GND2",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "6977ee2d-cfc6-43b2-8d6f-a7decc528f63"
+                },
+                {
+                    "description": "Micro via [CC2] on F.Cu - GND",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "79b743d9-b126-4186-9e2e-6c9d1f58ec17"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC2] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "58fd4dff-dce1-4658-9086-83919931a946"
+                },
+                {
+                    "description": "Micro via [CC2] on GND - GND2",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "6977ee2d-cfc6-43b2-8d6f-a7decc528f63"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1350 mm)",
+            "items": [
+                {
+                    "description": "Micro via [CC2] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 109.07,
+                        "y": 93.63
+                    },
+                    "uuid": "58fd4dff-dce1-4658-9086-83919931a946"
+                },
+                {
+                    "description": "Buried via [+3V3] on HDI_PWR - CORE_ROUTE_L5",
+                    "pos": {
+                        "x": 109.2488,
+                        "y": 94.0156
+                    },
+                    "uuid": "f2604fc1-2f00-46ab-81b7-769d6c6c5320"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.04] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "1ec9363a-96e4-43d1-afaa-08fd436fe730"
+                },
+                {
+                    "description": "Micro via [P1.04] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "539cd515-ff15-407a-b609-b1fcd102f788"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.04] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "1ec9363a-96e4-43d1-afaa-08fd436fe730"
+                },
+                {
+                    "description": "Micro via [P1.04] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.2542,
+                        "y": 93.2409
+                    },
+                    "uuid": "62aee16f-4195-4597-a6c9-bfe68d6b0670"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.27] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 105.6207,
+                        "y": 93.261
+                    },
+                    "uuid": "0e2da429-e8db-4f03-b3d6-c4418f98b13e"
+                },
+                {
+                    "description": "Micro via [P0.27] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 105.6207,
+                        "y": 93.261
+                    },
+                    "uuid": "8733b468-cb55-4b6e-97c9-869953c09b77"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC5] on GND - GND2",
+                    "pos": {
+                        "x": 105.743,
+                        "y": 92.568
+                    },
+                    "uuid": "00ae1d35-967f-4386-846c-b865c8c6c834"
+                },
+                {
+                    "description": "Micro via [DEC5] on F.Cu - GND",
+                    "pos": {
+                        "x": 105.743,
+                        "y": 92.568
+                    },
+                    "uuid": "4b33c5c1-b1df-4766-a58a-7f6b6cea692b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC5] on GND - GND2",
+                    "pos": {
+                        "x": 105.743,
+                        "y": 92.568
+                    },
+                    "uuid": "00ae1d35-967f-4386-846c-b865c8c6c834"
+                },
+                {
+                    "description": "Micro via [DEC5] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 105.743,
+                        "y": 92.568
+                    },
+                    "uuid": "526ec2bd-471a-4f69-bbb6-e681dd2dbe75"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC5] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 105.52,
+                        "y": 92.65
+                    },
+                    "uuid": "66af26a1-c08e-4c31-9b01-c17b6f981c01"
+                },
+                {
+                    "description": "Micro via [DEC5] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 105.52,
+                        "y": 92.65
+                    },
+                    "uuid": "ccc4af0e-3fe9-4527-b821-7ee5204aadb2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC5] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 105.52,
+                        "y": 92.65
+                    },
+                    "uuid": "2c1e1bff-f843-48ff-9599-b4fc93bb6925"
+                },
+                {
+                    "description": "Micro via [DEC5] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 105.52,
+                        "y": 92.65
+                    },
+                    "uuid": "ccc4af0e-3fe9-4527-b821-7ee5204aadb2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on F.Cu - GND",
+                    "pos": {
+                        "x": 101.729,
+                        "y": 92.568
+                    },
+                    "uuid": "13bee9c7-f164-498d-b048-2c49df062570"
+                },
+                {
+                    "description": "Micro via [+3V3] on GND - GND2",
+                    "pos": {
+                        "x": 101.729,
+                        "y": 92.568
+                    },
+                    "uuid": "99b945a8-de34-4875-bb97-269af67f5bbe"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on F.Cu - GND",
+                    "pos": {
+                        "x": 102.887,
+                        "y": 92.568
+                    },
+                    "uuid": "54160f70-6e2c-45ba-8391-5d822e22f2f4"
+                },
+                {
+                    "description": "Micro via [+3V3] on GND - GND2",
+                    "pos": {
+                        "x": 102.887,
+                        "y": 92.568
+                    },
+                    "uuid": "6e5ea26e-0ca6-4e24-8f93-13c63a9802ba"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on F.Cu - GND",
+                    "pos": {
+                        "x": 102.51,
+                        "y": 96.45
+                    },
+                    "uuid": "78281f62-07d4-434b-af72-e1b69538c9b9"
+                },
+                {
+                    "description": "Micro via [+3V3] on GND - GND2",
+                    "pos": {
+                        "x": 102.51,
+                        "y": 96.45
+                    },
+                    "uuid": "8ffb4df9-e9a5-4188-982e-e0ad630e99fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 102.51,
+                        "y": 96.45
+                    },
+                    "uuid": "760dc1ba-4a64-4e1d-b762-33a7dbe4cc08"
+                },
+                {
+                    "description": "Micro via [+3V3] on GND - GND2",
+                    "pos": {
+                        "x": 102.51,
+                        "y": 96.45
+                    },
+                    "uuid": "8ffb4df9-e9a5-4188-982e-e0ad630e99fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 112.465,
+                        "y": 95.61
+                    },
+                    "uuid": "04c91ff5-930b-4ae0-a96c-a989bb79ce2c"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.465,
+                        "y": 95.61
+                    },
+                    "uuid": "6c53ed74-3e7a-4b71-81d6-e52f5401c3e8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 102.3035,
+                        "y": 95.525
+                    },
+                    "uuid": "3d7423b3-a1ec-4cde-855b-e21a4211a3c4"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.3035,
+                        "y": 95.525
+                    },
+                    "uuid": "cd870f74-2797-4d6e-afcb-081f93f5363f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 103.9046,
+                        "y": 99.3718
+                    },
+                    "uuid": "560710ff-8d21-4a6c-b094-9ca9ab7687eb"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.9046,
+                        "y": 99.3718
+                    },
+                    "uuid": "9b1061ad-9f51-4f28-b3b6-cd232152006d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "7baa01c4-8dd1-49b1-acaa-54a6b24f14b1"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 102.3593,
+                        "y": 92.9585
+                    },
+                    "uuid": "87a48c9d-8737-4b01-8838-fd8da418af67"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.3593,
+                        "y": 92.9585
+                    },
+                    "uuid": "abceefad-2848-4c1f-a4bf-9f6553f42bbd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 108.4678,
+                        "y": 99.5466
+                    },
+                    "uuid": "8a688933-68bb-4c62-9b3d-26017cb410d6"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.4678,
+                        "y": 99.5466
+                    },
+                    "uuid": "956a3264-e1c8-4042-97d9-86c87ba7fa73"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "4ec4b9e0-d8f0-4daf-9cd6-50082879ff79"
+                },
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "a4d0fc91-f2ea-4877-b8f9-1242bf043d48"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "5b991bb9-c340-4572-8560-5567a3544960"
+                },
+                {
+                    "description": "Micro via [+3V3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "d00b4396-f94b-46ff-8a1a-01918a7df35b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "4ec4b9e0-d8f0-4daf-9cd6-50082879ff79"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "c156fc4b-24ae-4bac-a0d9-f1456c06d247"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1312 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "4ec4b9e0-d8f0-4daf-9cd6-50082879ff79"
+                },
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1318 mm)",
+            "items": [
+                {
+                    "description": "Micro via [LED_A] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.689,
+                        "y": 97.3266
+                    },
+                    "uuid": "45e48e77-7142-4751-a077-ef3471f6326e"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "5b991bb9-c340-4572-8560-5567a3544960"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "5b991bb9-c340-4572-8560-5567a3544960"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "9e8d657c-dff9-43d7-9ba9-997fbaeec4f5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.465,
+                        "y": 95.61
+                    },
+                    "uuid": "6c53ed74-3e7a-4b71-81d6-e52f5401c3e8"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.465,
+                        "y": 95.61
+                    },
+                    "uuid": "97cc6308-3619-437f-96f1-25d3445c74b9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.9046,
+                        "y": 99.3718
+                    },
+                    "uuid": "388d0bf6-a390-4747-8bcc-5f5515347edb"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.9046,
+                        "y": 99.3718
+                    },
+                    "uuid": "9b1061ad-9f51-4f28-b3b6-cd232152006d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "73e6bebc-51c0-4a1e-adff-a8e455a1b814"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.048,
+                        "y": 93.7289
+                    },
+                    "uuid": "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.3593,
+                        "y": 92.9585
+                    },
+                    "uuid": "0691ceb2-7967-441e-a4ec-ac3066d0dbf5"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.3593,
+                        "y": 92.9585
+                    },
+                    "uuid": "abceefad-2848-4c1f-a4bf-9f6553f42bbd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.3035,
+                        "y": 95.525
+                    },
+                    "uuid": "7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1"
+                },
+                {
+                    "description": "Micro via [+3V3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.3035,
+                        "y": 95.525
+                    },
+                    "uuid": "cd870f74-2797-4d6e-afcb-081f93f5363f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1318 mm)",
+            "items": [
+                {
+                    "description": "Micro via [LED_A] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.689,
+                        "y": 97.3266
+                    },
+                    "uuid": "45e48e77-7142-4751-a077-ef3471f6326e"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.3833,
+                        "y": 97.0978
+                    },
+                    "uuid": "9e8d657c-dff9-43d7-9ba9-997fbaeec4f5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1312 mm)",
+            "items": [
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                },
+                {
+                    "description": "Micro via [+3V3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.9312,
+                        "y": 97.9825
+                    },
+                    "uuid": "c156fc4b-24ae-4bac-a0d9-f1456c06d247"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0922 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0438,
+                        "y": 93.0993
+                    },
+                    "uuid": "252d35f7-2a6e-48e0-8f58-986b9b9c1f4b"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.251,
+                        "y": 92.827
+                    },
+                    "uuid": "971ea6df-588c-4d93-8218-37ec1e3c5f82"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0922 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.0438,
+                        "y": 93.0993
+                    },
+                    "uuid": "79ba0b39-b285-44e4-ba3a-b49d860946b8"
+                },
+                {
+                    "description": "Micro via [P1.14] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.251,
+                        "y": 92.827
+                    },
+                    "uuid": "971ea6df-588c-4d93-8218-37ec1e3c5f82"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC3] on GND - GND2",
+                    "pos": {
+                        "x": 106.901,
+                        "y": 92.568
+                    },
+                    "uuid": "714f1dd6-89bc-476c-b369-d450ac39068a"
+                },
+                {
+                    "description": "Micro via [DEC3] on F.Cu - GND",
+                    "pos": {
+                        "x": 106.901,
+                        "y": 92.568
+                    },
+                    "uuid": "dc69142e-71da-4a54-ab3b-8187ab993763"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC3] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 106.901,
+                        "y": 92.568
+                    },
+                    "uuid": "09b8e96d-f6ae-4b9d-9191-d99d35e386bf"
+                },
+                {
+                    "description": "Micro via [DEC3] on GND - GND2",
+                    "pos": {
+                        "x": 106.901,
+                        "y": 92.568
+                    },
+                    "uuid": "714f1dd6-89bc-476c-b369-d450ac39068a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC3] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "adf7d405-7103-4619-8e81-934ea21e0e72"
+                },
+                {
+                    "description": "Micro via [DEC3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "e26f9537-5e80-4fb3-b795-3614102b740a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "322f822d-7a75-49dc-b56e-2cee95829337"
+                },
+                {
+                    "description": "Micro via [DEC3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "e26f9537-5e80-4fb3-b795-3614102b740a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1478 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.152,
+                        "y": 93.261
+                    },
+                    "uuid": "64505de4-88ea-4850-b6c9-b668b7396ece"
+                },
+                {
+                    "description": "Micro via [DEC3] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "e26f9537-5e80-4fb3-b795-3614102b740a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.1478 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC3] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 93.15
+                    },
+                    "uuid": "322f822d-7a75-49dc-b56e-2cee95829337"
+                },
+                {
+                    "description": "Micro via [P1.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.152,
+                        "y": 93.261
+                    },
+                    "uuid": "64505de4-88ea-4850-b6c9-b668b7396ece"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.05] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.8628,
+                        "y": 93.0203
+                    },
+                    "uuid": "7a7bbe5e-760e-4787-a698-bd8615c660db"
+                },
+                {
+                    "description": "Micro via [P0.05] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.8628,
+                        "y": 93.0203
+                    },
+                    "uuid": "8d5d8bce-82a2-4228-ba44-b3fad7f200b2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.13] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.77,
+                        "y": 92.9318
+                    },
+                    "uuid": "92885bf1-3e93-4758-9c7e-8e1841decd52"
+                },
+                {
+                    "description": "Micro via [P0.13] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.77,
+                        "y": 92.9318
+                    },
+                    "uuid": "effe0d36-6b0f-4e2f-8d09-ed95d90fddcb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.12] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155"
+                },
+                {
+                    "description": "Micro via [P0.12] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.5528,
+                        "y": 92.419
+                    },
+                    "uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on F.Cu - GND",
+                    "pos": {
+                        "x": 112.691,
+                        "y": 92.568
+                    },
+                    "uuid": "1117dc38-bdc8-43ae-9c6d-0b80b3953e98"
+                },
+                {
+                    "description": "Micro via [XC2] on GND - GND2",
+                    "pos": {
+                        "x": 112.691,
+                        "y": 92.568
+                    },
+                    "uuid": "d663204f-f770-49bc-8ce1-edcfa88158ae"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 112.691,
+                        "y": 92.568
+                    },
+                    "uuid": "8ad22d85-5c9f-4523-bfe2-6391258c27e8"
+                },
+                {
+                    "description": "Micro via [XC2] on GND - GND2",
+                    "pos": {
+                        "x": 112.691,
+                        "y": 92.568
+                    },
+                    "uuid": "d663204f-f770-49bc-8ce1-edcfa88158ae"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 112.16,
+                        "y": 93.175
+                    },
+                    "uuid": "1eda818b-dda8-4e27-8189-7f780c17339f"
+                },
+                {
+                    "description": "Micro via [XC2] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 112.16,
+                        "y": 93.175
+                    },
+                    "uuid": "681c0063-fcdc-4c68-8dbd-2536b7c49b7a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [XC2] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.0438,
+                        "y": 93.0993
+                    },
+                    "uuid": "252d35f7-2a6e-48e0-8f58-986b9b9c1f4b"
+                },
+                {
+                    "description": "Micro via [XC2] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.0438,
+                        "y": 93.0993
+                    },
+                    "uuid": "79ba0b39-b285-44e4-ba3a-b49d860946b8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DECUSB] on GND - GND2",
+                    "pos": {
+                        "x": 101.404,
+                        "y": 97.39
+                    },
+                    "uuid": "6865cce4-0363-4ad4-8257-5002e054bd3c"
+                },
+                {
+                    "description": "Micro via [DECUSB] on GND2 - HDI_PWR",
+                    "pos": {
+                        "x": 101.404,
+                        "y": 97.39
+                    },
+                    "uuid": "c476f9f5-c7dc-4940-b842-5e80b2372ece"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DECUSB] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 102.3057,
+                        "y": 97.3084
+                    },
+                    "uuid": "5a23a936-1ef5-4f54-a990-057835229504"
+                },
+                {
+                    "description": "Micro via [DECUSB] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.3057,
+                        "y": 97.3084
+                    },
+                    "uuid": "9bcaf8fa-08d5-4f97-b681-92b8221158fa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.00] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.8018,
+                        "y": 93.3426
+                    },
+                    "uuid": "9c484f93-a757-4323-a915-8dcc64a629cd"
+                },
+                {
+                    "description": "Micro via [P1.00] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.8018,
+                        "y": 93.3426
+                    },
+                    "uuid": "da84461a-10c9-49fd-9e43-60ff231b787a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [SWDIO] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "b048a504-3818-43d8-908e-7b320af1c6a0"
+                },
+                {
+                    "description": "Micro via [SWDIO] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "b34404dd-ad81-401c-9377-a301bc30b4a0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [SWDIO] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 103.163,
+                        "y": 92.5266
+                    },
+                    "uuid": "b4f79c5c-0d4c-4c9d-baf3-7f83067fc497"
+                },
+                {
+                    "description": "Micro via [SWDIO] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.163,
+                        "y": 92.5266
+                    },
+                    "uuid": "e8259f1f-303e-456c-a096-961ef5e0c399"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [SWDIO] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "b34404dd-ad81-401c-9377-a301bc30b4a0"
+                },
+                {
+                    "description": "Micro via [SWDIO] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 111.8156,
+                        "y": 99.1604
+                    },
+                    "uuid": "f61425b0-884c-4142-acfc-69bf442552bb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [SWDIO] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.163,
+                        "y": 92.5266
+                    },
+                    "uuid": "553fbc51-47eb-429b-85d7-a751ef128203"
+                },
+                {
+                    "description": "Micro via [SWDIO] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.163,
+                        "y": 92.5266
+                    },
+                    "uuid": "e8259f1f-303e-456c-a096-961ef5e0c399"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                },
+                {
+                    "description": "Micro via [DEC4_6] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "e16296a2-6b3f-492f-9ac8-99a6425537cf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, different nets' clearance 0.1500 mm; actual 0.0889 mm)",
+            "items": [
+                {
+                    "description": "Micro via [nRESET] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.7473,
+                        "y": 97.6486
+                    },
+                    "uuid": "72c57a76-89d7-4f50-9316-3279d56a479a"
+                },
+                {
+                    "description": "Micro via [DEC4_6] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "f7685b28-f930-4071-87d3-7d9e40690587"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 103.645,
+                        "y": 98.8665
+                    },
+                    "uuid": "03e35674-b80c-4e9a-a48e-4c5ff397c522"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.645,
+                        "y": 98.8665
+                    },
+                    "uuid": "8572cc44-16e4-4150-8ef9-04a303ce1360"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 102.7951,
+                        "y": 98.9964
+                    },
+                    "uuid": "2cfd36a8-510d-4d5e-9dc7-2fd54fa42bbf"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.7951,
+                        "y": 98.9964
+                    },
+                    "uuid": "8a4775c5-bfba-4799-9893-0f215d07ace9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 101.97,
+                        "y": 94.07
+                    },
+                    "uuid": "39074007-e539-46e2-ae5c-47bfc64fb122"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 101.97,
+                        "y": 94.07
+                    },
+                    "uuid": "b3e9421a-ba6d-4a78-9473-2efda17aff10"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "e49d65f1-6001-40ab-b3ed-1588fdf0c5d0"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on CORE_ROUTE_L5 - GPIO_ROUTE_L6",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "f4a99392-a9a7-4509-b118-a9f040d0a73c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 101.97,
+                        "y": 94.07
+                    },
+                    "uuid": "39074007-e539-46e2-ae5c-47bfc64fb122"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 101.97,
+                        "y": 94.07
+                    },
+                    "uuid": "6db0b026-c558-460a-8d6d-0b270c707546"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 103.645,
+                        "y": 98.8665
+                    },
+                    "uuid": "8572cc44-16e4-4150-8ef9-04a303ce1360"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 103.645,
+                        "y": 98.8665
+                    },
+                    "uuid": "944fec3c-a304-4b0c-ba4e-1245fe4f3dfb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 102.7951,
+                        "y": 98.9964
+                    },
+                    "uuid": "094f7fea-9fa3-4568-9238-bbac11f4f001"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 102.7951,
+                        "y": 98.9964
+                    },
+                    "uuid": "8a4775c5-bfba-4799-9893-0f215d07ace9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [VBUS_MCU] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "134cf44b-849f-47e4-9e11-3fcff01fbce9"
+                },
+                {
+                    "description": "Micro via [VBUS_MCU] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 113.1958,
+                        "y": 98.5278
+                    },
+                    "uuid": "e49d65f1-6001-40ab-b3ed-1588fdf0c5d0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P0.11] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 105.0217,
+                        "y": 92.6293
+                    },
+                    "uuid": "941ecd2c-6516-44f6-b223-9c8a7dcd2091"
+                },
+                {
+                    "description": "Micro via [P0.11] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 105.0217,
+                        "y": 92.6293
+                    },
+                    "uuid": "eca2fe9a-6657-415b-9580-7f49b88d101b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC4_6] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 107.52,
+                        "y": 92.65
+                    },
+                    "uuid": "15b61323-2e9e-400d-858e-6d69f5d47cc2"
+                },
+                {
+                    "description": "Micro via [DEC4_6] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 107.52,
+                        "y": 92.65
+                    },
+                    "uuid": "1f97fc43-6e7a-4941-992e-22e9ee9201ff"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC4_6] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 93.77
+                    },
+                    "uuid": "74b665e8-f3c1-4dbc-87d8-da25a4a8648c"
+                },
+                {
+                    "description": "Micro via [DEC4_6] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.735,
+                        "y": 93.77
+                    },
+                    "uuid": "760d8737-5e50-4adf-80e1-cbee88b2f850"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC4_6] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "e16296a2-6b3f-492f-9ac8-99a6425537cf"
+                },
+                {
+                    "description": "Micro via [DEC4_6] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.52,
+                        "y": 97.9
+                    },
+                    "uuid": "f7685b28-f930-4071-87d3-7d9e40690587"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 109.575,
+                        "y": 99.615
+                    },
+                    "uuid": "38177b14-448c-478a-b50b-a2ae6c536173"
+                },
+                {
+                    "description": "Micro via [DEC1] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 109.575,
+                        "y": 99.615
+                    },
+                    "uuid": "ec90cc08-8eff-4745-8d62-6798d891704b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [DEC1] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 99.15
+                    },
+                    "uuid": "a37a285f-4c4b-4f26-8bd5-13c9d105a63d"
+                },
+                {
+                    "description": "Micro via [DEC1] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 108.02,
+                        "y": 99.15
+                    },
+                    "uuid": "c9c5d6db-2f3a-4002-b72e-ac430d9d97a5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'via drill separation, same net' clearance 0.0500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Micro via [P1.02] on RF_GND_L7 - B.Cu",
+                    "pos": {
+                        "x": 104.02,
+                        "y": 92.5721
+                    },
+                    "uuid": "78329a13-25ab-4d1f-934f-8713c1e167c6"
+                },
+                {
+                    "description": "Micro via [P1.02] on GPIO_ROUTE_L6 - RF_GND_L7",
+                    "pos": {
+                        "x": 104.02,
+                        "y": 92.5721
+                    },
+                    "uuid": "c4978a99-b8d9-47f2-a90b-69da652622e8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "comment": "J1 west NPTH locating peg at (104.430, 94.720) intentionally lies inside U1's courtyard in the compact 13.570 x 9.435 mm placement. The peg-to-U1 overlap is the mechanically reviewed notch-aligned placement; this exact exclusion is keyed to the fresh DRC position, J1 pad UUID, and U1 footprint UUID. Regenerate and re-review if any key changes.",
+            "description": "NPTH inside courtyard",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 104.43,
+                        "y": 94.72
+                    },
+                    "uuid": "9975e04a-a69e-4e64-8470-7cca97045659"
+                },
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 105.77,
+                        "y": 95.9
+                    },
+                    "uuid": "7c7fb09b-a960-4d8f-912f-ec65519f8564"
+                }
+            ],
+            "severity": "error",
+            "type": "npth_inside_courtyard"
+        }
+    ]
+}

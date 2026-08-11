@@ -1,0 +1,24 @@
+CONTROLLED IMPEDANCE AND 8-LAYER 3+2+3 HDI NOTE
+
+Vendor/order path: NextPCB Advanced PCB with written engineering review.
+Nominal order thickness: 1.0 mm; exact released KiCad stack sum 0.991 mm.
+Material and resin content: use the exact attached stack CSV as the design request; vendor must return a pressed construction for written approval. Finish ENIG, 35 um outer and 17.5 um inner copper.
+
+RF_50
+- B.Cu referenced to continuous adjacent In6.Cu GND.
+- Artwork nominal: 0.115 mm width, at least 0.310 mm same-side copper setback, soldermask retained.
+- Target 50 ohm single-ended, +/-10% maximum.
+- Field-solve using the vendor's proposed pressed 0.100 mm B.Cu-In6 dielectric, resin content, finished copper, and mask. No pre-DFM impedance number is asserted.
+- Adjust RF_50 only after written customer approval; do not change ANT_FEED or matching geometry.
+- Add a B.Cu/In6 coupon when required and supply the lot TDR result.
+
+SEQUENTIAL HDI / VIPPO
+- Construction: 3+2+3 with laser pairs F-In1, In1-In2, In2-In3, In4-In5, In5-In6, In6-B.
+- Released adjacent-tier dielectric thicknesses: 0.100, 0.100, 0.095, 0.226, 0.095, 0.100, 0.100 mm.
+- Manifest-observed laser geometry: 0.250/0.100 mm.
+- Every laser tier must be copper filled and planarized before the next lamination.
+- Copper fill, cap, and planarize every via-in-pad feature; maximum cap dimple 10 um.
+- Microsection both face stacks and X-ray U1 on the first article.
+- Central In3.Cu-In4.Cu buried program present: 18 transition(s).
+- Fabrication and release require this operation in the signed DFM approval.
+- No stack, via geometry, impedance, or central operation is approved by this note alone; signed vendor DFM must bind the released board and manifest SHA-256 values.

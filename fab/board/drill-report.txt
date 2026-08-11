@@ -1,0 +1,86 @@
+Drill report for meenie.kicad_pcb
+Created on 2026-08-11T11:37:59
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  GND                       in1
+    L3 :  GND2                      in2
+    L4 :  HDI_PWR                   in3
+    L5 :  CORE_ROUTE_L5             in4
+    L6 :  GPIO_ROUTE_L6             in5
+    L7 :  RF_GND_L7                 in6
+    L8 :  B.Cu                      back
+
+
+Drill file 'meenie-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.150mm  0.0059"  (6 holes))
+    T2  0.300mm  0.0118"  (15 holes))
+
+    Total plated holes count 21
+
+
+Drill file 'meenie-front-in1.drl' contains
+    holes connecting layer pair: 'F.Cu and GND' (blind vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (24 holes))
+
+    Total plated holes count 24
+
+
+Drill file 'meenie-back-in6.drl' contains
+    holes connecting layer pair: 'B.Cu and RF_GND_L7' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (76 holes))
+
+    Total plated holes count 76
+
+
+Drill file 'meenie-in1-in2.drl' contains
+    holes connecting layer pair: 'GND and GND2' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (19 holes))
+
+    Total plated holes count 19
+
+
+Drill file 'meenie-in2-in3.drl' contains
+    holes connecting layer pair: 'GND2 and HDI_PWR' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (21 holes))
+
+    Total plated holes count 21
+
+
+Drill file 'meenie-in3-in4.drl' contains
+    holes connecting layer pair: 'HDI_PWR and CORE_ROUTE_L5' (buried vias):
+    =============================================================
+    T1  0.150mm  0.0059"  (18 holes))
+
+    Total plated holes count 18
+
+
+Drill file 'meenie-in4-in5.drl' contains
+    holes connecting layer pair: 'CORE_ROUTE_L5 and GPIO_ROUTE_L6' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (26 holes))
+
+    Total plated holes count 26
+
+
+Drill file 'meenie-in5-in6.drl' contains
+    holes connecting layer pair: 'GPIO_ROUTE_L6 and RF_GND_L7' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (50 holes))
+
+    Total plated holes count 50
+
+
+Drill file 'meenie-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.750mm  0.0295"  (2 holes))
+
+    Total unplated holes count 2

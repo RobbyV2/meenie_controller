@@ -1,0 +1,27 @@
+{
+  "board_sha256": "f35f3f9ab7b9f7036889477b2521ae48020c2f21517cd56bb72479dcd414e0ad",
+  "status": "accepted_centerline_continuous_controlled_trunk_with_disclosed_endpoint_sliver",
+  "routing_unchanged_from_rf_geometry_audit": true,
+  "controlled_trunk_width_mm": 0.115,
+  "controlled_trunk_length_mm": 7.12,
+  "centerline_samples": 7120,
+  "centerline_covered": 7120,
+  "foreign_in6_centerline_intersections": 0,
+  "literal_full_width_shadow_fraction": 0.999923061497,
+  "literal_full_width_shadow_percent": 99.9923061497,
+  "literal_full_width_missing_area_mm2": 0.000062488491,
+  "missing_sliver_bounds_record_mm": [9.220636745, 8.121045663, 9.24, 8.1275],
+  "qualification": "Centerline continuity is exactly 100 percent; literal full-width copper-shadow coverage is not 100 percent.",
+  "source_rf_audit": {
+    "path": "fab/reports/rf-audit/final-grown-audit.json",
+    "sha256": "47706e03d92f72898079e3f780f32c6700289f15237f47a2540bdc647c2fc36d",
+    "audited_board_sha256": "da287bb563d1f42fc78b56a3b283d70203b867952b8bdc542935e6242ed7bcaf"
+  },
+  "metadata_only_supersession_audit": {
+    "path": "fab/reports/rf-audit/superseding-metadata-model-audit.json",
+    "sha256": "6f3e6d8b3fa1171ce9cea9b2cea0e0964d46231c30c8fc2ec03b778ba8336060",
+    "routing_items": 600,
+    "routing_signature_equal": true
+  },
+  "vendor_gate": "NextPCB must field-solve 50 ohms on the exact 1.001 mm stack and approve 0.115 mm width, or the artwork must be revised and the release rerun."
+}

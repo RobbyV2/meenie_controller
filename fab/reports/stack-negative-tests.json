@@ -1,0 +1,238 @@
+{
+  "all_pass": true,
+  "case_count": 24,
+  "failures": [],
+  "cases": {
+    "positive": {
+      "pass": true,
+      "exit": 0,
+      "output": [
+        "PASS: fail-closed HDI manifest validates 124 stacks / 216 microvias / 93 signatures / 93 DRC reports / 6 reviewed board marker rules"
+      ]
+    },
+    "missing-manifest-tier": {
+      "pass": true,
+      "expected": "unmanifested board microvia",
+      "exit": 1,
+      "output": [
+        "FAIL: 5 stack-manifest issue(s)",
+        "  - unmanifested board microvia 7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1",
+        "  - overlapping holes cd870f74-2797-4d6e-afcb-081f93f5363f and 7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1 are not in one approved stack",
+        "  - allowed marker ('clearance', 102.3035, 95.525, ('7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1', 'cd870f74-2797-4d6e-afcb-081f93f5363f')) is not one stack's adjacent-tier pair",
+        "  - missing expected active stack marker x1: ('clearance', 102.3035, 95.525, ('7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1', 'cd870f74-2797-4d6e-afcb-081f93f5363f'))",
+        "  - unreviewed active board marker rule ('clearance', \"rule 'via drill separation, same net'\") x1"
+      ]
+    },
+    "wrong-center": {
+      "pass": true,
+      "expected": "center",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: center (102.3035, 95.525), manifest [102.3135, 95.525]"
+      ]
+    },
+    "wrong-net": {
+      "pass": true,
+      "expected": "manifest 'WRONG_NET'",
+      "exit": 1,
+      "output": [
+        "FAIL: 3 stack-manifest issue(s)",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: net '+3V3', manifest 'WRONG_NET'",
+        "  - bottom-3v3-102.3035-95.5250 tier 1: net '+3V3', manifest 'WRONG_NET'",
+        "  - bottom-3v3-102.3035-95.5250 tier 2: net '+3V3', manifest 'WRONG_NET'"
+      ]
+    },
+    "wrong-layer-pair": {
+      "pass": true,
+      "expected": "illegal adjacent pair",
+      "exit": 1,
+      "output": [
+        "FAIL: 2 stack-manifest issue(s)",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: illegal adjacent pair ('F.Cu', 'In2.Cu')",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: layers ('In4.Cu', 'In5.Cu'), manifest ('F.Cu', 'In2.Cu')"
+      ]
+    },
+    "wrong-pad-geometry": {
+      "pass": true,
+      "expected": "pad",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: pad 0.25, manifest 0.4"
+      ]
+    },
+    "wrong-drill-geometry": {
+      "pass": true,
+      "expected": "drill",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - bottom-3v3-102.3035-95.5250 tier 0: drill 0.1, manifest 0.2"
+      ]
+    },
+    "missing-layer-stack": {
+      "pass": true,
+      "expected": "manifest missing layer_stack",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - manifest missing layer_stack"
+      ]
+    },
+    "wrong-layer-stack-thickness": {
+      "pass": true,
+      "expected": "layer stack differs from exact manifest",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - layer stack differs from exact manifest: {'finished_thickness_mm': 0.991, 'rows': [{'name': 'F.Cu', 'type': 'copper', 'thickness_mm': 0.035, 'material': ''}, {'name': 'dielectric 1', 'type': 'prepreg', 'thickness_mm': 0.1, 'material': '2313'}, {'name': 'In1.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 2', 'type': 'prepreg', 'thickness_mm': 0.1, 'material': 'FR4'}, {'name': 'In2.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 3', 'type': 'prepreg', 'thickness_mm': 0.095, 'material': '1080'}, {'name': 'In3.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 4', 'type': 'core', 'thickness_mm': 0.226, 'material': 'FR4'}, {'name': 'In4.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 5', 'type': 'prepreg', 'thickness_mm': 0.095, 'material': '1080'}, {'name': 'In5.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 6', 'type': 'prepreg', 'thickness_mm': 0.1, 'material': 'FR4'}, {'name': 'In6.Cu', 'type': 'copper', 'thickness_mm': 0.0175, 'material': ''}, {'name': 'dielectric 7', 'type': 'prepreg', 'thickness_mm': 0.1, 'material': '2313'}, {'name': 'B.Cu', 'type': 'copper', 'thickness_mm': 0.035, 'material': ''}]}"
+      ]
+    },
+    "duplicate-manifest-uuid": {
+      "pass": true,
+      "expected": "appears in both",
+      "exit": 1,
+      "output": [
+        "FAIL: 7 stack-manifest issue(s)",
+        "  - microvia 3d7423b3-a1ec-4cde-855b-e21a4211a3c4 appears in both bottom-3v3-102.3035-95.5250 and bottom-3v3-102.3593-92.9585",
+        "  - bottom-3v3-102.3593-92.9585: adjacent tiers do not overlap capture pads (2.567107 > 0.250000mm)",
+        "  - unmanifested board microvia 87a48c9d-8737-4b01-8838-fd8da418af67",
+        "  - overlapping holes 87a48c9d-8737-4b01-8838-fd8da418af67 and abceefad-2848-4c1f-a4bf-9f6553f42bbd are not in one approved stack",
+        "  - allowed marker ('clearance', 102.3593, 92.9585, ('87a48c9d-8737-4b01-8838-fd8da418af67', 'abceefad-2848-4c1f-a4bf-9f6553f42bbd')) is not one stack's adjacent-tier pair",
+        "  - missing expected active stack marker x1: ('clearance', 102.3593, 92.9585, ('87a48c9d-8737-4b01-8838-fd8da418af67', 'abceefad-2848-4c1f-a4bf-9f6553f42bbd'))",
+        "  - unreviewed active board marker rule ('clearance', \"rule 'via drill separation, same net'\") x1"
+      ]
+    },
+    "split-physical-chain": {
+      "pass": true,
+      "expected": "not in one approved stack",
+      "exit": 1,
+      "output": [
+        "FAIL: 4 stack-manifest issue(s)",
+        "  - overlapping holes cd870f74-2797-4d6e-afcb-081f93f5363f and 7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1 are not in one approved stack",
+        "  - allowed marker ('clearance', 102.3035, 95.525, ('7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1', 'cd870f74-2797-4d6e-afcb-081f93f5363f')) is not one stack's adjacent-tier pair",
+        "  - missing expected active stack marker x1: ('clearance', 102.3035, 95.525, ('7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1', 'cd870f74-2797-4d6e-afcb-081f93f5363f'))",
+        "  - unreviewed active board marker rule ('clearance', \"rule 'via drill separation, same net'\") x1"
+      ]
+    },
+    "stale-drc-multiset": {
+      "pass": true,
+      "expected": "missing expected active stack marker",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - missing expected active stack marker x1: ('clearance', 111.533, 92.568, ('9e054b20-c185-42c1-9311-817a3d26a1d8', 'f7d5b55e-c554-4379-95fc-7c2108df6ecf'))"
+      ]
+    },
+    "extra-stack-report": {
+      "pass": true,
+      "expected": "unexpected active stack marker",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - unexpected active stack marker x1: ('clearance', 111.533, 92.568, ('9e054b20-c185-42c1-9311-817a3d26a1d8', 'f7d5b55e-c554-4379-95fc-7c2108df6ecf'))"
+      ]
+    },
+    "active-unsupported-type": {
+      "pass": true,
+      "expected": "unexpected active DRC marker",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - unexpected active DRC marker ('silk_over_copper', 111.533, 92.568, ('9e054b20-c185-42c1-9311-817a3d26a1d8', 'f7d5b55e-c554-4379-95fc-7c2108df6ecf'))"
+      ]
+    },
+    "unreviewed-board-rule": {
+      "pass": true,
+      "expected": "unreviewed active board marker rule",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - unreviewed active board marker rule ('clearance', \"rule 'unreviewed injected rule'\") x1"
+      ]
+    },
+    "stale-board-rule": {
+      "pass": true,
+      "expected": "reports nothing; manifest is stale",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - reviewed board marker rule ('clearance', \"rule 'rule that reports nothing'\") reports nothing; manifest is stale"
+      ]
+    },
+    "wrong-drill-separation": {
+      "pass": true,
+      "expected": "via_drill_separation_mm[same_net]",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - manifest via_drill_separation_mm[same_net] is 0.02, approved 0.05mm"
+      ]
+    },
+    "wrong-excluded-drc-signature": {
+      "pass": true,
+      "expected": "excluded-marker signatures differ",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - DRC report excluded-marker signatures differ from exact project/manifest exclusions: actual={('npth_inside_courtyard', 104.43, 94.72, ('00000000-0000-4000-8000-000000000000', '7c7fb09b-a960-4d8f-912f-ec65519f8564')): 1}, expected={('npth_inside_courtyard', 104.43, 94.72, ('7c7fb09b-a960-4d8f-912f-ec65519f8564', '9975e04a-a69e-4e64-8470-7cca97045659')): 1}"
+      ]
+    },
+    "broad-ignore-rule": {
+      "pass": true,
+      "expected": "broad severity-ignore rule",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - rules file contains a broad severity-ignore rule"
+      ]
+    },
+    "extra-native-exclusion": {
+      "pass": true,
+      "expected": "project DRC exclusions differ",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - project DRC exclusions differ from exact manifest list: [['npth_inside_courtyard|104430000|94720000|9975e04a-a69e-4e64-8470-7cca97045659|7c7fb09b-a960-4d8f-912f-ec65519f8564', \"J1 west NPTH locating peg at (104.430, 94.720) intentionally lies inside U1's courtyard in the compact 13.570 x 9.435 mm placement. The peg-to-U1 overlap is the mechanically reviewed notch-aligned placement; this exact exclusion is keyed to the fresh DRC position, J1 pad UUID, and U1 footprint UUID. Regenerate and re-review if any key changes.\"], ['clearance|1|1|fake|fake', 'negative test']]"
+      ]
+    },
+    "missing-central-transition": {
+      "pass": true,
+      "expected": "unmanifested board blind/buried via",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - unmanifested board blind/buried via f2604fc1-2f00-46ab-81b7-769d6c6c5320"
+      ]
+    },
+    "wrong-central-center": {
+      "pass": true,
+      "expected": "central transition",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - central transition 21b9309a-f8a8-44c6-be81-eb9f685d8178: center (112.8, 98.85), manifest [112.81, 98.85]"
+      ]
+    },
+    "wrong-central-pair": {
+      "pass": true,
+      "expected": "illegal pair",
+      "exit": 1,
+      "output": [
+        "FAIL: 2 stack-manifest issue(s)",
+        "  - central transition 21b9309a-f8a8-44c6-be81-eb9f685d8178: illegal pair ('In2.Cu', 'In3.Cu')",
+        "  - central transition 21b9309a-f8a8-44c6-be81-eb9f685d8178: layers ('In3.Cu', 'In4.Cu'), manifest ('In2.Cu', 'In3.Cu')"
+      ]
+    },
+    "missing-central-capture-link": {
+      "pass": true,
+      "expected": "missing central capture link",
+      "exit": 1,
+      "output": [
+        "FAIL: 1 stack-manifest issue(s)",
+        "  - missing central capture link ('484029b2-3a47-4512-ae63-e07e58116524', 'd9991e3b-67c6-4f1a-8086-35c56fa1594e', 'GND', 'top')"
+      ]
+    }
+  }
+}

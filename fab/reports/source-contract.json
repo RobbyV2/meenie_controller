@@ -1,0 +1,25 @@
+{
+  "critical_parts": {
+    "C1": {
+      "LCSC Part": "C161404",
+      "MPN": "GRM0335C1H120GA01D",
+      "Manufacturer": "Murata"
+    },
+    "C2": {
+      "LCSC Part": "C161404",
+      "MPN": "GRM0335C1H120GA01D",
+      "Manufacturer": "Murata"
+    },
+    "Y1": {
+      "LCSC Part": "C255986",
+      "MPN": "X1E0002510059",
+      "Manufacturer": "Seiko Epson"
+    }
+  },
+  "issues": [],
+  "passed": true,
+  "y1_footprint": "meenie:Crystal_SMD_1612-4Pin_FA-118T",
+  "y1_model": "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/Crystal_SMD_1612-4Pin_1.6x1.2mm.step",
+  "y1_model_resolved": "lib/3dmodels/meenie.3dshapes/Crystal_SMD_1612-4Pin_1.6x1.2mm.step",
+  "y1_model_sha256": "5dc1840726dd4c28d037b0904ccc2ff9fbfd4a66fc57bfb97c67d25f630c3d97"
+}

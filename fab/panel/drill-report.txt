@@ -1,0 +1,88 @@
+Drill report for meenie-panel.kicad_pcb
+Created on 2026-08-11T11:38:05
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  GND                       in1
+    L3 :  GND2                      in2
+    L4 :  HDI_PWR                   in3
+    L5 :  CORE_ROUTE_L5             in4
+    L6 :  GPIO_ROUTE_L6             in5
+    L7 :  RF_GND_L7                 in6
+    L8 :  B.Cu                      back
+
+
+Drill file 'meenie-panel-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.150mm  0.0059"  (210 holes))
+    T2  0.300mm  0.0118"  (525 holes))
+
+    Total plated holes count 735
+
+
+Drill file 'meenie-panel-front-in1.drl' contains
+    holes connecting layer pair: 'F.Cu and GND' (blind vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (840 holes))
+
+    Total plated holes count 840
+
+
+Drill file 'meenie-panel-back-in6.drl' contains
+    holes connecting layer pair: 'B.Cu and RF_GND_L7' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (2660 holes))
+
+    Total plated holes count 2660
+
+
+Drill file 'meenie-panel-in1-in2.drl' contains
+    holes connecting layer pair: 'GND and GND2' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (665 holes))
+
+    Total plated holes count 665
+
+
+Drill file 'meenie-panel-in2-in3.drl' contains
+    holes connecting layer pair: 'GND2 and HDI_PWR' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (735 holes))
+
+    Total plated holes count 735
+
+
+Drill file 'meenie-panel-in3-in4.drl' contains
+    holes connecting layer pair: 'HDI_PWR and CORE_ROUTE_L5' (buried vias):
+    =============================================================
+    T1  0.150mm  0.0059"  (630 holes))
+
+    Total plated holes count 630
+
+
+Drill file 'meenie-panel-in4-in5.drl' contains
+    holes connecting layer pair: 'CORE_ROUTE_L5 and GPIO_ROUTE_L6' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (910 holes))
+
+    Total plated holes count 910
+
+
+Drill file 'meenie-panel-in5-in6.drl' contains
+    holes connecting layer pair: 'GPIO_ROUTE_L6 and RF_GND_L7' (buried vias):
+    =============================================================
+    T1  0.100mm  0.0039"  (1750 holes))
+
+    Total plated holes count 1750
+
+
+Drill file 'meenie-panel-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.600mm  0.0236"  (350 holes))
+    T2  0.750mm  0.0295"  (70 holes))
+    T3  3.050mm  0.1201"  (4 holes))
+
+    Total unplated holes count 424

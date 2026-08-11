@@ -1,0 +1,46 @@
+{
+  "artifact": {
+    "path": "temp/codex-resume-audit/klc-grown-pack",
+    "pcb_sha256": "1d401a567b796355ba714f60d659de2d2f1c969c4c127add4b00ba5f28c5e3ff",
+    "schematic_sha256": "926edf70ba82c33652060efbd4e3bb2883a7ae87104802e9dbced626bb3b070b",
+    "supersedes_pcb_sha256": "da287bb563d1f42fc78b56a3b283d70203b867952b8bdc542935e6242ed7bcaf"
+  },
+  "decision": "ACCEPT",
+  "geometry_and_routing": {
+    "routing_signature_equal_to_8d30_source": true,
+    "routing_items": 600,
+    "transitive_equality_to_da287": "da287 was independently proven routing-identical to 8d30; current is also routing-identical to 8d30",
+    "outline_mm": [14.460, 11.350],
+    "PTH_row_record_y_mm": 10.450,
+    "Y1_courtyard_bbox_record_mm": [11.700, 7.660, 14.460, 10.020],
+    "RF_and_XC_metrics": "unchanged from final-grown-audit.json",
+    "filled_polygon_geometry": "unchanged by the metadata/model edit"
+  },
+  "metadata": {
+    "Y1": {"Manufacturer": "Seiko Epson", "MPN": "X1E0002510059"},
+    "C1": {"Manufacturer": "Murata", "MPN": "GRM0335C1H120GA01D"},
+    "C2": {"Manufacturer": "Murata", "MPN": "GRM0335C1H120GA01D"},
+    "pcb_schematic_agreement": true
+  },
+  "model": {
+    "reference": "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/Crystal_SMD_1612-4Pin_1.6x1.2mm.step",
+    "exists": true,
+    "size_bytes": 156429,
+    "footprint_side": "B.Cu",
+    "offset_xyz": [0, 0, 0],
+    "scale_xyz": [1, 1, 1],
+    "rotation_xyz_deg": [0, 0, 0],
+    "step_raw_envelope_mm": [1.700, 1.300, 0.500],
+    "step_raw_bounds_mm": [[-0.850, 0.850], [-0.650, 0.650], [-0.070, 0.430]],
+    "manufacturer_body_mm": [1.600, 1.200, 0.350],
+    "land_envelope_mm": [1.750, 1.350],
+    "assessment": "Credible conservative local 1612 four-terminal visual proxy. It is centered, fits within the land envelope, and KiCad mirrors it automatically for the B.Cu footprint. It is not exact Epson CAD: the STEP header identifies KiCad's WE IQXC-26 model and the envelope is 0.10 mm wider/longer and 0.15 mm taller overall than the nominal FA-118T body. This is safe for collision visualization but must not be cited as manufacturer mechanical authority."
+  },
+  "native_validation": {
+    "drc": "PASS: zero new active errors, zero opens, zero parity; two expected stacked-hole warnings and inherited excluded NPTH marker",
+    "erc": "PASS: zero findings",
+    "drc_json": "temp/codex-resume-rf-crystal-audit/superseding-independent-drc.json",
+    "erc_json": "temp/codex-resume-rf-crystal-audit/superseding-independent-erc.json"
+  },
+  "shared_candidate_edited": false
+}

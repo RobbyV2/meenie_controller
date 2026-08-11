@@ -1,0 +1,139 @@
+(footprint "L0402"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2nH ±0.3nH")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "528624c7-3fb4-41f4-86d0-ca69e10a8583")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L0402"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "3db4347f-c5c6-4c11-a56f-1d1a0f215796")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0eaf43b4-06b8-4cf4-9786-0cc74be162d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cb1c339-6c81-48e7-9776-816c2dbabb47")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C18216"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a2f10a9-0dc9-4402-bcf4-0d6def63cf98")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.77 -0.35)
+		(end 0.77 -0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4c0ac50b-a9c0-4f36-995f-cc3e5209cc60")
+	)
+	(fp_line
+		(start -0.77 0.35)
+		(end -0.77 -0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d3cfc05b-478d-4f43-983a-61f6723ff229")
+	)
+	(fp_line
+		(start 0.77 -0.35)
+		(end 0.77 0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f9a3cf76-df3d-4c91-b1ea-7d6603ae45da")
+	)
+	(fp_line
+		(start 0.77 0.35)
+		(end -0.77 0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b2dc4e6-d204-42fb-b12a-24a969ba7912")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a32147fc-9e97-446c-b887-7f07f35abbf4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.42 0)
+		(size 0.54 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "594c8772-c001-44f2-8fdb-abe9a8b18f8a")
+	)
+	(pad "2" smd rect
+		(at 0.42 0)
+		(size 0.54 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f0afc1b2-6b19-4c14-8f1f-0911e09380ce")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/L0402_L1.0-W0.5-H0.5_BEAD.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,24 @@
+Designator,Quantity,Manufacturer,MPN,Value,Footprint,Distributor Part Number,Notes
+"C1,C2",2,Murata,GRM0335C1H120GA01D,12pF C0G 2%,meenie:C0201,C161404,RF population per variant name; no substitutions without approval
+"C11,C9",2,Samsung Electro-Mechanics,CL10A475KA8NQNC,4.7uF,meenie:C0603,C69335,RF population per variant name; no substitutions without approval
+"C12,C18,C3",3,Murata Electronics,GRM033C71C104KE14D,100nF,meenie:C0201,C85923,RF population per variant name; no substitutions without approval
+"C14,C16",2,Murata Electronics,GJM0335C1ER80WB01D,0.8pF,meenie:C0201,C408126,RF population per variant name; no substitutions without approval
+C15,1,Murata Electronics,GJM0335C1HR50WB01D,0.5pF,meenie:C0201,C237424,RF population per variant name; no substitutions without approval
+C19,1,Samsung Electro-Mechanics,CL05A475MO5NUNC,4.7uF,meenie:C0402,C318563,RF population per variant name; no substitutions without approval
+C21,1,Murata Electronics,GRM033R71E821KA01D,820pF,meenie:C0201,C185597,RF population per variant name; no substitutions without approval
+C4,1,Murata Electronics,GRM033C71C104KE14D,100nF,meenie:C0201_Murata_GRM033,C85923,RF population per variant name; no substitutions without approval
+C5,1,Yageo,CC0201JRNPO9BN101,100pF,meenie:C0201,C272870,RF population per variant name; no substitutions without approval
+C6,1,Samsung Electro-Mechanics,CL05A106MP6NUN8,10uF,meenie:C0402,C3902158,RF population per variant name; no substitutions without approval
+"C7,C8",2,Samsung Electro-Mechanics,CL05A105KA5NQNC,1.0uF,meenie:C0402,C52923,RF population per variant name; no substitutions without approval
+D1,1,Texas Instruments,TPD1E01B04DPLR,TPD1E01B04DPLR,meenie:ESD_X2SON_DPL,C1972949,RF population per variant name; no substitutions without approval
+D2,1,Texas Instruments,TPD1E6B06DPLR,TPD1E6B06DPLR,meenie:ESD_X2SON_DPL,C914099,RF population per variant name; no substitutions without approval
+D3,1,Lite-On,LTST-C281KRKT,red,meenie:LED0402-R-RD_RED,C364556,RF population per variant name; no substitutions without approval
+D4,1,Will Semiconductor,ESD5311Z-2/TR,ESD5311Z-2/TR,meenie:ESD_DFN0603-2,C239819,RF population per variant name; no substitutions without approval
+J1,1,SHOU HAN,TYPE-C 16P QTWT,USB-C 16P sink,meenie:USB-TYPE-C-SMD_TYPE-C-16P-QTWT,C5187472,RF population per variant name; no substitutions without approval
+"L1,L2",2,Murata Electronics,LQP03HQ4N7H02D,4.7nH,meenie:L0201,C237443,RF population per variant name; no substitutions without approval
+R1,1,Yageo,RC0402FR-072R2L,2R2,meenie:R0402,C327251,RF population per variant name; no substitutions without approval
+"R2,R3",2,Uniroyal Electronics,0201WMF5101TEE,5.1k,meenie:R0201,C270344,RF population per variant name; no substitutions without approval
+R4,1,Uniroyal Electronics,0201WMF1001TEE,1k,meenie:R0201,C270365,RF population per variant name; no substitutions without approval
+SW1,1,C&K/Littelfuse,GSNANOT000102,GSNANOT000102,meenie:Switch_NanoT_AS,DigiKey 108-NANOT160ASCT-ND,RF population per variant name; no substitutions without approval
+U1,1,Nordic Semiconductor,NRF52840-QIAA-R,nRF52840-QIAA-R,meenie:AQFN-73_L7.0-W7.0-P0.50-BL-EP4.8,C190794,RF population per variant name; no substitutions without approval
+Y1,1,Seiko Epson,X1E0002510059,FA-118T 32MHz CL 8pF,meenie:Crystal_SMD_1612-4Pin_FA-118T,C255986,RF population per variant name; no substitutions without approval

@@ -1,0 +1,138 @@
+(footprint "LED0402-R-RD_RED"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "5a3f866b-9606-4d9b-a725-ca428fccc460")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED0402-R-RD_RED"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "1e355e78-869e-4d12-8669-c9c53d8a005c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fac505fb-7ba6-42e5-8b2e-295ec854575b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9cd2ed6f-e63f-4536-b17f-d5d8a5afab72")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C965790"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a887b38b-b394-4814-9673-708a4c894180")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.075 -0.38)
+		(end 1.075 -0.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ba119279-12f2-4f85-b9f0-37cdc110e4c1")
+	)
+	(fp_line
+		(start -1.075 0.38)
+		(end -1.075 -0.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8dae7798-959f-4a2c-9972-36fb52ba9112")
+	)
+	(fp_line
+		(start 1.075 -0.38)
+		(end 1.075 0.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1f24d515-38ea-4251-af52-45c2c11c52ef")
+	)
+	(fp_line
+		(start 1.075 0.38)
+		(end -1.075 0.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "77911889-d1e9-4888-8e01-294637d11663")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4940c26b-e4b6-464e-a2b2-abc038dc10ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.62 -0.04)
+		(size 0.75 0.52)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "96495e08-0b3e-4c44-943d-abbfc77ed443")
+	)
+	(pad "2" smd rect
+		(at -0.62 -0.04)
+		(size 0.75 0.52)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b4d92092-e38e-47b5-af2c-1784ee13fff0")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/LED0402-R-RD_RED.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

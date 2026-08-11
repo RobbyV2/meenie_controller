@@ -1,0 +1,122 @@
+(footprint "R0201"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "0201 resistor, land copied from the vendored C0201 import")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "9bb7f455-7f59-5e42-95ee-196958448570")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R0201"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "9bbfbda9-d516-5aef-b7d7-585506058e9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "164de834-58bb-5c23-9e66-7fa9e208d794")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a8ee1524-8be0-5f6a-bddd-e11cb9350a58")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.534 -0.242)
+		(end 0.534 -0.242)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "49345c32-d9bc-51f0-8221-8361908e1675")
+	)
+	(fp_line
+		(start -0.534 0.242)
+		(end -0.534 -0.242)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b887d6fe-3325-5edf-9573-aed8fc364804")
+	)
+	(fp_line
+		(start 0.534 -0.242)
+		(end 0.534 0.242)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb30dc65-1a2d-5e46-9faf-034b1c5a5a65")
+	)
+	(fp_line
+		(start 0.534 0.242)
+		(end -0.534 0.242)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d915442d-4ab5-5ca6-8a23-bf924e58935d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "f123a8a2-db1d-553c-9d20-7d3dc8f528d2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.27 0)
+		(size 0.368 0.324)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "805c18b3-07df-5eab-bf3f-a764210530fb")
+	)
+	(pad "2" smd rect
+		(at 0.27 0)
+		(size 0.368 0.324)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0a76cf07-6a22-5f07-bd0b-0993558ed217")
+	)
+	(model "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/R_0201_0603Metric.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+	(embedded_fonts no)
+)

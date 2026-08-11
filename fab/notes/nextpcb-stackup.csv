@@ -1,0 +1,17 @@
+Order,Layer/build-up,Type,Thickness mm,Function/note
+1,F.Cu,copper,0.035,finished copper
+2,dielectric 1,prepreg,0.1,2313
+3,In1.Cu,copper,0.0175,finished copper
+4,dielectric 2,prepreg,0.1,FR4
+5,In2.Cu,copper,0.0175,finished copper
+6,dielectric 3,prepreg,0.095,1080
+7,In3.Cu,copper,0.0175,finished copper
+8,dielectric 4,core,0.226,FR4
+9,In4.Cu,copper,0.0175,finished copper
+10,dielectric 5,prepreg,0.095,1080
+11,In5.Cu,copper,0.0175,finished copper
+12,dielectric 6,prepreg,0.1,FR4
+13,In6.Cu,copper,0.0175,finished copper
+14,dielectric 7,prepreg,0.1,2313
+15,B.Cu,copper,0.035,finished copper
+,STACK SUM,,0.9910,exact released KiCad stack; quote nominal 1.0 mm

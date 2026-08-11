@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "path": "temp/codex-resume-audit/klc-grown-pack",
+    "pcb_sha256": "da287bb563d1f42fc78b56a3b283d70203b867952b8bdc542935e6242ed7bcaf",
+    "source_pcb_sha256": "8d30f8bead7e65c1865657c6f253cd28db4ad2662338df158267fefbeddfff65",
+    "schematic_sha256": "b978990de6f9d09b60811fbfc8dde20231f78e6ea1c12ad6b41d983d3f9c8707",
+    "footprint_sha256": "9da139178a84f86a6e9dadf476bddc4dc2eba93a833fd72907f3c21cc1a283e6"
+  },
+  "decision": {
+    "status": "ACCEPT_WITH_DISCLOSED_RF_ENDPOINT_SLIVER",
+    "native_drc": "PASS",
+    "connectivity": "PASS",
+    "mechanical_delta": "PASS",
+    "routing_preservation": "PASS",
+    "panel_and_fab": "MUST_REGENERATE"
+  },
+  "mechanical": {
+    "outline_mm": [14.460, 11.350],
+    "Y1_courtyard_bbox_record_mm": [11.700, 7.660, 14.460, 10.020],
+    "Y1_courtyard_mm": [2.760, 2.360],
+    "courtyard_east_centerline_to_edge_mm": 0.0,
+    "courtyard_0p05_stroke_outside_edge_mm": 0.025,
+    "Y1_body_to_east_edge_mm": 0.580,
+    "Y1_land_to_east_edge_mm": 0.505,
+    "PTH_row_record_y_mm": 10.450,
+    "PTH_refs": ["E9", "W6", "W7", "E3"],
+    "actual_PTH_pad_diameter_mm": 0.600,
+    "actual_PTH_drill_mm": 0.300,
+    "PTH_copper_bottom_record_y_mm": 10.150,
+    "projected_PTH_copper_to_Y1_courtyard_gap_mm": 0.130,
+    "PTH_F_courtyard_bottom_record_y_mm": 10.110,
+    "PTH_F_courtyard_to_Y1_B_courtyard_projected_gap_mm": 0.090,
+    "tab_pullback_1_bbox_record_mm": [0.0, 10.850, 5.0, 11.350],
+    "tab_pullback_2_bbox_record_mm": [7.6, 10.850, 14.460, 11.350],
+    "U1_north_pocket_bbox_record_mm": [11.930, 6.550, 14.460, 8.350]
+  },
+  "delta_from_source": {
+    "routing_items_equal": true,
+    "source_routing_items": 600,
+    "candidate_routing_items": 600,
+    "footprint_moves_only": {
+      "E9": [[11.368, 10.390], [11.368, 10.450]],
+      "W6": [[12.120, 10.390], [12.120, 10.450]],
+      "W7": [[12.872, 10.390], [12.872, 10.450]],
+      "E3": [[13.624, 10.390], [13.624, 10.450]]
+    },
+    "changed_rule_area_outlines_only": ["tab pullback 1", "tab pullback 2", "U1 north pocket"],
+    "unexpected_rule_or_zone_outline_changes": []
+  },
+  "native_validation": {
+    "independent_drc_json": "temp/codex-resume-rf-crystal-audit/final-grown-independent-drc.json",
+    "new_active_errors": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "expected_stacked_hole_warnings": 2,
+    "inherited_excluded_NPTH": 1
+  },
+  "crystal": {
+    "XC1_mm": 2.046350706287,
+    "XC2_mm": 1.916661606323,
+    "mismatch_mm": 0.129689099964,
+    "result": "PASS"
+  },
+  "rf_reference": {
+    "controlled_trunk_length_mm": 7.120,
+    "centerline_samples": 7120,
+    "centerline_covered": 7120,
+    "foreign_In6_centerline_intersections": [],
+    "centerline_result": "PASS_100_PERCENT",
+    "full_width_flat_cap_shadow_fraction": 0.999923061497,
+    "full_width_missing_area_mm2": 0.000062488491,
+    "missing_sliver_bounds_record_mm": [9.220636745, 8.121045663, 9.240000000, 8.127500000],
+    "round_endpoint_cap_shadow_fraction": 0.997315582848,
+    "classification": "The round-cap deficit is mostly an artificial cap beyond the controlled segment. A real 6.5-micrometre edge sliver remains at the match-end even with flat junction caps. Centerline continuity is exactly 100%; literal full-width coverage is not."
+  },
+  "panel": {
+    "included_in_frozen_package": false,
+    "must_regenerate": true,
+    "estimated_5x5_panel_mm_if_existing_22mm_allowance_is_preserved": [94.300, 78.750],
+    "inside_100x100_bracket": true
+  },
+  "inherited_disclosure": "The footprints read back as TestPad_0.6mm_PTH with 0.600 mm pad and 0.300 mm drill. Any documentation calling these 0.8/0.5 mm is stale and must not drive the order or wire-size claim.",
+  "shared_candidate_edited": false
+}
