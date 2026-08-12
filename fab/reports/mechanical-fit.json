@@ -1,0 +1,27 @@
+{
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "board_thickness_mm": 0.991,
+  "connector": {
+    "drawing_post_maximum_mm": 0.75,
+    "drawing_post_nominal_mm": 0.6,
+    "drawing_tolerance_mm": 0.15,
+    "lcsc_part": "C5187472",
+    "locating_hole_diameter_mm": 0.75,
+    "locating_holes_mm": [
+      [
+        104.43,
+        94.72
+      ],
+      [
+        110.21,
+        94.72
+      ]
+    ],
+    "manufacturer": "SHOU HAN",
+    "mpn": "TYPE-C 16P QTWT",
+    "reference": "J1"
+  },
+  "issues": [],
+  "passed": true,
+  "post_containment_minimum_mm": 0.241
+}

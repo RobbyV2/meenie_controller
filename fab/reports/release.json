@@ -1,32 +1,50 @@
 {
-  "accepted_dispositions": [
-    {
-      "count": 1,
-      "reason": "exact J1 NPTH locating peg inside U1 courtyard; keyed by marker and both UUIDs",
-      "status": "accepted_manifest_bound",
-      "type": "native_drc_exclusion"
-    },
-    {
-      "central_transition_count": 18,
-      "count": 186,
-      "microvia_geometries_mm": [
-        [
-          0.25,
-          0.1
-        ]
-      ],
-      "reason": "only exact adjacent sequential-tier capture reports enumerated by schema-3 manifest",
-      "status": "accepted_manifest_bound_pending_vendor_dfm",
-      "type": "manifested_stack_drc_reports"
-    }
-  ],
   "board_count": 35,
   "board_mm": [
     13.57,
     9.435
   ],
+  "circuit_audit": {
+    "critical_net_count": 22,
+    "gpio_breakout_count": 15,
+    "issues": [],
+    "passed": true,
+    "power_mode": {
+      "dcdc_enabled": false,
+      "decusb": {
+        "mpn": "GRM188R61E475KE11D",
+        "nwp_030": true,
+        "reference": "C9"
+      },
+      "effective_capacitance_minimum_uf": {
+        "DECUSB": 2.35,
+        "VDD": 2.7
+      },
+      "nordic_product_specification_version": 1.9,
+      "nordic_reference_bom_version": 1.1,
+      "nrf52840_qiaa_reference_configuration": 1,
+      "regulator_mode": "LDO",
+      "uicr_pselreset_pin": "P0.18",
+      "uicr_pselreset_register_count": 2,
+      "uicr_regout0_erased_v": 1.8,
+      "uicr_regout0_required_v": 3.3,
+      "vdd_bulk": {
+        "dielectric": "X5R",
+        "mpn": "GRM188R61E475KE11D",
+        "nominal_uf": 4.7,
+        "package": "0603",
+        "rated_v": 25,
+        "reference": "C6"
+      },
+      "vdd_bypass": {
+        "nominal_uf": 0.1,
+        "quantity": 4
+      },
+      "vddh_source": "USB_VBUS"
+    }
+  },
   "drc": {
-    "active_manifested_hole_reports": 186,
+    "active_violations": 0,
     "excluded": 1,
     "parity": 0,
     "unconnected": 0,
@@ -37,10 +55,13 @@
       "file_function": "NonPlated,1,8,NPTH",
       "panel_hits": 424,
       "panel_tools_mm": [
-        0.6,
+        0.5,
         0.75,
         3.05
       ],
+      "unit_hit_counts_by_tool_mm": {
+        "0.75": 2
+      },
       "unit_hits": 2,
       "unit_tools_mm": [
         0.75
@@ -48,12 +69,16 @@
     },
     "PTH": {
       "file_function": "Plated,1,8,PTH",
-      "panel_hits": 735,
+      "panel_hits": 770,
       "panel_tools_mm": [
         0.15,
         0.3
       ],
-      "unit_hits": 21,
+      "unit_hit_counts_by_tool_mm": {
+        "0.15": 7,
+        "0.3": 15
+      },
+      "unit_hits": 22,
       "unit_tools_mm": [
         0.15,
         0.3
@@ -61,11 +86,14 @@
     },
     "back-in6": {
       "file_function": "Plated,7,8,Blind",
-      "panel_hits": 2660,
+      "panel_hits": 2695,
       "panel_tools_mm": [
         0.1
       ],
-      "unit_hits": 76,
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 77
+      },
+      "unit_hits": 77,
       "unit_tools_mm": [
         0.1
       ]
@@ -76,6 +104,9 @@
       "panel_tools_mm": [
         0.1
       ],
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 24
+      },
       "unit_hits": 24,
       "unit_tools_mm": [
         0.1
@@ -83,55 +114,70 @@
     },
     "in1-in2": {
       "file_function": "Plated,2,3,Buried",
-      "panel_hits": 665,
+      "panel_hits": 630,
       "panel_tools_mm": [
         0.1
       ],
-      "unit_hits": 19,
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 18
+      },
+      "unit_hits": 18,
       "unit_tools_mm": [
         0.1
       ]
     },
     "in2-in3": {
       "file_function": "Plated,3,4,Buried",
-      "panel_hits": 735,
+      "panel_hits": 700,
       "panel_tools_mm": [
         0.1
       ],
-      "unit_hits": 21,
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 20
+      },
+      "unit_hits": 20,
       "unit_tools_mm": [
         0.1
       ]
     },
     "in3-in4": {
       "file_function": "Plated,4,5,Buried",
-      "panel_hits": 630,
+      "panel_hits": 595,
       "panel_tools_mm": [
         0.15
       ],
-      "unit_hits": 18,
+      "unit_hit_counts_by_tool_mm": {
+        "0.15": 17
+      },
+      "unit_hits": 17,
       "unit_tools_mm": [
         0.15
       ]
     },
     "in4-in5": {
       "file_function": "Plated,5,6,Buried",
-      "panel_hits": 910,
+      "panel_hits": 840,
       "panel_tools_mm": [
         0.1
       ],
-      "unit_hits": 26,
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 24
+      },
+      "unit_hits": 24,
       "unit_tools_mm": [
         0.1
       ]
     },
     "in5-in6": {
       "file_function": "Plated,6,7,Buried",
-      "panel_hits": 1750,
+      "panel_hits": 1645,
       "panel_tools_mm": [
         0.1
       ],
-      "unit_hits": 50,
+      "unit_hit_counts_by_tool_mm": {
+        "0.1": 47
+      },
+      "unit_hits": 47,
       "unit_tools_mm": [
         0.1
       ]
@@ -142,551 +188,168 @@
     "live": 0
   },
   "finished_thickness_mm": 0.991,
+  "first_article_orderable": false,
   "grid": [
     5,
     7
   ],
   "hard_failures": [],
+  "hfxo": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/hfxo.json",
+    "sha256": "27ff73b71be9faa1a5189a8358f0a93a7b2dcfd4dff79e18ca0e66456b39f45d"
+  },
+  "mechanical_fit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/mechanical-fit.json",
+    "sha256": "aa05cbbc0372f048fe5d75fcd2d66b42392c3c2bbe91bbc9bf823554c606cf56"
+  },
   "orderable": false,
+  "panel_assembly": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/panel-assembly.json",
+    "sha256": "bad94dc62b22cf53e1555d69e36cbe89013c58931cf960c29d875ff106f1f249"
+  },
   "panel_mm": [
     89.85,
     92.045
   ],
-  "release_blockers": [
-    "signed NextPCB Advanced DFM/quote approval is missing"
+  "power_geometry": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/power-geometry.json",
+    "sha256": "60969a2caa88feba9be2514be479a5a517108b98acb8cda06b81644603ec5b04"
+  },
+  "production_orderable": false,
+  "production_release_blockers": [
+    "vendor_dfm_approval",
+    "firmware_artifact_sha256",
+    "u1_active_order_code_migration",
+    "first_article_functional_test",
+    "rf_vna_ota_2402_2440_2480_mhz",
+    "usb_iec_61000_4_2"
   ],
-  "required_dfm_scope": {
-    "central_in3_in4": true,
-    "central_transition_geometry_mm": [
-      0.3,
-      0.15
+  "release_blockers": [
+    "vendor_dfm_approval"
+  ],
+  "release_class": "DFM_REVIEW",
+  "required_vendor_approval": {
+    "path": "fab/vendor-dfm-approval-template.json",
+    "sha256": "ded8ed9396a4b26aac1fd68a2d38643b46bd362815a6e179c1b2e7537d22e74e"
+  },
+  "rf_50_geometry": {
+    "artwork_length_mm": 4.113,
+    "layers": [
+      "B.Cu"
     ],
-    "central_transitions": [
+    "segment_count": 5,
+    "segments": [
       {
-        "center_mm": [
-          112.8,
-          98.85
+        "end_mm": [
+          104.994,
+          91.65
         ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
+        "layer": "B.Cu",
+        "length_mm": 0.3930000000000007,
+        "start_mm": [
+          104.994,
+          92.043
         ],
-        "net": "VBUS_MCU",
-        "pad_mm": 0.33,
-        "via_uuid": "21b9309a-f8a8-44c6-be81-eb9f685d8178"
+        "width_mm": 0.17
       },
       {
-        "center_mm": [
-          108.9312,
-          99.3325
+        "end_mm": [
+          104.994,
+          92.043
         ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
+        "layer": "B.Cu",
+        "length_mm": 0.617999999999995,
+        "start_mm": [
+          105.612,
+          92.043
         ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "3d56994b-aa0b-47d4-9451-20b0d8ff9022"
+        "width_mm": 0.17
       },
       {
-        "center_mm": [
-          112.815,
-          95.61
+        "end_mm": [
+          102.678,
+          92.043
         ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
+        "layer": "B.Cu",
+        "length_mm": 0.3930000000000007,
+        "start_mm": [
+          102.678,
+          91.65
         ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "45d89f52-3647-44c6-860b-001188e3d76c"
+        "width_mm": 0.17
       },
       {
-        "center_mm": [
-          106.4154,
-          92.835
+        "end_mm": [
+          102.678,
+          91.65
         ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
+        "layer": "B.Cu",
+        "length_mm": 2.3160000000000025,
+        "start_mm": [
+          104.994,
+          91.65
         ],
-        "net": "GND",
-        "pad_mm": 0.33,
-        "via_uuid": "484029b2-3a47-4512-ae63-e07e58116524"
+        "width_mm": 0.17
       },
       {
-        "center_mm": [
-          107.25,
-          92.9
+        "end_mm": [
+          103.836,
+          92.043
         ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
+        "layer": "B.Cu",
+        "length_mm": 0.3930000000000007,
+        "start_mm": [
+          103.836,
+          91.65
         ],
-        "net": "DEC3",
-        "pad_mm": 0.33,
-        "via_uuid": "490235f4-00e0-4c9c-bb13-c1d1ab9e1d86"
-      },
-      {
-        "center_mm": [
-          102.7093,
-          92.9585
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "4be50e2e-847c-4402-b7ba-469ad776aae9"
-      },
-      {
-        "center_mm": [
-          112.0333,
-          97.0978
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "769877fd-63c5-4930-844b-89541cebf1d6"
-      },
-      {
-        "center_mm": [
-          110.4049,
-          96.3464
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "CC2",
-        "pad_mm": 0.33,
-        "via_uuid": "88c579a8-e4bc-4e02-a424-88697f3d6228"
-      },
-      {
-        "center_mm": [
-          103.258,
-          97.8522
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "DECUSB",
-        "pad_mm": 0.33,
-        "via_uuid": "9a133032-c835-48a4-abb3-058bd00debec"
-      },
-      {
-        "center_mm": [
-          102.3035,
-          95.875
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "9de4698d-150d-4a3f-b239-acffcc55e142"
-      },
-      {
-        "center_mm": [
-          103.2,
-          98.85
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "VBUS_MCU",
-        "pad_mm": 0.33,
-        "via_uuid": "af874a34-6b2d-49f6-a156-51b1ded26aaf"
-      },
-      {
-        "center_mm": [
-          112.6114,
-          98.3164
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "VBUS",
-        "pad_mm": 0.33,
-        "via_uuid": "bce385a2-82c0-41c7-937b-8365bd991b7a"
-      },
-      {
-        "center_mm": [
-          105.9,
-          92.9
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "DEC5",
-        "pad_mm": 0.33,
-        "via_uuid": "be05f735-e69a-40e2-85d1-ba352c244b7e"
-      },
-      {
-        "center_mm": [
-          110.471,
-          93.1643
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "XC1",
-        "pad_mm": 0.33,
-        "via_uuid": "c7314e1d-7978-4c03-aba8-223bf3cd1b41"
-      },
-      {
-        "center_mm": [
-          111.2903,
-          92.9643
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "XC2",
-        "pad_mm": 0.33,
-        "via_uuid": "d5fce144-1540-428c-b188-df1707eb853d"
-      },
-      {
-        "center_mm": [
-          104.2546,
-          99.3718
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "d8b1d002-9fe2-4f1d-8259-24b5061ff99b"
-      },
-      {
-        "center_mm": [
-          108.1178,
-          99.5466
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "e61466db-5c30-4f3e-8648-a0d4781be8b3"
-      },
-      {
-        "center_mm": [
-          109.2488,
-          94.0156
-        ],
-        "hole_mm": 0.15,
-        "layers": [
-          "In3.Cu",
-          "In4.Cu"
-        ],
-        "net": "+3V3",
-        "pad_mm": 0.33,
-        "via_uuid": "f2604fc1-2f00-46ab-81b7-769d6c6c5320"
+        "width_mm": 0.17
       }
     ],
-    "copper_filled_planarized_sequential_tiers": true,
-    "drill_programs": [
-      "NPTH",
-      "PTH",
-      "back-in6",
-      "front-in1",
-      "in1-in2",
-      "in2-in3",
-      "in3-in4",
-      "in4-in5",
-      "in5-in6"
-    ],
-    "layer_stack": {
-      "finished_thickness_mm": 0.991,
-      "rows": [
-        {
-          "material": "",
-          "name": "F.Cu",
-          "thickness_mm": 0.035,
-          "type": "copper"
-        },
-        {
-          "material": "2313",
-          "name": "dielectric 1",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In1.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 2",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In2.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "1080",
-          "name": "dielectric 3",
-          "thickness_mm": 0.095,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In3.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 4",
-          "thickness_mm": 0.226,
-          "type": "core"
-        },
-        {
-          "material": "",
-          "name": "In4.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "1080",
-          "name": "dielectric 5",
-          "thickness_mm": 0.095,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In5.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 6",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In6.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "2313",
-          "name": "dielectric 7",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "B.Cu",
-          "thickness_mm": 0.035,
-          "type": "copper"
-        }
-      ]
-    },
-    "microvia_geometries_mm": [
-      [
-        0.25,
-        0.1
-      ]
-    ],
-    "rf_50_field_solved_width_mm": 0.115,
-    "rf_50_target_ohms": 50,
-    "rf_50_tolerance_percent": 10,
-    "target_microvia_annular_ring_mm": 0.075,
-    "target_microvia_geometry_mm": [
-      0.25,
-      0.1
-    ],
-    "target_microvia_tier_aspect_ratio": 1.0
+    "widths_mm": [
+      0.17
+    ]
   },
-  "required_vendor_approval": {
-    "approved": true,
-    "board_sha256": "97c4a63564938adcd18c2af0a84366fbe6d760e7ce6a62b88a90f4ca6699db35",
-    "central_in3_in4": true,
-    "central_transition_count": 18,
-    "central_transition_geometry_mm": [
-      0.3,
-      0.15
-    ],
-    "construction": "8L 3+2+3",
-    "copper_filled_planarized_sequential_tiers": true,
-    "drill_programs": [
-      "NPTH",
-      "PTH",
-      "back-in6",
-      "front-in1",
-      "in1-in2",
-      "in2-in3",
-      "in3-in4",
-      "in4-in5",
-      "in5-in6"
-    ],
-    "finished_thickness_mm": 0.991,
-    "layer_stack": {
-      "finished_thickness_mm": 0.991,
-      "rows": [
-        {
-          "material": "",
-          "name": "F.Cu",
-          "thickness_mm": 0.035,
-          "type": "copper"
-        },
-        {
-          "material": "2313",
-          "name": "dielectric 1",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In1.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 2",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In2.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "1080",
-          "name": "dielectric 3",
-          "thickness_mm": 0.095,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In3.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 4",
-          "thickness_mm": 0.226,
-          "type": "core"
-        },
-        {
-          "material": "",
-          "name": "In4.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "1080",
-          "name": "dielectric 5",
-          "thickness_mm": 0.095,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In5.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "FR4",
-          "name": "dielectric 6",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "In6.Cu",
-          "thickness_mm": 0.0175,
-          "type": "copper"
-        },
-        {
-          "material": "2313",
-          "name": "dielectric 7",
-          "thickness_mm": 0.1,
-          "type": "prepreg"
-        },
-        {
-          "material": "",
-          "name": "B.Cu",
-          "thickness_mm": 0.035,
-          "type": "copper"
-        }
-      ]
-    },
-    "manifest_sha256": "6b7e9b74887b1345cac48d36241c016bb4c5eebee091275650bfb21bae967864",
-    "microvia_geometries_mm": [
-      [
-        0.25,
-        0.1
-      ]
-    ],
-    "quote_approved": true,
-    "rf_50_field_solved_width_mm": 0.115,
-    "rf_50_target_ohms": 50,
-    "rf_50_tolerance_percent": 10,
-    "service": "Advanced PCB",
-    "target_microvia_annular_ring_mm": 0.075,
-    "target_microvia_geometry_mm": [
-      0.25,
-      0.1
-    ],
-    "target_microvia_tier_aspect_ratio": 1.0,
-    "vendor": "NextPCB"
+  "rf_reference_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/rf-reference.json",
+    "sha256": "b798fbfa545d247ccb6897ac8e9ad68059904104563f904af75a77ded102f01b"
   },
   "source": {
-    "board_sha256": "97c4a63564938adcd18c2af0a84366fbe6d760e7ce6a62b88a90f4ca6699db35",
-    "manifest_sha256": "6b7e9b74887b1345cac48d36241c016bb4c5eebee091275650bfb21bae967864"
+    "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+    "manifest_sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd"
   },
   "stack_gate": {
     "issues": [],
     "passed": true
   },
+  "stock_audit": {
+    "checked_utc": "2026-08-12T16:24:40.372179+00:00",
+    "issues": [],
+    "part_count": 22,
+    "passed": true,
+    "policy": {
+      "overage_percent": 10,
+      "population_scope": "B-4n7-0p8"
+    }
+  },
+  "usb_interface": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/usb-interface.json",
+    "sha256": "0caf11d06764303b2f7704521c39e7eb9c3288b5f79496c3fa4d4279b88bbc89"
+  },
   "vendor_dfm": {
-    "issues": [
-      "signed NextPCB Advanced DFM/quote approval is missing"
+    "issue_codes": [
+      "missing"
     ],
     "passed": false
   }

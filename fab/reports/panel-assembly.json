@@ -1,0 +1,317 @@
+{
+  "board_count": 35,
+  "edge_pth": {
+    "count": 15,
+    "drill_mm": 0.3,
+    "inventory": [
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          106.28,
+          91.114999
+        ],
+        "reference": "E2"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          113.048,
+          91.114999
+        ],
+        "reference": "E3"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          103.272,
+          91.114999
+        ],
+        "reference": "E4"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          105.528,
+          91.114999
+        ],
+        "reference": "E5"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          104.024,
+          91.114999
+        ],
+        "reference": "E6"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          111.544,
+          91.114999
+        ],
+        "reference": "E8"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          107.784,
+          91.114999
+        ],
+        "reference": "E9"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          102.52,
+          91.114999
+        ],
+        "reference": "W1"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          108.536,
+          91.114999
+        ],
+        "reference": "W2"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          109.288,
+          91.114999
+        ],
+        "reference": "W3"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          112.295999,
+          91.114999
+        ],
+        "reference": "W4"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          110.039999,
+          91.114999
+        ],
+        "reference": "W5"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          110.792,
+          91.114999
+        ],
+        "reference": "W6"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          104.776,
+          91.114999
+        ],
+        "reference": "W7"
+      },
+      {
+        "copper_to_edge_mm": 0.249999,
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "pad_mm": [
+          0.6,
+          0.6
+        ],
+        "position_mm": [
+          107.032,
+          91.114999
+        ],
+        "reference": "W9"
+      }
+    ],
+    "minimum_copper_to_edge_mm": 0.249999,
+    "pad_mm": 0.6,
+    "references": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E8",
+      "E9",
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W9"
+    ],
+    "vendor_minimum_copper_to_edge_mm": 0.2
+  },
+  "global_fiducials": {
+    "asymmetric": true,
+    "copper_mm": 1.0,
+    "count": 3,
+    "faces": [
+      "F",
+      "B"
+    ],
+    "mask_opening_mm": 2.0
+  },
+  "grid": [
+    5,
+    7
+  ],
+  "issues": [],
+  "mouse_bites": {
+    "count": 350,
+    "hole_mm": 0.5,
+    "offset_into_routed_gap_mm": 0.5,
+    "per_tab": 5,
+    "pitch_mm": 0.85
+  },
+  "panel_board_sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e",
+  "panel_mm": [
+    89.85,
+    92.045
+  ],
+  "passed": true,
+  "required_handling": {
+    "discard_units_with_cracked_laminate_or_damaged_edge_pth": true,
+    "edge_pth_barrel_and_solder_joint_post_depanel_inspection": true,
+    "hand_snapping_prohibited": true,
+    "supported_low_stress_cut_or_nibble_depaneling": true
+  },
+  "tabs": {
+    "edge": "breakout_pth",
+    "per_board": 2,
+    "width_mm": 5.0
+  },
+  "tooling_holes": {
+    "count": 4,
+    "diameter_mm": 3.05
+  },
+  "unit_board_mm": [
+    13.57,
+    9.435
+  ],
+  "unit_board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e"
+}

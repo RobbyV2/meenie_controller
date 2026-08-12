@@ -1,0 +1,204 @@
+{
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "etched_antenna": {
+    "ant_feed_tracks": [
+      {
+        "endpoints_mm": [
+          [
+            101.52,
+            92.043
+          ],
+          [
+            101.65,
+            92.043
+          ]
+        ],
+        "layer": "B.Cu",
+        "locked": false,
+        "width_mm": 0.115
+      },
+      {
+        "endpoints_mm": [
+          [
+            101.52,
+            92.043
+          ],
+          [
+            102.138,
+            92.043
+          ]
+        ],
+        "layer": "B.Cu",
+        "locked": false,
+        "width_mm": 0.115
+      },
+      {
+        "endpoints_mm": [
+          [
+            100.625,
+            92.79
+          ],
+          [
+            100.625,
+            99.375
+          ]
+        ],
+        "layer": "F.Cu",
+        "locked": true,
+        "width_mm": 0.85
+      },
+      {
+        "endpoints_mm": [
+          [
+            100.625,
+            92.79
+          ],
+          [
+            101.65,
+            92.043
+          ]
+        ],
+        "layer": "F.Cu",
+        "locked": false,
+        "width_mm": 0.115
+      }
+    ],
+    "feed_via": {
+      "center_mm": [
+        101.65,
+        92.043
+      ],
+      "diameter_mm": 0.33,
+      "drill_mm": 0.15,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ]
+    },
+    "keepout_bbox_mm": [
+      100.0,
+      92.215,
+      1.27,
+      7.785
+    ],
+    "keepouts": [
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": false,
+        "block_vias": false,
+        "block_zone_fills": true,
+        "layer": "F.Cu"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "GND"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "GND2"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "HDI_PWR"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "CORE_ROUTE_L5"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "GPIO_ROUTE_L6"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "RF_GND_L7"
+      },
+      {
+        "block_footprints": false,
+        "block_pads": false,
+        "block_tracks": true,
+        "block_vias": true,
+        "block_zone_fills": true,
+        "layer": "B.Cu"
+      }
+    ],
+    "no_filled_copper_sample_points_per_layer": 1014,
+    "radiator_layer": "F.Cu",
+    "radiator_length_mm": 6.585,
+    "radiator_locked": true,
+    "radiator_width_mm": 0.85
+  },
+  "matching_components": {
+    "C14": {
+      "center_mm": [
+        107.04,
+        92.043
+      ],
+      "in6_ground_below_center_and_pads": true,
+      "pad_count": 2
+    },
+    "C15": {
+      "center_mm": [
+        104.724,
+        92.043
+      ],
+      "in6_ground_below_center_and_pads": true,
+      "pad_count": 2
+    },
+    "C16": {
+      "center_mm": [
+        103.566,
+        92.043
+      ],
+      "in6_ground_below_center_and_pads": true,
+      "pad_count": 2
+    },
+    "L1": {
+      "center_mm": [
+        105.882,
+        92.043
+      ],
+      "in6_ground_below_center_and_pads": true,
+      "pad_count": 2
+    },
+    "L2": {
+      "center_mm": [
+        102.408,
+        92.043
+      ],
+      "in6_ground_below_center_and_pads": true,
+      "pad_count": 2
+    }
+  },
+  "nordic_inner_keepout_deviation": true,
+  "passed": true,
+  "rf_50_in6_sample_count": 171,
+  "rf_50_maximum_sample_step_mm": 0.025,
+  "rf_50_segment_count": 5,
+  "rf_50_width_mm": 0.17
+}

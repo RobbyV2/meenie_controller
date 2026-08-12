@@ -1,737 +1,432 @@
 {
   "by_top_directory": {
-    ".gitkeep": {
-      "bytes": 0,
-      "files": 1
-    },
-    "3d": {
-      "bytes": 17001430,
-      "files": 5
-    },
-    "CLAUDE.md": {
-      "bytes": 2463,
-      "files": 1
-    },
     "assembly": {
-      "bytes": 478419,
-      "files": 33
-    },
-    "board": {
-      "bytes": 1913070,
-      "files": 30
-    },
-    "meenie-panel.kicad_pcb": {
-      "bytes": 19162016,
-      "files": 1
-    },
-    "meenie-panel.kicad_prl": {
-      "bytes": 2299,
-      "files": 1
-    },
-    "notes": {
-      "bytes": 2417,
+      "bytes": 66704,
       "files": 2
     },
+    "board": {
+      "bytes": 341628,
+      "files": 25
+    },
+    "dfm-review.zip": {
+      "bytes": 6715756,
+      "files": 1
+    },
+    "meenie-board.kicad_pcb": {
+      "bytes": 560553,
+      "files": 1
+    },
+    "meenie-panel.kicad_pcb": {
+      "bytes": 21244856,
+      "files": 1
+    },
+    "netlist.ipc": {
+      "bytes": 30387,
+      "files": 1
+    },
     "panel": {
-      "bytes": 62896118,
-      "files": 29
+      "bytes": 11663007,
+      "files": 25
     },
     "reports": {
-      "bytes": 639828,
-      "files": 34
+      "bytes": 49849,
+      "files": 16
+    },
+    "stack-manifest.json": {
+      "bytes": 84933,
+      "files": 1
+    },
+    "stackup.csv": {
+      "bytes": 471,
+      "files": 1
+    },
+    "vendor-dfm-approval-template.json": {
+      "bytes": 14511,
+      "files": 1
     }
   },
-  "bytes_excluding_inventory_and_checksum": 102098060,
+  "bytes_excluding_inventory": 40772655,
   "files": [
     {
-      "bytes": 0,
-      "path": ".gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "bytes": 282323,
-      "path": "3d/bottom.png",
-      "sha256": "01d98b83700bed1eef509d6de268a7b43919d9ce9bd296dc6a13fcc524b438f8"
-    },
-    {
-      "bytes": 564654,
-      "path": "3d/iso.png",
-      "sha256": "4e2a1d4b62bf4af72bf18cdb8a7ec2fa71ab049d95552cd3b0a7b56f918774f1"
-    },
-    {
-      "bytes": 9387172,
-      "path": "3d/meenie-board.html",
-      "sha256": "cb797d8a421c10f637235cd5b0471e4b75d34a485958c071320e338f83dd7090"
-    },
-    {
-      "bytes": 6463828,
-      "path": "3d/meenie.glb",
-      "sha256": "1568d13c25f314e5c789e0789a881ce36548db38ebe4558013832541f79361dd"
-    },
-    {
-      "bytes": 303453,
-      "path": "3d/top.png",
-      "sha256": "60e776111f1d7fad7ce41d84a24c1becac614e7804512c01bfba2e1094d69ff6"
-    },
-    {
-      "bytes": 2463,
-      "path": "CLAUDE.md",
-      "sha256": "d7e648f9447a3fb36b312e4fd6d7f929fed047cc3957389e7b1634d62fe3ec33"
-    },
-    {
-      "bytes": 10178,
-      "path": "assembly/A-4n7-0p5/panel-bom.csv",
-      "sha256": "c64b72028d7be2ec81805ca2994fbb6230eec6e0645cc5020c1c5016466bde46"
-    },
-    {
-      "bytes": 5878,
-      "path": "assembly/A-4n7-0p5/panel-bom.xlsx",
-      "sha256": "9a6edd8b32d2c1459c03c944fb4fd36b5bc86a81e5d8fe70cdc331ba4f7763ac"
-    },
-    {
-      "bytes": 58053,
-      "path": "assembly/A-4n7-0p5/panel-centroid.csv",
-      "sha256": "1b582c4ef56f550efd63f103884bcec8107d57f0527b5b1c4d7c167318e6e7fb"
-    },
-    {
-      "bytes": 34565,
-      "path": "assembly/A-4n7-0p5/panel-centroid.xlsx",
-      "sha256": "e0b1f7fd33b3960a4997ff6af415c75f565a6c574ba82dc9a7c0087e0d393592"
-    },
-    {
-      "bytes": 3399,
-      "path": "assembly/A-4n7-0p5/unit-bom.csv",
-      "sha256": "66c4cbfefa4dd8b608cd64b14de78125c7861fd8e13ad9acc27210fc18280f7f"
-    },
-    {
-      "bytes": 3178,
-      "path": "assembly/A-4n7-0p5/unit-bom.xlsx",
-      "sha256": "b1a8072213a5aecde399e7ffe80d38e3d984a5b42203040f5b682471569133f2"
-    },
-    {
-      "bytes": 1600,
-      "path": "assembly/A-4n7-0p5/unit-centroid.csv",
-      "sha256": "5e10c4bcb5ad85977231738d62caa2a644dba759661566e51d90b14c9c60fdae"
-    },
-    {
-      "bytes": 3031,
-      "path": "assembly/A-4n7-0p5/unit-centroid.xlsx",
-      "sha256": "1f4d1906e7fa86378e8aa02fe03ed99370b741e4f1f6903110f07177e0ffc173"
-    },
-    {
-      "bytes": 10178,
+      "bytes": 8668,
       "path": "assembly/B-4n7-0p8/panel-bom.csv",
-      "sha256": "c81aa68eed4a561911683e3fe3bf7fa4437c5c22771d3a3adc7a836993600958"
+      "sha256": "3ac50ce41be8ec4b7a87753a02e04648197a628ec6019cb0111c118b6704710c"
     },
     {
-      "bytes": 5892,
-      "path": "assembly/B-4n7-0p8/panel-bom.xlsx",
-      "sha256": "ebd32294581c0e2905a8392daa06107dcabd030f5a070e883a68d3f8bbe5e0d3"
-    },
-    {
-      "bytes": 58053,
+      "bytes": 58036,
       "path": "assembly/B-4n7-0p8/panel-centroid.csv",
-      "sha256": "1b582c4ef56f550efd63f103884bcec8107d57f0527b5b1c4d7c167318e6e7fb"
+      "sha256": "6f28bdcda41b0ccef2a2a4eea9bf814f1b280abeefb2cf1183d870d2f4ca706d"
     },
     {
-      "bytes": 34565,
-      "path": "assembly/B-4n7-0p8/panel-centroid.xlsx",
-      "sha256": "e0b1f7fd33b3960a4997ff6af415c75f565a6c574ba82dc9a7c0087e0d393592"
-    },
-    {
-      "bytes": 3399,
-      "path": "assembly/B-4n7-0p8/unit-bom.csv",
-      "sha256": "8436786cd9b9d3f85607ae6f337fe38fa195f9705833e7b7279f5311f899564c"
-    },
-    {
-      "bytes": 3176,
-      "path": "assembly/B-4n7-0p8/unit-bom.xlsx",
-      "sha256": "ea7923799cd65ce7f8e6da255560305ed2cca7a640a730272563e14dfa5bca46"
-    },
-    {
-      "bytes": 1600,
-      "path": "assembly/B-4n7-0p8/unit-centroid.csv",
-      "sha256": "5e10c4bcb5ad85977231738d62caa2a644dba759661566e51d90b14c9c60fdae"
-    },
-    {
-      "bytes": 3031,
-      "path": "assembly/B-4n7-0p8/unit-centroid.xlsx",
-      "sha256": "1f4d1906e7fa86378e8aa02fe03ed99370b741e4f1f6903110f07177e0ffc173"
-    },
-    {
-      "bytes": 10066,
-      "path": "assembly/C-3n9-DNP/panel-bom.csv",
-      "sha256": "e93d2e90f33f13d5e2efaf5accbb136e882d6df9e8de59d7698b3c37785de5b6"
-    },
-    {
-      "bytes": 5890,
-      "path": "assembly/C-3n9-DNP/panel-bom.xlsx",
-      "sha256": "925ff558bc0ff1f2867c7f1ec879795271562c4237112730cf758c420fc9d3dc"
-    },
-    {
-      "bytes": 56303,
-      "path": "assembly/C-3n9-DNP/panel-centroid.csv",
-      "sha256": "c8756936d5ab519cb41695d4c745e10c20d42513cc8b6a2e5a78b387ed27d9a4"
-    },
-    {
-      "bytes": 33630,
-      "path": "assembly/C-3n9-DNP/panel-centroid.xlsx",
-      "sha256": "f3addbfe55862fa42da4bf260eb27483cbdc1cf2b1c463a87df3b8e3a1b49248"
-    },
-    {
-      "bytes": 3521,
-      "path": "assembly/C-3n9-DNP/unit-bom.csv",
-      "sha256": "f5ce764943ebaeda5500c89668c264bdee304711671f24dff9b1cde61b99cc59"
-    },
-    {
-      "bytes": 3220,
-      "path": "assembly/C-3n9-DNP/unit-bom.xlsx",
-      "sha256": "fe966b03172c6597f7ce43cab57f59c61e9ab15ec1096f6650a4ad081ddfb375"
-    },
-    {
-      "bytes": 1554,
-      "path": "assembly/C-3n9-DNP/unit-centroid.csv",
-      "sha256": "aded6e06780da7e4c8ec89e03bd2e53b5d6c0e81f9a2b280ad830d599c780447"
-    },
-    {
-      "bytes": 2999,
-      "path": "assembly/C-3n9-DNP/unit-centroid.xlsx",
-      "sha256": "98337f4e97b05b5eed2225f3b933b8766bce518ca0a1e37e758c248274c0dc6c"
-    },
-    {
-      "bytes": 10449,
-      "path": "assembly/D-3n9-2p4/panel-bom.csv",
-      "sha256": "b1f1bf8140db44b5b8b471a680d0b43d8086072c00283831c6ba4e78190205f8"
-    },
-    {
-      "bytes": 6019,
-      "path": "assembly/D-3n9-2p4/panel-bom.xlsx",
-      "sha256": "503d375c9b54fc972e83cacb0f688b658d6196b348840c024d64d726ad16d018"
-    },
-    {
-      "bytes": 58053,
-      "path": "assembly/D-3n9-2p4/panel-centroid.csv",
-      "sha256": "1b582c4ef56f550efd63f103884bcec8107d57f0527b5b1c4d7c167318e6e7fb"
-    },
-    {
-      "bytes": 34565,
-      "path": "assembly/D-3n9-2p4/panel-centroid.xlsx",
-      "sha256": "e0b1f7fd33b3960a4997ff6af415c75f565a6c574ba82dc9a7c0087e0d393592"
-    },
-    {
-      "bytes": 3660,
-      "path": "assembly/D-3n9-2p4/unit-bom.csv",
-      "sha256": "293773cd8b31a4c078dc8f7733f3dc85f2c86fbd3fecf8ad9d404340d699e4ee"
-    },
-    {
-      "bytes": 3262,
-      "path": "assembly/D-3n9-2p4/unit-bom.xlsx",
-      "sha256": "d2e8fc617fed1444352b0aba25e7970387d569c6ac15119a46bec957658474b4"
-    },
-    {
-      "bytes": 1600,
-      "path": "assembly/D-3n9-2p4/unit-centroid.csv",
-      "sha256": "5e10c4bcb5ad85977231738d62caa2a644dba759661566e51d90b14c9c60fdae"
-    },
-    {
-      "bytes": 3031,
-      "path": "assembly/D-3n9-2p4/unit-centroid.xlsx",
-      "sha256": "1f4d1906e7fa86378e8aa02fe03ed99370b741e4f1f6903110f07177e0ffc173"
-    },
-    {
-      "bytes": 821,
-      "path": "assembly/RF_POPULATIONS.md",
-      "sha256": "49d25898bed6e1d527ad011bf2905d37ef4ef6af8b8427b71460b4e726458ce6"
-    },
-    {
-      "bytes": 2681,
-      "path": "board/drill-report.txt",
-      "sha256": "5356c8b0b6cf48fd61ade8e4cf99b6f2a70da948df883e4ad36f815bc6ed0c95"
-    },
-    {
-      "bytes": 60807,
+      "bytes": 86303,
       "path": "board/gerbers/meenie-B_Cu.gbl",
-      "sha256": "c1b59bdded652b2a7c595975415bd39ce6b08976c9a37025523cec607bcf975c"
+      "sha256": "dc1321ab6cf8cd6e81d1ac66a0e96b3a753810301c094352e89bb8337a5a98fb"
     },
     {
-      "bytes": 5753,
+      "bytes": 5576,
       "path": "board/gerbers/meenie-B_Mask.gbs",
-      "sha256": "5f2c361f024e10df2991a74fdce4750a49610ee1b2862a1749cfd301ae405320"
+      "sha256": "c4c00887c6b416dd0201d6aea069389cff2a0f6f1d8e4c12c8770bf1b9fad23b"
     },
     {
-      "bytes": 4857,
+      "bytes": 4680,
       "path": "board/gerbers/meenie-B_Paste.gbp",
-      "sha256": "be11f9f85bef34f3270f53c6da9ee981120e815e7be8677e4fe4484747fbad67"
+      "sha256": "29b3c91e79a40d28bd25ccc76777ea9dfef1f4a8441b0f4a043988288b60d874"
     },
     {
-      "bytes": 5763,
+      "bytes": 5586,
       "path": "board/gerbers/meenie-B_Silkscreen.gbo",
-      "sha256": "adce9ccd5e16e5d1cdc96e6da2bf08e1f7026f53f5b592447b44eb9f556b0f4d"
+      "sha256": "764e9953ccd3092f6de27b624e003bcbab41875230d2271836a7b0f8e6f9d508"
     },
     {
-      "bytes": 18234,
+      "bytes": 25290,
       "path": "board/gerbers/meenie-CORE_ROUTE_L5.g4",
-      "sha256": "7313f514c5997a48736a295fb38f4450658715ecc4bc7c7854b3123501084dd2"
+      "sha256": "a701762d4f702643df202f01d24ec129a81f0edefff52d63e8514f471b73227d"
     },
     {
       "bytes": 685,
       "path": "board/gerbers/meenie-Edge_Cuts.gm1",
-      "sha256": "42dbc54a2b65814353963df6b6d363f6fd27cd8e8f0aca7e610152c860bc4952"
+      "sha256": "20b47fc7dd33f199567107230c6d5657bd701d433da51046ebfc04478d27b610"
     },
     {
-      "bytes": 31643,
+      "bytes": 33901,
       "path": "board/gerbers/meenie-F_Cu.gtl",
-      "sha256": "11edb55f9c8a87395876869483ae952459e247186b57e2eeab6081ec02237edc"
+      "sha256": "11671cbfb555252761dbc44a2523f38d7418ce9fb4779fb9af397ed08878b0c7"
     },
     {
-      "bytes": 2697,
+      "bytes": 2869,
       "path": "board/gerbers/meenie-F_Mask.gts",
-      "sha256": "a3b5df2ef29c9cacb8c0d15edb07923f499fadfedbda6236b3364d133c265ee0"
+      "sha256": "484cab9084e7a91d0e19436e65d4361de3556fff3c2c8fcf5d538037c796a598"
     },
     {
-      "bytes": 1998,
+      "bytes": 2170,
       "path": "board/gerbers/meenie-F_Paste.gtp",
-      "sha256": "d0a789d3aa5c487be0db4a615f8174534d3382bb8eefe862437e92664aa9925f"
+      "sha256": "d3ab148e385197c8b049416bb7e92e6fdba9c97c7993111c74bb1c7da337fc65"
     },
     {
-      "bytes": 2707,
+      "bytes": 2879,
       "path": "board/gerbers/meenie-F_Silkscreen.gto",
-      "sha256": "393ade3b28d1fbced10648128fb156628d2209e280666cd092044fe22bccec70"
+      "sha256": "00541aaeb59de87f7c62d61e9e1004ae3ed65d9c44cf6692aa81cff64dab3001"
     },
     {
-      "bytes": 27111,
+      "bytes": 26530,
       "path": "board/gerbers/meenie-GND.g1",
-      "sha256": "8be5dc46838f3c5e02b479c4331775860fe00b5ff0f94f50eae9c2598b6dc70e"
+      "sha256": "5e1d5115258990660ce29d33d40ab4edea059eec6b8deb5d9939fc1480e87a4b"
     },
     {
-      "bytes": 30251,
+      "bytes": 29825,
       "path": "board/gerbers/meenie-GND2.g2",
-      "sha256": "45fbb7325e0901feb3961a05608492850065dff94d4b2ded92b8d6ee97b075c0"
+      "sha256": "9df6ee7460e06720661287766e689d9cb243f03dc991202837f84b9c72c80442"
     },
     {
-      "bytes": 7280,
+      "bytes": 7039,
       "path": "board/gerbers/meenie-GPIO_ROUTE_L6.g5",
-      "sha256": "6960de847e4f1784a3e17c0155947d7620a62218efb2a84938dfde6ed7251718"
+      "sha256": "1a8afa37b86a0616949a1e6400ebf28973cb4e08754f8a5c66da31fc71967e90"
     },
     {
-      "bytes": 39336,
+      "bytes": 37475,
       "path": "board/gerbers/meenie-HDI_PWR.g3",
-      "sha256": "05799adac423add1a1aa0d0a6a91636e6a579a0d838bfcc74d0b913beae6ecc6"
+      "sha256": "1cc2a975a2fa4cdd22eed72784364ab8b891be4177cce724c242090a6748da04"
     },
     {
       "bytes": 358,
       "path": "board/gerbers/meenie-NPTH.drl",
-      "sha256": "f6e7419779f49149c97ed41089857d3033a3d454c4c312f926967f959a17c621"
+      "sha256": "3ad65b0561178a331e9e6b96660802272bd016fabab88c0911a93c838d0f5543"
     },
     {
-      "bytes": 726,
+      "bytes": 739,
       "path": "board/gerbers/meenie-PTH.drl",
-      "sha256": "76a13c9c1ac06f0b21a974e8d94b3a39b44a05c0a12033a6f2fc8334118542e6"
+      "sha256": "9516f6036938174d7fa2d710be1349fd3747ac9bc0e0f6b6a8fbdab1995fd561"
     },
     {
-      "bytes": 48996,
+      "bytes": 58441,
       "path": "board/gerbers/meenie-RF_GND_L7.g6",
-      "sha256": "6040b0c9844bbcb348b428833337d1603c211eb4f4b7fb27a488628736ff9940"
+      "sha256": "b0c448db7eeaa51530d199a2b15dbb7e5f351ba126d4dee0bbc4921552541201"
     },
     {
-      "bytes": 1560,
+      "bytes": 1567,
       "path": "board/gerbers/meenie-back-in6.drl",
-      "sha256": "32daa560462de1daa166292b9362166d35fd5976fa7dd5698638abd135a597aa"
+      "sha256": "18b07a74e6e1a8ec488e95300b932ed3415e134eb7ea215fcc6b916497da582c"
     },
     {
-      "bytes": 704,
+      "bytes": 699,
       "path": "board/gerbers/meenie-front-in1.drl",
-      "sha256": "92cc0d29b178beaeb6a24697ac590ce8a5fdb3e2f8d492e659d79e649ab65559"
+      "sha256": "cd6870057dd02029257cde22c986c60c062cde44eb9b56c803578dbfc6d1feb1"
     },
     {
-      "bytes": 624,
+      "bytes": 608,
       "path": "board/gerbers/meenie-in1-in2.drl",
-      "sha256": "5315956d0b778b3f682993ca8254f55f5d720f26a6709a82fec035cebf83ceb5"
+      "sha256": "a7f97bb4363ebbb2bdad938aa6f8aa6560b69bfb13c99eb8ab237865a8813cbb"
     },
     {
-      "bytes": 661,
+      "bytes": 645,
       "path": "board/gerbers/meenie-in2-in3.drl",
-      "sha256": "8890bbad216af96dc961fc5a64b5d352b8ace7887fd126d12d6fbc4944676318"
+      "sha256": "b6128d7e3206703749139562a74e4bfaa3433b2907bddf47a56b212cd456c453"
     },
     {
-      "bytes": 611,
+      "bytes": 594,
       "path": "board/gerbers/meenie-in3-in4.drl",
-      "sha256": "be1a2c24c8b8ab5f379c73edf0403af38b57922a34309ba014a1f42d7bf13fb0"
+      "sha256": "cd183a25c0674122db2fcb65f1c38643c588430b5f241ed040d5ddae203df63c"
     },
     {
-      "bytes": 747,
+      "bytes": 714,
       "path": "board/gerbers/meenie-in4-in5.drl",
-      "sha256": "2def58ae9844a665006e6f96d5c74a25cccf7c79fdd0c34408c8ca12997f50fa"
+      "sha256": "067e862e89a615bdc2aed563d114dff4ca2d381207b62412a9470eba616f66bb"
     },
     {
-      "bytes": 1140,
+      "bytes": 1091,
       "path": "board/gerbers/meenie-in5-in6.drl",
-      "sha256": "66f8c0be412cc433fbbf7b242880b5b6ffda769884d057829f040de0c9b05824"
+      "sha256": "14b4dcdb23806904bec6bf07c593ebe587c0c6638be6f96b783c277e6d207e94"
     },
     {
       "bytes": 5364,
       "path": "board/gerbers/meenie-job.gbrjob",
-      "sha256": "f66ad274d4f471c9585174a16e985b8950e401610a3e0dea400fe97aa5fa472d"
+      "sha256": "67fcbbdc1414c3af2013a887f0ba3bf5d913dda2a2e11fdd71c77de6492c960b"
     },
     {
-      "bytes": 1574719,
-      "path": "board/ipc2581.xml",
-      "sha256": "04e228869fd9d80a0b9e31ff20fa3f458d5a1c0b838f5b38b134a3446a768781"
+      "bytes": 6715756,
+      "path": "dfm-review.zip",
+      "sha256": "7498f979f16bce30e661ef8d5015e6cca99226258de1a312b4f71b5a7e73f036"
     },
     {
-      "bytes": 30831,
-      "path": "board/netlist.ipc",
-      "sha256": "11d060aa1607a4cc852a37ade08a4c91bbc3fe7e03fcb41c483fec29b7271ecb"
+      "bytes": 560553,
+      "path": "meenie-board.kicad_pcb",
+      "sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e"
     },
     {
-      "bytes": 2150,
-      "path": "board/raw-bom.csv",
-      "sha256": "33936019841c540b9af097709caf9201cf6e977d68bb9cf3d5ccf469f892cca2"
-    },
-    {
-      "bytes": 2076,
-      "path": "board/raw-centroid.csv",
-      "sha256": "ad93d49882848348a7bea6859ac4fe1fb4618f7b5b86191f971f5008b43d47c7"
-    },
-    {
-      "bytes": 19162016,
+      "bytes": 21244856,
       "path": "meenie-panel.kicad_pcb",
-      "sha256": "4279d8e0d3622bed1885d58b4717396d3592f6aaa65da4f9216b647e0e908dd2"
+      "sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e"
     },
     {
-      "bytes": 2299,
-      "path": "meenie-panel.kicad_prl",
-      "sha256": "6ca14ff0479e7065b858b52e3da3f7357e4605be3ea9485a4c6a9f412c5b82cd"
+      "bytes": 30387,
+      "path": "netlist.ipc",
+      "sha256": "31d94d812c04544e054c2b80daebb79798e331e8e7dbb2de6173f0d6c066d772"
     },
     {
-      "bytes": 1743,
-      "path": "notes/IMPEDANCE-HDI-NOTES.txt",
-      "sha256": "bac361668ff432a1e7f4b3e9ca967f8798e0c72315bed7965ac2c055cd156aab"
-    },
-    {
-      "bytes": 674,
-      "path": "notes/nextpcb-stackup.csv",
-      "sha256": "ada06c8f282228eb1556a58f42fa67ecacc7d6e31a0d57de6a3b70fe4f09f0cc"
-    },
-    {
-      "bytes": 2842,
-      "path": "panel/drill-report.txt",
-      "sha256": "d328632e5acf8d536227cd169e7a3cd3ed21a7a77a184fd90debb85d75d4da10"
-    },
-    {
-      "bytes": 2124783,
+      "bytes": 3055370,
       "path": "panel/gerbers/meenie-panel-B_Cu.gbl",
-      "sha256": "b7fefda7a3a46755be741fba991f89a90b916f8f1e5ac5c8afbd6fa53acaa8c6"
+      "sha256": "9cf678c4b716817b52da33a12639659bc0902de716d7eba63245f4c9a4cd11bc"
     },
     {
-      "bytes": 172537,
+      "bytes": 166968,
       "path": "panel/gerbers/meenie-panel-B_Mask.gbs",
-      "sha256": "b331e0345323f3b800927e390a4db2eb714402aba7e9686c9d4c03dccc9a6eb7"
+      "sha256": "ab8ddb55ea35913c309a312ae63d72e1dfc7d345121366199cd27e13c94c300c"
     },
     {
-      "bytes": 124991,
+      "bytes": 119398,
       "path": "panel/gerbers/meenie-panel-B_Paste.gbp",
-      "sha256": "40e7875bcbd436c65d013d0bc3cdcfecc2d2638ca954009d195d36b50be6f31e"
+      "sha256": "dd15ccf05e8574f4b048b2a9691f8d36aa657d9fcac84f4e50b8f70e7b342c80"
     },
     {
-      "bytes": 172547,
+      "bytes": 166978,
       "path": "panel/gerbers/meenie-panel-B_Silkscreen.gbo",
-      "sha256": "1b4aa62bd8724d8ef0c7c6da7843c842da87e908985164123071e45eb33528d5"
+      "sha256": "15378680b15647bbe8d9330c590e8ab017c0c64c45f05b5f56f4485d6c6246c6"
     },
     {
-      "bytes": 631714,
+      "bytes": 890488,
       "path": "panel/gerbers/meenie-panel-CORE_ROUTE_L5.g4",
-      "sha256": "f261213ee7a0451a9fee94566a9fe1970430bd20f8d1f45acd36a51e613187d5"
+      "sha256": "5946b41a992f25e602de11a7b9836f067c7e35e3dce9940426f314b55a59c98b"
     },
     {
       "bytes": 9743,
       "path": "panel/gerbers/meenie-panel-Edge_Cuts.gm1",
-      "sha256": "a36ac755b14b483ebf513358f9c7bff0c131bf30fabf30c3783ce689c9172378"
+      "sha256": "0e09689012f9f36a91cf984102903533672c67a4ee1f5eee131f175866003369"
     },
     {
-      "bytes": 1099298,
+      "bytes": 1177296,
       "path": "panel/gerbers/meenie-panel-F_Cu.gtl",
-      "sha256": "38843bb1f4048da24ae262ca989920727966bb7bb8eeaab47ccb69b6dad5bcfa"
+      "sha256": "190be845bfedb24c38fed4e1d30321235b62a1a80f89e0d4e7d1914258193e61"
     },
     {
-      "bytes": 89637,
+      "bytes": 95079,
       "path": "panel/gerbers/meenie-panel-F_Mask.gts",
-      "sha256": "99f81c08850e2aecff9c216918060858e9027f058a04e496a3941cc26ea74a2b"
+      "sha256": "cadc8f080b32673a6e513433d71383af2be37ef9658481863de7eacdd6068794"
     },
     {
-      "bytes": 47707,
+      "bytes": 53125,
       "path": "panel/gerbers/meenie-panel-F_Paste.gtp",
-      "sha256": "8f1819627d291277b8ff45de515ed8afad6e649b9e892bf75b2746cfc22a8b06"
+      "sha256": "f7121cfd5ce2fb383ed0903fa357faf0a6bff81fde9c3f98406dce676c8ff069"
     },
     {
-      "bytes": 89647,
+      "bytes": 95089,
       "path": "panel/gerbers/meenie-panel-F_Silkscreen.gto",
-      "sha256": "f3b150be4b24c0f676a28ce74ed8ebcdcfafaae8873cac82f6aa57f0d331ba64"
+      "sha256": "c18db4e8cb0e12cde5ffe1f41e755775720d751b43e7e0cc15b8f1353a2185bc"
     },
     {
-      "bytes": 960567,
+      "bytes": 944056,
       "path": "panel/gerbers/meenie-panel-GND.g1",
-      "sha256": "611874bc2abfb2df8ef65bf9585259800bee4c9b2fedbb70fc1b6c706b9325dc"
+      "sha256": "af1a85fc3985ff87d20f2dc639c9f238102bb1a991ddf53f46af030e7c299c5e"
     },
     {
-      "bytes": 1073616,
+      "bytes": 1059915,
       "path": "panel/gerbers/meenie-panel-GND2.g2",
-      "sha256": "3eb2e93923976e9123ff28441b62c6747df8382dbdd02cde215c650c493e72b4"
+      "sha256": "cfa71a690e022bd41e337bfe600b27fd554e757a961f6e7eda3819b51a070229"
     },
     {
-      "bytes": 236776,
+      "bytes": 229795,
       "path": "panel/gerbers/meenie-panel-GPIO_ROUTE_L6.g5",
-      "sha256": "f7d27e648a7b4da01faffae1ad82cad23dfb7b4b22e04991fafc25947510a90b"
+      "sha256": "167e55c1bcc3e035344fcff07b0c1060980ff8417078bdd691328f75f42c0584"
     },
     {
-      "bytes": 1400239,
+      "bytes": 1334353,
       "path": "panel/gerbers/meenie-panel-HDI_PWR.g3",
-      "sha256": "c03c3f6bd8d04417a87a0272c736b8d22674cfd652a21013b357a946136fe6f0"
+      "sha256": "f953436323ef7351af7577421a63ffa63b923ede76668ff261e1017a35775024"
     },
     {
       "bytes": 7426,
       "path": "panel/gerbers/meenie-panel-NPTH.drl",
-      "sha256": "9e6046ca57ebb1eec9935e3ef24648fceb6db8dfab4c511c4efdf43a383d174a"
+      "sha256": "16bdb24e2574e95f0aa0bffddb85584f768caced4f96519a8ee090cd0b82e539"
     },
     {
-      "bytes": 13197,
+      "bytes": 13760,
       "path": "panel/gerbers/meenie-panel-PTH.drl",
-      "sha256": "1c411ac360b33751b3e24ae2dbf19148446c910f5819986b183ab7b59074020e"
+      "sha256": "581d4bb2cccbf37ff7f038071b7a9a1b2028a0b2d293f8297477727e8817bcc9"
     },
     {
-      "bytes": 1752710,
+      "bytes": 2098599,
       "path": "panel/gerbers/meenie-panel-RF_GND_L7.g6",
-      "sha256": "379ce49e37c88894c0b551402fd4a3979fd3ffb6f50f3f7e0469960b39f75f0c"
+      "sha256": "16b7f7e1fd408ca8a681510ef03b8dd1276e819c1887ae646b459b277c53827b"
     },
     {
-      "bytes": 46478,
+      "bytes": 47002,
       "path": "panel/gerbers/meenie-panel-back-in6.drl",
-      "sha256": "d3bc4aa720a43a59b0ede157bd2fe6e6e63f2d6604224b3216b778bd1795d78e"
+      "sha256": "6cb428dbd0be9e51acfecebbad386db5f030cdf2a5b08282c91a956936d98e4f"
     },
     {
-      "bytes": 14820,
+      "bytes": 14691,
       "path": "panel/gerbers/meenie-panel-front-in1.drl",
-      "sha256": "da20951221a00daa22ff8f3d5b8079d0b9019fbf5e13a57e1ecb11a6c0c922dd"
+      "sha256": "e07695ebfab699f8819d66c489705986e921e86128ccbb0331d371512b02a102"
     },
     {
-      "bytes": 11778,
+      "bytes": 11168,
       "path": "panel/gerbers/meenie-panel-in1-in2.drl",
-      "sha256": "38b94b3fa7deee3e8ea6a1f2b99a67e5e78cef09350445890dabeb2c10cd2940"
+      "sha256": "a95a9a450ddb29d82fd68ed92dad4a26a6b7c3ee7b9852989482718f68fcd77b"
     },
     {
-      "bytes": 13138,
+      "bytes": 12528,
       "path": "panel/gerbers/meenie-panel-in2-in3.drl",
-      "sha256": "db454a0957d49f40a040c92ebee667f71831b3f53ab7cfea85dad70fc9b269f9"
+      "sha256": "7406cc21359659f3303b801550b376c13f0ababaa71e95e409f4d75ec8310242"
     },
     {
-      "bytes": 11302,
+      "bytes": 10672,
       "path": "panel/gerbers/meenie-panel-in3-in4.drl",
-      "sha256": "2c18ab7894c5cfc1898b8cc98373e32672adf9e7e065fbb5ed72987e0f56da91"
+      "sha256": "36ed06eb0d2445a86f471357f0ab7c3b8fa092fc57d86bc6e4435e87a1bff26f"
     },
     {
-      "bytes": 16206,
+      "bytes": 14996,
       "path": "panel/gerbers/meenie-panel-in4-in5.drl",
-      "sha256": "7d5f1c554751b312ddc6a8645d4e2fb29ad23158645e6b02a40148f64bbb38f9"
+      "sha256": "3d253d1c89f3467b657c29c2211b4ce2147af99f0d5528f026d750822881ed98"
     },
     {
-      "bytes": 30844,
+      "bytes": 29059,
       "path": "panel/gerbers/meenie-panel-in5-in6.drl",
-      "sha256": "8d02cc3eb37668ce5b2d6ae257cdf1ed07b1c535ae663aae8f391b7e28567d67"
+      "sha256": "fec328aff47ae008f4c963a0622cb0b176172ce87332d3f5f12275f7980ab756"
     },
     {
       "bytes": 5453,
       "path": "panel/gerbers/meenie-panel-job.gbrjob",
-      "sha256": "0197fdca746fc4b2d31fccc2b2db612b9b1c642338664d79a7fff21d65b2c821"
-    },
-    {
-      "bytes": 51556185,
-      "path": "panel/ipc2581.xml",
-      "sha256": "6a32570b6dc2c4b1ac017dc1991ec5215994c4df6f6fa14450d7d79f4ba0f154"
-    },
-    {
-      "bytes": 1104127,
-      "path": "panel/netlist.ipc",
-      "sha256": "b4861202cfffdbcd11301a2e014143aa1510b4dd11f82d26fba4270187d75173"
-    },
-    {
-      "bytes": 75810,
-      "path": "panel/raw-centroid.csv",
-      "sha256": "4560713c32e4bab56adc3983cede44d324052fc6ecfad71af774904efcb5ddf9"
-    },
-    {
-      "bytes": 1193,
-      "path": "reports/assembly-audit.json",
-      "sha256": "ecc584e68dea2231985c07d7b20ac25889a423b54d737bb702d473cb892fa4d7"
+      "sha256": "f80ab31ab806491ae0ce90ab3a8ededc621b6d0306acfc239b02b9930c6908e3"
     },
     {
       "bytes": 164,
-      "path": "reports/assembly-summary.csv",
-      "sha256": "96a34e58f88e37bd6b059553d388638c126af70f815c4875323e784a9804095e"
+      "path": "reports/assembly-audit.json",
+      "sha256": "61c8fdcc3b12fd96543e9ac754865e0dbfd2faf5ba6376b9c8a55ba35403bc2f"
     },
     {
-      "bytes": 162754,
+      "bytes": 2198,
+      "path": "reports/circuit-audit.json",
+      "sha256": "89f1505e123ade05f1d023fede372e0cf7fb9a8c5b93f101e20639059ea22313"
+    },
+    {
+      "bytes": 2139,
       "path": "reports/drc.json",
-      "sha256": "f4d6f6e0ad3678d7ee02e5950a85e2903411b234e461f334d301b437f3636a26"
+      "sha256": "c899827852e435a62b1f57cbaa7ab25827ed544d30870bb57e8507253ce1733a"
     },
     {
       "bytes": 1000,
       "path": "reports/erc.json",
-      "sha256": "22858b2a9aa94184e05261968707cf570d9cce26869e78c4b5a51d240b04ddf4"
+      "sha256": "d39f2da0e2dea3fadc2c29b846dd3d5a061bedc65104d46b172257c25f701f82"
     },
     {
-      "bytes": 692,
-      "path": "reports/mech-gerbers/mech-B_Cu.gbl",
-      "sha256": "3643b0f78779b95c39ca381b7ff992f35a048156657da6f64b28d9d0a57b954d"
+      "bytes": 3078,
+      "path": "reports/hfxo.json",
+      "sha256": "27ff73b71be9faa1a5189a8358f0a93a7b2dcfd4dff79e18ca0e66456b39f45d"
     },
     {
-      "bytes": 16829,
-      "path": "reports/mech-gerbers/mech-B_Mask.gbs",
-      "sha256": "bd97cbfa2de56a54e2d587dc40fad0069065a736c7c879f6053a82edeab47778"
+      "bytes": 602,
+      "path": "reports/mechanical-fit.json",
+      "sha256": "aa05cbbc0372f048fe5d75fcd2d66b42392c3c2bbe91bbc9bf823554c606cf56"
     },
     {
-      "bytes": 449,
-      "path": "reports/mech-gerbers/mech-B_Paste.gbp",
-      "sha256": "b14577bb9cc15dd71e91810fbc6d7706872dbdd1f88e17a0b058fd32e964d56c"
+      "bytes": 446,
+      "path": "reports/mouse-bite-clearance.json",
+      "sha256": "1aa23780b585b99a2aa4626512125b10f3ff2a259cb329f87692519d11a48973"
     },
     {
-      "bytes": 16839,
-      "path": "reports/mech-gerbers/mech-B_Silkscreen.gbo",
-      "sha256": "02bbf4bcb3b26ff7131b3d58d9461a39bdd9f53a8b0953754d69ebc1ab21616e"
+      "bytes": 5662,
+      "path": "reports/panel-assembly.json",
+      "sha256": "bad94dc62b22cf53e1555d69e36cbe89013c58931cf960c29d875ff106f1f249"
     },
     {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-CORE_ROUTE_L5.g4",
-      "sha256": "5b17d6d1726618f0a6224b8ddb05fc774dc38e942b7657ce89c37b778483bd41"
+      "bytes": 185,
+      "path": "reports/panel-audit.json",
+      "sha256": "d7a575e27951504dfc5446fc4baaa6a0c400b0ff3d66defb3929b2aa08d8a653"
     },
     {
-      "bytes": 9735,
-      "path": "reports/mech-gerbers/mech-Edge_Cuts.gm1",
-      "sha256": "cdfff659cb081e5fb7b82d88540f51f78bd97d45a35f647a990b24c44e95c6d3"
+      "bytes": 1169,
+      "path": "reports/power-geometry.json",
+      "sha256": "60969a2caa88feba9be2514be479a5a517108b98acb8cda06b81644603ec5b04"
     },
     {
-      "bytes": 692,
-      "path": "reports/mech-gerbers/mech-F_Cu.gtl",
-      "sha256": "a55bedb120409c0f8ca38316ec27abf1b53db17c0b301ec36eec4021c3377bc2"
-    },
-    {
-      "bytes": 16829,
-      "path": "reports/mech-gerbers/mech-F_Mask.gts",
-      "sha256": "ec3fb9eb999313c2140522eb6daa751607c4899403ce716e37cd5c6d28c2a081"
-    },
-    {
-      "bytes": 449,
-      "path": "reports/mech-gerbers/mech-F_Paste.gtp",
-      "sha256": "d2532c4cec75e701bd504d906cc7bca8d6283910083c927c24c1e7aef68b34fd"
-    },
-    {
-      "bytes": 16839,
-      "path": "reports/mech-gerbers/mech-F_Silkscreen.gto",
-      "sha256": "5d2ce3c5f02f7e39ac481fba4ccb01aa45e1d7b5f07e8fd29bc0f3c5d900ee3c"
-    },
-    {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-GND.g1",
-      "sha256": "3d32954c9715e09e2d13643d4a82628ecc2c6226dd397721ff06f1f1a2f5cb51"
-    },
-    {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-GND2.g2",
-      "sha256": "5a6c7e1b2ca313f27d92f627fccf85f1e3cd886b7a2f539270bd44d35af80c79"
-    },
-    {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-GPIO_ROUTE_L6.g5",
-      "sha256": "9b62ae73d185c928a5b2c0b02dffe84b5fd2d30ea4d2737d3517a9f4697bb847"
-    },
-    {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-HDI_PWR.g3",
-      "sha256": "3cf16b598961d3f6de33143a0175cd952537bb86f0827af1b93469bcab52f41c"
-    },
-    {
-      "bytes": 6219,
-      "path": "reports/mech-gerbers/mech-NPTH.drl",
-      "sha256": "a330387989b476fa5cfd162fb8594190b1b6c5a63d6c85c2d81604d01a6648b9"
-    },
-    {
-      "bytes": 260,
-      "path": "reports/mech-gerbers/mech-PTH.drl",
-      "sha256": "4b6ee846a366ddfd3ff0549a6ef95dda0e94b7cfec9a03d4662e38b00a53329e"
-    },
-    {
-      "bytes": 453,
-      "path": "reports/mech-gerbers/mech-RF_GND_L7.g6",
-      "sha256": "6e5c11233d22900f954cd10a393f604519484e0b5ea8eee8809d6e513138a743"
-    },
-    {
-      "bytes": 5155,
-      "path": "reports/mech-gerbers/mech-job.gbrjob",
-      "sha256": "eb3b1b4d1738ea70da148c9156fba9f7df66851bf1a9100019930e01b526f404"
-    },
-    {
-      "bytes": 338391,
-      "path": "reports/mech.kicad_pcb",
-      "sha256": "ef9158794263c884d6abcec8c6fedef65ad179d8a9e97a477a4133d8ec5cd6e0"
-    },
-    {
-      "bytes": 2291,
-      "path": "reports/mech.kicad_prl",
-      "sha256": "c2a700261cfe1fd2f7c37201a4bfc13590744b6e222592c840374479f3988430"
-    },
-    {
-      "bytes": 1551,
-      "path": "reports/mouse-bite-clearance.txt",
-      "sha256": "c6b1fd51c660d9ffaaecc67469c3d87e96a1e459cc1f06446a8c12e9e19b6279"
-    },
-    {
-      "bytes": 3475,
-      "path": "reports/panel-correspondence.txt",
-      "sha256": "da2bdce2d4a9db9a52575e72219308ab12a60a4a8243e62a59e021c5f7578318"
-    },
-    {
-      "bytes": 14857,
+      "bytes": 7640,
       "path": "reports/release.json",
-      "sha256": "1194dfeb9640321f5db4378ec77710a2dd202bbcb020f3dc807a83e95b5d6778"
+      "sha256": "2296b71b13cd8bfd89a806ca930b18163bca752787b3966b01fec479678432d3"
     },
     {
-      "bytes": 3745,
-      "path": "reports/rf-audit/final-grown-audit.json",
-      "sha256": "47706e03d92f72898079e3f780f32c6700289f15237f47a2540bdc647c2fc36d"
+      "bytes": 4226,
+      "path": "reports/rf-reference.json",
+      "sha256": "b798fbfa545d247ccb6897ac8e9ad68059904104563f904af75a77ded102f01b"
     },
     {
-      "bytes": 2545,
-      "path": "reports/rf-audit/superseding-metadata-model-audit.json",
-      "sha256": "6f3e6d8b3fa1171ce9cea9b2cea0e0964d46231c30c8fc2ec03b778ba8336060"
-    },
-    {
-      "bytes": 1482,
-      "path": "reports/rf-reference-acceptance.json",
-      "sha256": "3525c2f9dea5cab0745719b84cd62db2d0ee5c41a00823a8a69b34670a86fde3"
-    },
-    {
-      "bytes": 745,
+      "bytes": 10484,
       "path": "reports/source-contract.json",
-      "sha256": "7001ce59a458e70df829ce7a2344a0a845f27ad9d3ebf576213d3f571fb694ce"
+      "sha256": "eac34a717004a1912fb28507dc702e9903ca794487c5a6feabff62725d5f2f99"
     },
     {
-      "bytes": 433,
-      "path": "reports/source-sha256.txt",
-      "sha256": "dea21d70f25014f8aa1ac84c0ca1cd48f135e58eeeb8c0358b72de24033a1d41"
+      "bytes": 471,
+      "path": "reports/source-sha256.json",
+      "sha256": "906b1d5638d09ae19dc2fd1cf70e36b42b3b49d5e44b2ead42e750f6b9b095ec"
     },
     {
-      "bytes": 133,
-      "path": "reports/stack-gate.txt",
-      "sha256": "b3e9760b1151be8a11fd40598d9715784fc34ad133c7876283705344c528b2c1"
+      "bytes": 8966,
+      "path": "reports/stock-audit.json",
+      "sha256": "7a673ac7cd8e30d0f394d0ddd0994a56cd12f40080af227841a96821b6a856e0"
     },
     {
-      "bytes": 11364,
-      "path": "reports/stack-negative-tests.json",
-      "sha256": "46147c71749b77318bff0edf2307b45bcda2da3e5e3dfbf39a5e1e5d6581032f"
+      "bytes": 1419,
+      "path": "reports/usb-interface.json",
+      "sha256": "0caf11d06764303b2f7704521c39e7eb9c3288b5f79496c3fa4d4279b88bbc89"
+    },
+    {
+      "bytes": 84933,
+      "path": "stack-manifest.json",
+      "sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd"
+    },
+    {
+      "bytes": 471,
+      "path": "stackup.csv",
+      "sha256": "8905e817f7a3e4895daa6691c049d2471f1fbe81f8f622054862f1cf295d9260"
+    },
+    {
+      "bytes": 14511,
+      "path": "vendor-dfm-approval-template.json",
+      "sha256": "ded8ed9396a4b26aac1fd68a2d38643b46bd362815a6e179c1b2e7537d22e74e"
     }
   ],
-  "files_excluding_inventory_and_checksum": 137,
+  "files_excluding_inventory": 75,
+  "first_article_orderable": false,
   "orderable": false,
-  "root": "fab",
-  "upload_archives": [],
-  "warning": "No upload archive may be created or sent until the signed NextPCB DFM/quote JSON passes the exact release contract."
+  "production_orderable": false,
+  "root": ".release-build/adopt",
+  "upload_archives": []
 }

@@ -3,7 +3,6 @@
 temp/
 __pycache__/
 .easyeda_cache/
-
 *-backups/
 *.kicad_prl
 *.kicad_pcb-bak
@@ -17,8 +16,6 @@ fp-info-cache
 *.net
 *-erc.rpt
 *-drc.rpt
-
-!fab/**/*.kicad_prl
 
 log_*.txt
 USB_D+,USB_D-

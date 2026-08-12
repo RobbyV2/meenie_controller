@@ -5,10 +5,150 @@
       "MPN": "GRM0335C1H120GA01D",
       "Manufacturer": "Murata"
     },
+    "C11": {
+      "LCSC Part": "C90057",
+      "MPN": "GRM188R61E475KE11D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C12": {
+      "LCSC Part": "C85923",
+      "MPN": "GRM033C71C104KE14D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C14": {
+      "LCSC Part": "C408126",
+      "MPN": "GJM0335C1ER80WB01D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C15": {
+      "LCSC Part": "C237424",
+      "MPN": "GJM0335C1HR50WB01D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C16": {
+      "LCSC Part": "C408126",
+      "MPN": "GJM0335C1ER80WB01D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C18": {
+      "LCSC Part": "C85923",
+      "MPN": "GRM033C71C104KE14D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C19": {
+      "LCSC Part": "C318563",
+      "MPN": "CL05A475MO5NUNC",
+      "Manufacturer": "Samsung Electro-Mechanics"
+    },
     "C2": {
       "LCSC Part": "C161404",
       "MPN": "GRM0335C1H120GA01D",
       "Manufacturer": "Murata"
+    },
+    "C21": {
+      "LCSC Part": "C384953",
+      "MPN": "GRM0335C1E821JA01D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C3": {
+      "LCSC Part": "C85923",
+      "MPN": "GRM033C71C104KE14D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C4": {
+      "LCSC Part": "C85923",
+      "MPN": "GRM033C71C104KE14D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C5": {
+      "LCSC Part": "C272870",
+      "MPN": "CC0201JRNPO9BN101",
+      "Manufacturer": "Yageo"
+    },
+    "C6": {
+      "LCSC Part": "C90057",
+      "MPN": "GRM188R61E475KE11D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "C7": {
+      "LCSC Part": "C52923",
+      "MPN": "CL05A105KA5NQNC",
+      "Manufacturer": "Samsung Electro-Mechanics"
+    },
+    "C8": {
+      "LCSC Part": "C1525",
+      "MPN": "CL05B104KO5NNNC",
+      "Manufacturer": "Samsung Electro-Mechanics"
+    },
+    "C9": {
+      "LCSC Part": "C90057",
+      "MPN": "GRM188R61E475KE11D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "D1": {
+      "LCSC Part": "C1972949",
+      "MPN": "TPD1E01B04DPLR",
+      "Manufacturer": "Texas Instruments"
+    },
+    "D2": {
+      "LCSC Part": "C22427765",
+      "MPN": "ESD441DPLR",
+      "Manufacturer": "Texas Instruments"
+    },
+    "D3": {
+      "LCSC Part": "C364556",
+      "MPN": "LTST-C281KRKT",
+      "Manufacturer": "Lite-On"
+    },
+    "D4": {
+      "LCSC Part": "C239819",
+      "MPN": "ESD5311Z-2/TR",
+      "Manufacturer": "Will Semiconductor"
+    },
+    "J1": {
+      "LCSC Part": "C5187472",
+      "MPN": "TYPE-C 16P QTWT",
+      "Manufacturer": "SHOU HAN"
+    },
+    "L1": {
+      "LCSC Part": "C237443",
+      "MPN": "LQP03HQ4N7H02D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "L2": {
+      "LCSC Part": "C237443",
+      "MPN": "LQP03HQ4N7H02D",
+      "Manufacturer": "Murata Electronics"
+    },
+    "R1": {
+      "LCSC Part": "C327251",
+      "MPN": "RC0402FR-072R2L",
+      "Manufacturer": "Yageo"
+    },
+    "R2": {
+      "LCSC Part": "C274341",
+      "MPN": "RC0201FR-075K1L",
+      "Manufacturer": "Yageo"
+    },
+    "R3": {
+      "LCSC Part": "C274341",
+      "MPN": "RC0201FR-075K1L",
+      "Manufacturer": "Yageo"
+    },
+    "R4": {
+      "LCSC Part": "C270365",
+      "MPN": "0201WMF1001TEE",
+      "Manufacturer": "Uniroyal Electronics"
+    },
+    "SW1": {
+      "LCSC Part": "",
+      "MPN": "GSNANOT000102",
+      "Manufacturer": "C&K/Littelfuse"
+    },
+    "U1": {
+      "LCSC Part": "C190794",
+      "MPN": "NRF52840-QIAA-R",
+      "Manufacturer": "Nordic Semiconductor"
     },
     "Y1": {
       "LCSC Part": "C255986",
@@ -16,8 +156,409 @@
       "Manufacturer": "Seiko Epson"
     }
   },
+  "exact_datasheets": {
+    "C11": "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D",
+    "C19": "https://product.samsungsem.com/mlcc/CL05A475MO5NUN.do",
+    "C6": "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D",
+    "C9": "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D",
+    "D1": "https://www.ti.com/lit/ds/symlink/tpd1e01b04.pdf",
+    "D2": "https://www.ti.com/lit/ds/symlink/esd441.pdf",
+    "D3": "https://optoelectronics.liteon.com/upload/download/DS22-2008-0117/LTST-C281KRKT.PDF",
+    "D4": "https://www.lcsc.com/datasheet/C239819.pdf",
+    "J1": "https://atta.szlcsc.com/upload/public/pdf/source/20250724/0D22D8172E0B6194F7E17C81DE47450F.pdf",
+    "SW1": "https://www.ckswitches.com/media/2866/nanot.pdf",
+    "Y1": "https://download.epsondevice.com/td/pdf/brief/FA-118T_en.pdf"
+  },
+  "exact_footprints": {
+    "C19": "meenie:C0402",
+    "D1": "meenie:ESD_X2SON_DPL",
+    "D2": "meenie:ESD_X2SON_DPL",
+    "D3": "meenie:LED0402-R-RD_RED",
+    "D4": "meenie:ESD_DFN0603-2",
+    "J1": "meenie:USB-TYPE-C-SMD_TYPE-C-16P-QTWT",
+    "SW1": "meenie:Switch_NanoT_AS",
+    "U1": "meenie:AQFN-73_L7.0-W7.0-P0.50-BL-EP4.8",
+    "Y1": "meenie:Crystal_SMD_1612-4Pin_FA-118T"
+  },
+  "exact_pad_geometry": {
+    "C19": [
+      [
+        "1",
+        "smd",
+        -0.42,
+        0.0,
+        90.0,
+        0.5,
+        0.54,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        0.42,
+        0.0,
+        90.0,
+        0.5,
+        0.54,
+        null
+      ]
+    ],
+    "D1": [
+      [
+        "1",
+        "smd",
+        -0.22,
+        0.0,
+        90.0,
+        0.28,
+        0.25,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        0.22,
+        0.0,
+        90.0,
+        0.28,
+        0.25,
+        null
+      ]
+    ],
+    "D2": [
+      [
+        "1",
+        "smd",
+        -0.22,
+        0.0,
+        90.0,
+        0.28,
+        0.25,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        0.22,
+        0.0,
+        90.0,
+        0.28,
+        0.25,
+        null
+      ]
+    ],
+    "D3": [
+      [
+        "1",
+        "smd",
+        0.5,
+        0.04,
+        90.0,
+        0.65,
+        0.65,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        -0.5,
+        0.04,
+        90.0,
+        0.65,
+        0.65,
+        null
+      ]
+    ],
+    "D4": [
+      [
+        "1",
+        "smd",
+        -0.21,
+        0.0,
+        270.0,
+        0.2,
+        0.32,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        0.21,
+        0.0,
+        270.0,
+        0.2,
+        0.32,
+        null
+      ]
+    ],
+    "J1": [
+      [
+        "",
+        "np_thru_hole",
+        -2.89,
+        -1.22,
+        0.0,
+        0.75,
+        0.75,
+        0.75
+      ],
+      [
+        "",
+        "np_thru_hole",
+        2.89,
+        -1.22,
+        0.0,
+        0.75,
+        0.75,
+        0.75
+      ],
+      [
+        "0",
+        "smd",
+        -5.2,
+        -1.89,
+        0.0,
+        1.7,
+        1.2,
+        null
+      ],
+      [
+        "0",
+        "smd",
+        -5.2,
+        2.4,
+        0.0,
+        1.7,
+        1.32,
+        null
+      ],
+      [
+        "0",
+        "smd",
+        -5.4,
+        1.65,
+        0.0,
+        1.3,
+        0.18,
+        null
+      ],
+      [
+        "0",
+        "smd",
+        5.2,
+        -1.89,
+        0.0,
+        1.7,
+        1.2,
+        null
+      ],
+      [
+        "0",
+        "smd",
+        5.2,
+        2.31,
+        0.0,
+        1.7,
+        1.5,
+        null
+      ],
+      [
+        "A1B12",
+        "smd",
+        -3.2,
+        -2.34,
+        0.0,
+        0.6,
+        1.08,
+        null
+      ],
+      [
+        "A4B9",
+        "smd",
+        -2.4,
+        -2.34,
+        0.0,
+        0.6,
+        1.08,
+        null
+      ],
+      [
+        "A5",
+        "smd",
+        -1.25,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "A6",
+        "smd",
+        -0.25,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "A7",
+        "smd",
+        0.25,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "A8",
+        "smd",
+        1.25,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "B1A12",
+        "smd",
+        3.2,
+        -2.34,
+        0.0,
+        0.6,
+        1.08,
+        null
+      ],
+      [
+        "B4A9",
+        "smd",
+        2.4,
+        -2.34,
+        0.0,
+        0.6,
+        1.08,
+        null
+      ],
+      [
+        "B5",
+        "smd",
+        1.75,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "B6",
+        "smd",
+        0.75,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "B7",
+        "smd",
+        -0.75,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ],
+      [
+        "B8",
+        "smd",
+        -1.75,
+        -2.31,
+        0.0,
+        0.3,
+        1.14,
+        null
+      ]
+    ],
+    "SW1": [
+      [
+        "1",
+        "smd",
+        -1.15,
+        0.0,
+        90.0,
+        0.5,
+        1.4,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        1.15,
+        0.0,
+        90.0,
+        0.5,
+        1.4,
+        null
+      ]
+    ],
+    "Y1": [
+      [
+        "1",
+        "smd",
+        -0.55,
+        -0.4,
+        90.0,
+        0.65,
+        0.55,
+        null
+      ],
+      [
+        "2",
+        "smd",
+        0.55,
+        -0.4,
+        90.0,
+        0.65,
+        0.55,
+        null
+      ],
+      [
+        "3",
+        "smd",
+        0.55,
+        0.4,
+        90.0,
+        0.65,
+        0.55,
+        null
+      ],
+      [
+        "4",
+        "smd",
+        -0.55,
+        0.4,
+        90.0,
+        0.65,
+        0.55,
+        null
+      ]
+    ]
+  },
   "issues": [],
   "passed": true,
+  "u1_signal_land_pattern": {
+    "copper_pad_diameter_mm": 0.25,
+    "manufacturer_reference": "https://docs.nordicsemi.com/r/bundle/nan_040/page/app/nan_040/nan40_aqfn73_footprint.html",
+    "nordic_recommended_copper_pad_diameter_mm": 0.275,
+    "pad_count": 73,
+    "paste_mask_opening_mm": 0.3,
+    "reduced_copper_land": true,
+    "solder_mask_opening_mm": 0.375
+  },
   "y1_footprint": "meenie:Crystal_SMD_1612-4Pin_FA-118T",
   "y1_model": "${KIPRJMOD}/../lib/3dmodels/meenie.3dshapes/Crystal_SMD_1612-4Pin_1.6x1.2mm.step",
   "y1_model_resolved": "lib/3dmodels/meenie.3dshapes/Crystal_SMD_1612-4Pin_1.6x1.2mm.step",

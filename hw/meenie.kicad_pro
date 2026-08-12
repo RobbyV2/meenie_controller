@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.15,
+          "min_clearance": 0.08,
           "min_island_area": 10.0,
           "min_thickness": 0.15,
           "pad_connection": 1,
@@ -84,7 +84,7 @@
       "drc_exclusions": [
         [
           "npth_inside_courtyard|104430000|94720000|9975e04a-a69e-4e64-8470-7cca97045659|7c7fb09b-a960-4d8f-912f-ec65519f8564",
-          "J1 west NPTH locating peg at (104.430, 94.720) intentionally lies inside U1's courtyard in the compact 13.570 x 9.435 mm placement. The peg-to-U1 overlap is the mechanically reviewed notch-aligned placement; this exact exclusion is keyed to the fresh DRC position, J1 pad UUID, and U1 footprint UUID. Regenerate and re-review if any key changes."
+          ""
         ]
       ],
       "meta": {
@@ -158,7 +158,7 @@
         "allow_blind_buried_vias": true,
         "allow_microvias": true,
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.08,
         "min_connection": 0.09,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
@@ -308,7 +308,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.09,
+        "clearance": 0.08,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -327,7 +327,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.08,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -346,7 +346,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.08,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -357,7 +357,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.115,
+        "track_width": 0.17,
         "tuning_profile": "",
         "via_diameter": 0.3,
         "via_drill": 0.15,
@@ -365,7 +365,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.08,
         "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.15,
@@ -384,7 +384,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.08,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,

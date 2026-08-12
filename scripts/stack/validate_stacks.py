@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validator for Meenie HDI stack manifests (schema 3)."""
+"""Fail-closed validator for Meenie HDI stack manifests (schema 4)."""
 
 from __future__ import annotations
 
@@ -14,9 +14,20 @@ from pathlib import Path
 
 TOL = 1e-6
 ACTIVE_MARKER_TYPES = ("clearance", "hole_clearance", "holes_co_located")
-DRILL_SEPARATION_RULES = {
-    "different_nets": ("via drill separation, different nets", 0.150),
-    "same_net": ("via drill separation, same net", 0.050),
+VIA_PHYSICAL_CLEARANCE_RULES = {
+    "different_nets": ("via physical copper clearance, different nets", 0.075),
+}
+COPPER_LAYERS = ("F.Cu", "In1.Cu", "In2.Cu", "In3.Cu", "In4.Cu", "In5.Cu", "In6.Cu", "B.Cu")
+REQUIRED_RULE_SNIPPETS = {
+    "PTH hole to copper": ("(constraint hole_clearance (min 0.28mm))", "A.Pad_Type == 'Through-hole'"),
+    "PTH hole to PTH hole": ("(constraint hole_to_hole (min 0.45mm))",),
+    "RF corridor coplanar setback": ("(constraint clearance (min 0.22mm))", "(layer outer)"),
+    "U1 north pocket crystal and decoupling escape": ("(constraint clearance (min 0.09mm))", "insideArea('U1 north pocket')"),
+    "NextPCB Advanced HDI copper clearance": ("(constraint clearance (min 0.08mm))",),
+    "NextPCB Advanced HDI laser hole clearance": ("(constraint hole_clearance (min 0.08mm))", "A.Via_Type == 'Micro'"),
+    "NextPCB mechanical via annular ring": ("(constraint annular_width (min 0.09mm))", "A.Via_Type != 'Micro'"),
+    "NextPCB HDI RF_50 B.Cu width": ("(constraint track_width (min 0.17mm) (max 0.17mm))", "A.Layer == 'B.Cu'"),
+    "NextPCB HDI RF_50 same-side GND setback": ("(constraint clearance (min 0.300mm))", "insideArea('RF corridor, RF_50')"),
 }
 
 
@@ -167,16 +178,16 @@ def marker_rule(description: str) -> str:
     return match.group(1) if match else description
 
 
-def via_drill_separation(rules_text: str) -> dict:
+def via_physical_clearance(rules_text: str) -> dict:
     found: dict[str, float] = {}
-    for key, (name, _) in DRILL_SEPARATION_RULES.items():
+    for key, (name, _) in VIA_PHYSICAL_CLEARANCE_RULES.items():
         block = re.search(
             rf'\(rule "{re.escape(name)}"(.*?)\(condition "([^"]*)"\)\)',
             rules_text,
             flags=re.S,
         )
         if not block:
-            raise ValueError(f"rules file lacks the {name!r} drill-separation rule")
+            raise ValueError(f"rules file lacks the {name!r} physical-clearance rule")
         minimum = re.search(r"\(constraint physical_clearance \(min ([\d.]+)mm\)\)", block.group(1))
         if not minimum:
             raise ValueError(f"{name!r} does not carry a physical_clearance minimum")
@@ -184,6 +195,54 @@ def via_drill_separation(rules_text: str) -> dict:
             raise ValueError(f"{name!r} is not scoped to a via pair")
         found[key] = float(minimum.group(1))
     return found
+
+
+def via_spacing_metrics(vias: list[dict]) -> dict:
+    def layers(via: dict) -> set[str]:
+        start, end = (COPPER_LAYERS.index(name) for name in via["layers"])
+        return set(COPPER_LAYERS[min(start, end):max(start, end) + 1])
+
+    candidates = {"center": [], "copper_edge": [], "hole_edge": []}
+    for index, left in enumerate(vias):
+        left_layers = layers(left)
+        for right in vias[index + 1:]:
+            common_layers = left_layers & layers(right)
+            if left["net"] == right["net"] or not common_layers:
+                continue
+            center = math.dist(left["at"], right["at"])
+            values = {
+                "center": center,
+                "copper_edge": center - (left["size"] + right["size"]) / 2.0,
+                "hole_edge": center - (left["drill"] + right["drill"]) / 2.0,
+            }
+            uuids = sorted((left["uuid"], right["uuid"]))
+            for key, value in values.items():
+                candidates[key].append((round(value, 6), uuids, sorted(common_layers)))
+    result = {}
+    for key, rows in candidates.items():
+        if not rows:
+            raise ValueError("board has no common-layer different-net via pairs")
+        value, uuids, common_layers = min(rows)
+        result[f"minimum_{key}_mm"] = {
+            "value": value,
+            "via_uuids": uuids,
+            "common_layers": common_layers,
+        }
+    return result
+
+
+def validate_required_rules(rules_text: str) -> list[str]:
+    issues = []
+    for name, snippets in REQUIRED_RULE_SNIPPETS.items():
+        blocks = balanced_blocks(rules_text, f'(rule "{name}"')
+        if len(blocks) != 1:
+            issues.append(f"rules file has {len(blocks)} copies of required rule {name!r}")
+            continue
+        compact = re.sub(r"\s+", " ", blocks[0])
+        for snippet in snippets + ("(severity error)",):
+            if re.sub(r"\s+", " ", snippet) not in compact:
+                issues.append(f"required rule {name!r} lacks exact {snippet!r}")
+    return issues
 
 
 def manifest_signature(marker: dict) -> tuple[str, float, float, tuple[str, ...]]:
@@ -196,11 +255,15 @@ def manifest_signature(marker: dict) -> tuple[str, float, float, tuple[str, ...]
 
 
 def project_exclusion_signature(exclusion: object) -> tuple[str, float, float, tuple[str, ...]]:
-    if not isinstance(exclusion, list) or not exclusion or not isinstance(exclusion[0], str):
+    if isinstance(exclusion, str):
+        key = exclusion
+    elif isinstance(exclusion, list) and exclusion and isinstance(exclusion[0], str):
+        key = exclusion[0]
+    else:
         raise ValueError(f"unsupported project exclusion record {exclusion!r}")
-    fields = exclusion[0].split("|")
+    fields = key.split("|")
     if len(fields) != 5:
-        raise ValueError(f"unsupported project exclusion key {exclusion[0]!r}")
+        raise ValueError(f"unsupported project exclusion key {key!r}")
     marker_type, x_nm, y_nm, uuid_a, uuid_b = fields
     return (
         marker_type,
@@ -223,10 +286,12 @@ def fail(errors: list[str], message: str) -> None:
 def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> list[str]:
     errors: list[str] = []
     manifest = json.loads(manifest_path.read_text())
-    if manifest.get("schema") != 3:
-        return [f"manifest schema must be 3, got {manifest.get('schema')!r}"]
+    if manifest.get("schema") != 4:
+        return [f"manifest schema must be 4, got {manifest.get('schema')!r}"]
 
-    required = ("board", "project", "rules", "source_hashes", "layer_stack", "allowed_layer_sequences", "stacks")
+    required = ("board", "project", "rules", "source_hashes", "layer_stack",
+                "via_physical_clearance_rule_mm", "via_spacing_observed_mm",
+                "allowed_layer_sequences", "stacks")
     for field in required:
         if field not in manifest:
             fail(errors, f"manifest missing {field}")
@@ -262,6 +327,13 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
     micro_by_uuid = {via["uuid"]: via for via in microvias}
     if len(micro_by_uuid) != len(microvias):
         fail(errors, "board has duplicate microvia UUIDs")
+    for via in microvias:
+        if not math.isclose(via["size"], 0.25, abs_tol=TOL) or not math.isclose(via["drill"], 0.1, abs_tol=TOL):
+            fail(errors, f"microvia geometry {via['uuid']} is {via['size']}/{via['drill']}mm, approved 0.25/0.10mm")
+    for via in (item for item in all_vias if item["kind"] != "micro"):
+        ring = (via["size"] - via["drill"]) / 2.0
+        if ring < 0.09 - TOL:
+            fail(errors, f"mechanical via annular ring {via['uuid']} is {ring:.6f}mm, minimum 0.09mm")
 
     central = [via for via in all_vias if via["kind"] in ("blind", "buried")]
     central_manifest = manifest.get("central_buried_transitions", [])
@@ -299,18 +371,22 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
         fail(errors, f"manifest references missing blind/buried via {uuid}")
 
     try:
-        separation = via_drill_separation(rules_text)
+        separation = via_physical_clearance(rules_text)
     except ValueError as exc:
         separation = {}
         fail(errors, str(exc))
-    for key, (name, expected) in DRILL_SEPARATION_RULES.items():
+    for key, (name, expected) in VIA_PHYSICAL_CLEARANCE_RULES.items():
         if key in separation and not math.isclose(separation[key], expected, abs_tol=TOL):
             fail(errors, f"{name!r} minimum is {separation[key]}mm, approved {expected}mm")
-        declared = manifest.get("via_drill_separation_mm", {}).get(key)
+        declared = manifest.get("via_physical_clearance_rule_mm", {}).get(key)
         if declared is None or not math.isclose(float(declared), expected, abs_tol=TOL):
-            fail(errors, f"manifest via_drill_separation_mm[{key}] is {declared!r}, approved {expected}mm")
+            fail(errors, f"manifest via_physical_clearance_rule_mm[{key}] is {declared!r}, approved {expected}mm")
+    observed_spacing = via_spacing_metrics(all_vias)
+    if manifest.get("via_spacing_observed_mm") != observed_spacing:
+        fail(errors, f"manifest via_spacing_observed_mm differs from board: {observed_spacing!r}")
     if re.search(r"\(severity\s+ignore\)", rules_text, flags=re.I):
         fail(errors, "rules file contains a broad severity-ignore rule")
+    errors.extend(validate_required_rules(rules_text))
 
     canonical: dict[str, list[tuple[str, str]]] = {}
     for face, pairs in manifest["allowed_layer_sequences"].items():
@@ -428,9 +504,11 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
             # marker approvals below are restricted to adjacent tier pairs.
 
     exclusions = project.get("board", {}).get("design_settings", {}).get("drc_exclusions", [])
-    expected_exclusions = manifest.get("expected_project_exclusions", [])
-    if exclusions != expected_exclusions:
-        fail(errors, f"project DRC exclusions differ from exact manifest list: {exclusions!r}")
+    project_exclusion_signatures = [project_exclusion_signature(item) for item in exclusions]
+    expected_exclusions = manifest.get("expected_project_exclusion_signatures", [])
+    expected_exclusion_signatures = [project_exclusion_signature(item) for item in expected_exclusions]
+    if project_exclusion_signatures != expected_exclusion_signatures:
+        fail(errors, "project DRC exclusion signatures differ from exact manifest list")
 
     marker_counter: Counter = Counter()
     for marker in manifest.get("allowed_drc_markers", []):
@@ -477,7 +555,7 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
             for signature, count in sorted((marker_counter - actual_counter).items(), key=str):
                 fail(errors, f"missing expected active stack marker x{count}: {signature}")
         rows = {}
-        for row in manifest.get("reviewed_board_markers", {}).get("rows", []):
+        for row in manifest.get("reviewed_board_markers", []):
             key = (row.get("type"), row.get("rule"))
             if key in rows:
                 fail(errors, f"duplicate reviewed board marker row {key}")
@@ -491,7 +569,7 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
             for violation in report.get("violations", [])
             if violation.get("excluded", False)
         )
-        expected_report_exclusions = Counter(project_exclusion_signature(exclusion) for exclusion in expected_exclusions)
+        expected_report_exclusions = Counter(expected_exclusion_signatures)
         if report_exclusions != expected_report_exclusions:
             fail(
                 errors,
@@ -522,7 +600,7 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text())
     tier_count = sum(len(stack["tiers"]) for stack in manifest["stacks"])
     marker_count = sum(int(marker["expected_report_count"]) for marker in manifest.get("allowed_drc_markers", []))
-    board_rows = manifest.get("reviewed_board_markers", {}).get("rows", [])
+    board_rows = manifest.get("reviewed_board_markers", [])
     print(
         "PASS: fail-closed HDI manifest validates "
         f"{len(manifest['stacks'])} stacks / {tier_count} microvias / "

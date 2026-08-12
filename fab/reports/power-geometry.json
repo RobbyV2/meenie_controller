@@ -1,0 +1,49 @@
+{
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "issues": [],
+  "passed": true,
+  "routes": {
+    "DEC1": {
+      "capacitor": "C18 pad 1",
+      "controlled_shortest_path_mm": 1.623037,
+      "mcu_paths_mm": {
+        "C1": 1.623037
+      },
+      "released_maximum_mm": 1.624
+    },
+    "DEC3": {
+      "capacitor": "C5 pad 1",
+      "controlled_shortest_path_mm": 1.058665,
+      "mcu_paths_mm": {
+        "D23": 1.058665
+      },
+      "released_maximum_mm": 1.059
+    },
+    "DEC4_6": {
+      "capacitor": "C7 pad 1",
+      "controlled_shortest_path_mm": 2.48277,
+      "mcu_paths_mm": {
+        "B5": 8.014382,
+        "E24": 2.48277
+      },
+      "released_maximum_mm": 2.484
+    },
+    "DEC5": {
+      "capacitor": "C21 pad 1",
+      "controlled_shortest_path_mm": 0.822113,
+      "mcu_paths_mm": {
+        "N24": 0.822113
+      },
+      "released_maximum_mm": 0.823
+    },
+    "DECUSB": {
+      "capacitor": "C9 pad 1",
+      "controlled_shortest_path_mm": 1.826126,
+      "mcu_paths_mm": {
+        "AC5": 1.826126
+      },
+      "official_reference_path_mm": 3.452293,
+      "released_maximum_mm": 1.827
+    }
+  }
+}

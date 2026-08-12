@@ -1,0 +1,68 @@
+{
+  "bit_rate_mbit_s": 12,
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "ground_returns": {
+    "D1": {
+      "limit_mm": 0.271,
+      "planar_track_mm": 0.27074,
+      "via_mm": [
+        107.83,
+        92.24
+      ]
+    },
+    "D2": {
+      "limit_mm": 0.001,
+      "planar_track_mm": 0.0,
+      "via_mm": [
+        109.72,
+        92.26
+      ]
+    },
+    "D4": {
+      "limit_mm": 0.281,
+      "planar_track_mm": 0.28,
+      "via_mm": [
+        107.83,
+        92.24
+      ]
+    }
+  },
+  "interface": "USB_2_0_FS",
+  "issues": [],
+  "nets": {
+    "USB_D+": {
+      "connector_to_mcu_paths_mm": {
+        "A6": 12.236691,
+        "B6": 11.236691
+      },
+      "protector": "D1",
+      "protector_branch_limit_mm": 0.931,
+      "protector_branch_mm": 0.930484,
+      "segment_count": 6,
+      "total_planar_copper_mm": 13.167175,
+      "track_widths_mm": [
+        0.15
+      ]
+    },
+    "USB_D-": {
+      "connector_to_mcu_paths_mm": {
+        "A7": 18.933765,
+        "B7": 20.693272
+      },
+      "protector": "D4",
+      "protector_branch_limit_mm": 0.971,
+      "protector_branch_mm": 0.970206,
+      "segment_count": 10,
+      "total_planar_copper_mm": 21.663478,
+      "track_widths_mm": [
+        0.15
+      ]
+    }
+  },
+  "passed": true,
+  "vbus_protection": {
+    "protector": "D2",
+    "protector_branch_limit_mm": 0.901,
+    "protector_branch_mm": 0.9
+  }
+}

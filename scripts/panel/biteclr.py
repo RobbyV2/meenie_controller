@@ -10,6 +10,7 @@ LAYERS = (('F.Cu', PPRE + '-F_Cu.gtl'), ('In1.Cu', PPRE + '-GND.g1'),
           ('In4.Cu', PPRE + '-CORE_ROUTE_L5.g4'),
           ('In5.Cu', PPRE + '-GPIO_ROUTE_L6.g5'),
           ('In6.Cu', PPRE + '-RF_GND_L7.g6'), ('B.Cu', PPRE + '-B_Cu.gbl'))
+COPPER_GAP = float(os.environ.get('MEENIE_PANEL_BITE_COPPER_GAP_MM', '0.350'))
 
 
 def rect_dist(dx, dy, hw, hh):
@@ -79,7 +80,8 @@ def main(rad=0.25, box=2.0):
                     m, at = d, (bx, by, kind)
         print('%-7s min bite-edge to copper %.4f mm   at %s' % (lay, m - rad, at))
         worst = min(worst, m - rad)
-    print('worst %.4f mm  against the project NPTH-to-copper rule 0.2000' % worst)
+    print('worst %.4f mm  against the panel mouse-bite copper gap %.4f' %
+          (worst, COPPER_GAP))
     return worst
 
 

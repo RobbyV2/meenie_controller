@@ -1,1 +1,0 @@
-PASS: fail-closed HDI manifest validates 124 stacks / 216 microvias / 93 signatures / 93 DRC reports / 6 reviewed board marker rules

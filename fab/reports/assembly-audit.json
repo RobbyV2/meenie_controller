@@ -1,58 +1,8 @@
 {
   "issues": [],
+  "panel_bom_lines": 23,
+  "panel_fitted": 1085,
   "passed": true,
-  "source_metadata_disposition": "C1/C2/Y1 are source-complete and release-gated. Listed legacy rows are normalized only through the curated LCSC-to-manufacturer/MPN map; populate them in the schematic in a future metadata-only cleanup.",
-  "source_rows_missing_manufacturer_or_mpn": [
-    "C11",
-    "C12",
-    "C14",
-    "C15",
-    "C16",
-    "C18",
-    "C19",
-    "C21",
-    "C3",
-    "C5",
-    "C6",
-    "C7",
-    "C8",
-    "C9",
-    "D3",
-    "L1",
-    "L2",
-    "R1",
-    "R2",
-    "R3",
-    "R4"
-  ],
-  "variants": {
-    "A-4n7-0p5": {
-      "panel_bom_lines": 23,
-      "panel_fitted": 1085,
-      "passed": true,
-      "unit_bom_lines": 23,
-      "unit_fitted": 31
-    },
-    "B-4n7-0p8": {
-      "panel_bom_lines": 23,
-      "panel_fitted": 1085,
-      "passed": true,
-      "unit_bom_lines": 23,
-      "unit_fitted": 31
-    },
-    "C-3n9-DNP": {
-      "panel_bom_lines": 24,
-      "panel_fitted": 1050,
-      "passed": true,
-      "unit_bom_lines": 24,
-      "unit_fitted": 30
-    },
-    "D-3n9-2p4": {
-      "panel_bom_lines": 25,
-      "panel_fitted": 1085,
-      "passed": true,
-      "unit_bom_lines": 25,
-      "unit_fitted": 31
-    }
-  }
+  "population": "B-4n7-0p8",
+  "source_rows_missing_manufacturer_or_mpn": []
 }

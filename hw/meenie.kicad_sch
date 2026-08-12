@@ -6,10 +6,10 @@
 	(paper "A2")
 	(title_block
 		(title "meenie controller")
-		(date "2026-08-03")
 		(rev "B")
-		(comment 1 "nRF52840-QIAA USB-C HID board, 12.600 x 12.000 mm, 4L 0.80 mm ENIG")
+		(comment 1 "nRF52840-QIAA USB-C HID board, 13.570 x 9.435 mm, 8L 0.991 mm ENIG")
 		(comment 2 "Nordic reference circuit configuration 1: VDDH from VBUS, LDO, no DC/DC, no NFC")
+		(comment 3 "Program UICR REGOUT0=3.3 V and both PSELRESET=P0.18; recover erases UICR")
 	)
 	(lib_symbols
 			(symbol "meenie:ANTENNA-ETCHED"
@@ -2760,7 +2760,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C5187472.pdf"
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250724/0D22D8172E0B6194F7E17C81DE47450F.pdf"
 				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3830,18 +3830,6 @@
 		(uuid "832d60b9-3fcb-531f-92eb-be65c0515131")
 	)
 	
-	(text "VDD decoupling. REG0 sources this rail in high voltage mode, so VDD is an output here."
-		(exclude_from_sim no)
-		(at 20.32 40.64 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "58d3f1b9-e32c-5858-bbe9-cf44e1b29702")
-	)
-	(text "C3, C4 and C12 are X7R 10% 0201, C8 is X7R 10% 0402, C6 is X7R 10% 0603."
-		(exclude_from_sim no)
-		(at 20.32 45.72 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "f4d4c508-9878-57a1-bc15-08a1a4d786f6")
-	)
 	(symbol
 		(lib_id "meenie:C")
 		(at 40.64 66.04 0)
@@ -3857,6 +3845,8 @@
 		(property "Footprint" "meenie:C0201" (at 40.64 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 40.64 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C85923" (at 40.64 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 40.64 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM033C71C104KE14D" (at 40.64 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C3") (unit 1))
@@ -3950,6 +3940,8 @@
 		(property "Footprint" "meenie:C0201" (at 81.28 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 81.28 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C85923" (at 81.28 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 81.28 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM033C71C104KE14D" (at 81.28 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C12") (unit 1))
@@ -3991,10 +3983,14 @@
 		(dnp no)
 		(uuid "95725b42-e043-503d-ab1a-6d3a06d8800d")
 		(property "Reference" "C8" (at 104.14 64.135 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "1.0uF" (at 104.14 67.945 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "100nF" (at 104.14 67.945 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:C0402" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C52923" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C1525" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer Part Number" "CL05B104KO5NNNC" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Samsung Electro-Mechanics" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "CL05B104KO5NNNC" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Samsung CL05B104KO5NNNC 100 nF 16 V X7R 0402 MLCC" (at 101.6 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C8") (unit 1))
@@ -4036,11 +4032,13 @@
 		(dnp no)
 		(uuid "300c60de-6f59-5a5b-942c-2963863197cb")
 		(property "Reference" "C6" (at 124.46 64.135 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "10uF" (at 124.46 67.945 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "meenie:C0402" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C3902158" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Manufacturer Part Number" "CL05A106MP6NUN8" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Value" "4.7uF" (at 124.46 67.945 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "meenie:C0603" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C90057" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer Part Number" "GRM188R61E475KE11D" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM188R61E475KE11D" (at 121.92 66.04 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C6") (unit 1))
@@ -4071,24 +4069,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "b3d659b6-f638-5b1c-8bd2-93f1b9c90c00")
 	)
-	(text "Internal regulator decoupling, Nordic circuit configuration 1 for the aQFN73."
-		(exclude_from_sim no)
-		(at 20.32 92.71 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "d6dc8fc0-596f-5411-adff-6b6f67195912")
-	)
-	(text "DEC2 carries no external part in that configuration. DEC4 must be tied to DEC6."
-		(exclude_from_sim no)
-		(at 20.32 97.79 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "6ee6eb3f-292e-5062-86aa-62c95a14375c")
-	)
-	(text "C18 X7R 10% 0201, C5 NP0 5% 0201, C7 X7R 10% 0402, C21 NP0 5% 0201, C9 X7S 10% 0603."
-		(exclude_from_sim no)
-		(at 20.32 102.87 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "16643523-644e-5753-ac82-1d247b864f1f")
-	)
 	(symbol
 		(lib_id "meenie:C")
 		(at 40.64 123.19 0)
@@ -4104,6 +4084,8 @@
 		(property "Footprint" "meenie:C0201" (at 40.64 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 40.64 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C85923" (at 40.64 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 40.64 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM033C71C104KE14D" (at 40.64 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C18") (unit 1))
@@ -4149,6 +4131,8 @@
 		(property "Footprint" "meenie:C0201" (at 60.96 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 60.96 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C272870" (at 60.96 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Yageo" (at 60.96 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "CC0201JRNPO9BN101" (at 60.96 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C5") (unit 1))
@@ -4194,6 +4178,8 @@
 		(property "Footprint" "meenie:C0402" (at 81.28 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 81.28 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C52923" (at 81.28 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Samsung Electro-Mechanics" (at 81.28 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "CL05A105KA5NQNC" (at 81.28 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C7") (unit 1))
@@ -4235,10 +4221,12 @@
 		(dnp no)
 		(uuid "7b1f5d7c-3079-5367-bb27-8172f895c9ab")
 		(property "Reference" "C21" (at 104.14 121.285 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "820pF" (at 104.14 125.095 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "820pF C0G 5%" (at 104.14 125.095 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:C0201" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C185597" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM0335C1E821JA01%23" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C384953" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM0335C1E821JA01D" (at 101.6 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C21") (unit 1))
@@ -4282,8 +4270,10 @@
 		(property "Reference" "C9" (at 124.46 121.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "4.7uF" (at 124.46 125.095 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:C0603" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C69335" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C90057" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM188R61E475KE11D" (at 121.92 123.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C9") (unit 1))
@@ -4313,36 +4303,6 @@
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)))
 		(uuid "e9fa8a88-f5bb-5fb9-82ec-dc6293dc3b15")
-	)
-	(text "C21 is fitted on build codes Dxx and earlier, which is what the -R order code ships."
-		(exclude_from_sim no)
-		(at 20.32 144.78 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "2ef20818-9ddb-5042-8ed1-7975f3443d90")
-	)
-	(text "It is not required on Fxx and later. C9 carries CDECUSB, 2.35 uF minimum after bias."
-		(exclude_from_sim no)
-		(at 20.32 149.86 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "904f5cdd-a270-50bc-ae1d-326efb5617cb")
-	)
-	(text "32 MHz HFXO. Y1 is 32.000 MHz, CL 8 pF, FA-118T 1612 four pad."
-		(exclude_from_sim no)
-		(at 20.32 161.29 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "ba95b3b8-fc96-55a0-a48d-a494c1e63d09")
-	)
-	(text "C1 and C2 are the 12 pF NP0 2% load capacitors. No LFXO: the calibrated LFRC"
-		(exclude_from_sim no)
-		(at 20.32 166.37 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "bce308fe-c106-52b6-a3db-41ef06ebe004")
-	)
-	(text "holds 500 ppm, which is exactly the BLE sleep clock requirement."
-		(exclude_from_sim no)
-		(at 20.32 171.45 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "88ac8891-ea2c-5968-af54-77c9b42b40ae")
 	)
 	(symbol
 		(lib_id "meenie:XTAL-4P")
@@ -4509,18 +4469,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "99b1e7e0-d8b9-59f5-abf0-0d3ab62bee52")
 	)
-	(text "USB-C receptacle wired as a sink. Two Rd, one per CC, because a plug can seat"
-		(exclude_from_sim no)
-		(at 20.32 213.36 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "3424abab-1c8d-5be3-82f3-858486f2b5bc")
-	)
-	(text "either way up. D+ reaches A6 and B6, D- reaches A7 and B7, for the same reason."
-		(exclude_from_sim no)
-		(at 20.32 218.44 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "37f199df-58af-5d40-a4da-a431fb51daf8")
-	)
 	(symbol
 		(lib_id "meenie:TYPE-C16PQTWT")
 		(at 63.5 250.19 0)
@@ -4534,7 +4482,7 @@
 		(property "Reference" "J1" (at 63.5 229.87 0) (effects (font (size 1.27 1.27))))
 		(property "Value" "USB-C 16P sink" (at 63.5 270.51 0) (effects (font (size 1.27 1.27))))
 		(property "Footprint" "meenie:USB-TYPE-C-SMD_TYPE-C-16P-QTWT" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250724/0D22D8172E0B6194F7E17C81DE47450F.pdf" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C5187472" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "MPN" "TYPE-C 16P QTWT" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Manufacturer" "SHOU HAN" (at 63.5 250.19 0) (hide yes) (effects (font (size 1.27 1.27))))
@@ -4678,24 +4626,6 @@
 		(uuid "278e1e8b-5933-5595-9132-1393f74f5031")
 	)
 	(no_connect (at 57.15 259.08) (uuid "72f894d0-9f34-5eac-a44c-11aa7d1d2c33"))
-	(text "R2 and R3 are 5.1k 1%. R1 is 2R2 1% 0.063W and eats 2.2 of the 3.8 ohm source"
-		(exclude_from_sim no)
-		(at 116.84 213.36 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "f28c2804-e359-5092-bd41-15fd6c8ac189")
-	)
-	(text "resistance budget. C11 is X7R 10% and C19 X7S 10%, both 0603. D2 is a 6 V"
-		(exclude_from_sim no)
-		(at 116.84 218.44 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "1eebface-0e12-58a7-8279-54ca2e1cf1cb")
-	)
-	(text "unidirectional clamp on the bare VBUS pad."
-		(exclude_from_sim no)
-		(at 116.84 223.52 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "63b347c2-e220-5c93-bc22-e73b793ea31c")
-	)
 	(symbol
 		(lib_id "meenie:R")
 		(at 137.16 246.38 0)
@@ -4709,8 +4639,10 @@
 		(property "Reference" "R2" (at 139.7 244.475 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "5.1k" (at 139.7 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:R0201" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C270344" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_51_RoHS_L_14.pdf" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C274341" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Yageo" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "RC0201FR-075K1L" (at 137.16 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "R2") (unit 1))
@@ -4754,8 +4686,10 @@
 		(property "Reference" "R3" (at 160.02 244.475 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "5.1k" (at 160.02 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:R0201" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C270344" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_51_RoHS_L_14.pdf" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C274341" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Yageo" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "RC0201FR-075K1L" (at 157.48 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "R3") (unit 1))
@@ -4797,12 +4731,12 @@
 		(dnp no)
 		(uuid "d3c72f84-9ed8-5bce-bb3b-34f857406669")
 		(property "Reference" "D2" (at 180.34 244.475 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "TPD1E6B06DPLR" (at 180.34 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "ESD441DPLR" (at 180.34 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:ESD_X2SON_DPL" (at 177.8 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd1e6b06.pdf" (at 177.8 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C914099" (at 177.8 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "5 V bidirectional ESD protector, X2SON DPL" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "MPN" "TPD1E6B06DPLR" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/esd441.pdf" (at 177.8 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C22427765" (at 177.8 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "5.5 V unidirectional ESD protector, X2SON DPL" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "ESD441DPLR" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
@@ -4847,8 +4781,10 @@
 		(property "Reference" "C11" (at 200.66 244.475 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "4.7uF" (at 200.66 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:C0603" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC Part" "C69335" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E475KE11D" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC Part" "C90057" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GRM188R61E475KE11D" (at 198.12 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C11") (unit 1))
@@ -4894,6 +4830,8 @@
 		(property "Footprint" "meenie:R0402" (at 218.44 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 218.44 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C327251" (at 218.44 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Yageo" (at 218.44 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "RC0402FR-072R2L" (at 218.44 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "R1") (unit 1))
@@ -4937,9 +4875,11 @@
 		(property "Reference" "C19" (at 241.3 244.475 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "4.7uF" (at 241.3 248.285 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:C0402" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05A475MO5NUN.do" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C318563" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Manufacturer Part Number" "CL05A475MO5NUNC" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Samsung Electro-Mechanics" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "CL05A475MO5NUNC" (at 238.76 246.38 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C19") (unit 1))
@@ -5066,42 +5006,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "c0de0000-0000-4000-8000-000000000114")
 	)
-	(text "D1 and D4 are the dedicated low-capacitance USB ESD protectors. No series resistors: the USB"
-		(exclude_from_sim no)
-		(at 137.16 272.42 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "e8f3c566-716d-5b39-8a3d-1406e9fada44")
-	)
-	(text "peripheral makes its own 3.3 V from VBUS for signalling and for the D+ pull-up."
-		(exclude_from_sim no)
-		(at 137.16 277.5 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "d25505ba-2820-5242-8437-0a45c2b1db65")
-	)
-	(text "ESD5311Z-2/TR is fitted once per data net in its vendor DFN0603-2 land pattern."
-		(exclude_from_sim no)
-		(at 137.16 282.58 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "258672dc-8898-528e-8c5a-28902c9a019a")
-	)
-	(text "D1 pin 1 is D+, D4 pin 2 is D-, and each remaining pin is the shortest available ground."
-		(exclude_from_sim no)
-		(at 137.16 287.66 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "10af181e-2efa-5256-a5ef-f12b1860569c")
-	)
-	(text "Status LED on P1.02, R4 1k in series, cathode pin 1 to GND. Red, Vf 2.0 V. The rail is"
-		(exclude_from_sim no)
-		(at 20.32 292.1 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "cd1f3143-0750-5cf7-91b5-522fdc8cb574")
-	)
-	(text "3.3 V, so green and blue are out at 2.5 to 3.6 V of Vf. Red or yellow-green only."
-		(exclude_from_sim no)
-		(at 20.32 296.545 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "88e88947-50e1-5d6e-9f0d-a03258d38834")
-	)
 	(symbol
 		(lib_id "meenie:R")
 		(at 40.64 313.69 0)
@@ -5117,6 +5021,8 @@
 		(property "Footprint" "meenie:R0201" (at 40.64 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 40.64 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C270365" (at 40.64 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Uniroyal Electronics" (at 40.64 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "0201WMF1001TEE" (at 40.64 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "R4") (unit 1))
@@ -5160,8 +5066,10 @@
 		(property "Reference" "D3" (at 63.5 311.785 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Value" "red" (at 63.5 315.595 0) (effects (font (size 1.27 1.27)) (justify left)))
 		(property "Footprint" "meenie:LED0402-R-RD_RED" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2008-0117/LTST-C281KRKT.PDF" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C364556" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Lite-On" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "LTST-C281KRKT" (at 60.96 313.69 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "D3") (unit 1))
@@ -5192,24 +5100,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "e42b0fb4-7b36-5936-ade1-f1e242e9741e")
 	)
-	(text "SoC match then antenna pi. Order out of the ANT pin: C14 shunt, L1 series, C15 shunt,"
-		(exclude_from_sim no)
-		(at 20.32 339.09 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "d39c17a2-5109-58fa-98d9-d71c0d9d2816")
-	)
-	(text "then the pi C16 shunt and L2 series into the etched radiator."
-		(exclude_from_sim no)
-		(at 20.32 344.17 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "e0af2619-7fc5-5452-8daa-4db08a23dece")
-	)
-	(text "Capacitors C0G 0201, inductors HF chip 0201. C16 is fitted; C17 is the DNP feed-side tuning position."
-		(exclude_from_sim no)
-		(at 20.32 349.25 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "6a6daccd-5acc-5850-971b-173abf640492")
-	)
 	(symbol
 		(lib_id "meenie:C")
 		(at 40.64 370.84 0)
@@ -5225,6 +5115,8 @@
 		(property "Footprint" "meenie:C0201" (at 40.64 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 40.64 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C408126" (at 40.64 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 40.64 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GJM0335C1ER80WB01D" (at 40.64 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C14") (unit 1))
@@ -5270,6 +5162,8 @@
 		(property "Footprint" "meenie:L0201" (at 60.96 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 60.96 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C237443" (at 60.96 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 60.96 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "LQP03HQ4N7H02D" (at 60.96 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "L1") (unit 1))
@@ -5315,6 +5209,8 @@
 		(property "Footprint" "meenie:C0201" (at 81.28 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 81.28 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C237424" (at 81.28 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 81.28 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GJM0335C1HR50WB01D" (at 81.28 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C15") (unit 1))
@@ -5360,6 +5256,8 @@
 		(property "Footprint" "meenie:C0201" (at 101.6 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 101.6 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C408126" (at 101.6 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 101.6 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "GJM0335C1ER80WB01D" (at 101.6 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "C16") (unit 1))
@@ -5405,6 +5303,8 @@
 		(property "Footprint" "meenie:L0201" (at 121.92 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 121.92 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "LCSC Part" "C237443" (at 121.92 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer" "Murata Electronics" (at 121.92 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "LQP03HQ4N7H02D" (at 121.92 370.84 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(instances
 			(project "meenie"
 				(path "/6f2a1c40-6d1a-4e2b-9a7d-4c1f0b3e8a01" (reference "L2") (unit 1))
@@ -5512,12 +5412,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "2eed9232-6d08-5dba-869e-4fc567d77b1b")
 	)
-	(text "GND and VBUS_MCU have no driving pin anywhere on the sheet, so each one carries a flag."
-		(exclude_from_sim no)
-		(at 20.32 387.35 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "46641260-5ebe-5e6b-bfde-5e1e90debd69")
-	)
 	(symbol
 		(lib_id "meenie:PWR_FLAG")
 		(at 40.64 398.78 0)
@@ -5582,42 +5476,6 @@
 		(effects (font (size 1.27 1.27)))
 		(uuid "139d2efe-fbb4-5e28-a1b6-86a1337f260a")
 	)
-	(text "Twenty surface pads on B.Cu, 0.60 mm square. W1 to W9 with S1 and S2 sit on the north"
-		(exclude_from_sim no)
-		(at 443.23 40.64 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "138763d8-7cc4-584d-9617-18e61e7c46a1")
-	)
-	(text "rail at y 9.000, E1 to E9 on the east rail at x 12.100. Thirteen GPIO, seven of them"
-		(exclude_from_sim no)
-		(at 443.23 45.72 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "81f72f1c-5c4c-5a64-89c7-3609177b9d4f")
-	)
-	(text "SAADC capable, two grounds, 3V3 out, VBUS in and unfused, nRESET for double-tap DFU,"
-		(exclude_from_sim no)
-		(at 443.23 50.8 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "f9ec427b-0563-59be-befc-9874ef3cea5a")
-	)
-	(text "and the two SWD pads. Every GPIO sits on a U1 pin with a measured via-in-pad seat, so"
-		(exclude_from_sim no)
-		(at 443.23 55.88 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "9746df6d-2d6f-5de8-8d60-e85ebfef5a94")
-	)
-	(text "the escape is a drop onto In2. AIN0 E5, AIN1 W5, AIN3 E2, AIN4 W6, AIN5 E4, AIN6 W7,"
-		(exclude_from_sim no)
-		(at 443.23 60.96 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "4300c73e-7a9a-5fbc-8c9b-d5ea8c1c73b1")
-	)
-	(text "AIN7 E3. AIN2 on J1 is the one channel no breakout pad carries."
-		(exclude_from_sim no)
-		(at 443.23 66.04 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "f4d9b466-6aff-5e07-b9dc-f5993c6bcdd7")
-	)
 	(symbol
 		(lib_id "meenie:PAD-0.6")
 		(at 462.28 66.04 0)
@@ -5675,7 +5533,7 @@
 		(stroke (width 0) (type default))
 		(uuid "2e1b8b4f-a2a2-5ae7-b80f-aeabef7bf571")
 	)
-	(global_label "P1.12"
+	(global_label "P1.11"
 		(shape bidirectional)
 		(at 444.5 81.28 180)
 		(fields_autoplaced yes)
@@ -5739,7 +5597,7 @@
 		(stroke (width 0) (type default))
 		(uuid "ff63c1bb-f868-5d9c-a500-2f18b951cc79")
 	)
-	(global_label "P1.15"
+	(global_label "P1.13"
 		(shape bidirectional)
 		(at 444.5 111.76 180)
 		(fields_autoplaced yes)
@@ -5771,7 +5629,7 @@
 		(stroke (width 0) (type default))
 		(uuid "28cd47c2-c759-520b-8180-b70e496a4ee2")
 	)
-	(global_label "P0.03"
+	(global_label "P1.10"
 		(shape bidirectional)
 		(at 444.5 127 180)
 		(fields_autoplaced yes)
@@ -5803,7 +5661,7 @@
 		(stroke (width 0) (type default))
 		(uuid "ed9ab4c2-903a-5a5f-a6d0-d28c9b814765")
 	)
-	(global_label "P0.28"
+	(global_label "P0.03"
 		(shape bidirectional)
 		(at 444.5 142.24 180)
 		(fields_autoplaced yes)
@@ -5835,7 +5693,7 @@
 		(stroke (width 0) (type default))
 		(uuid "506a7354-8775-545b-8514-1e06581340e1")
 	)
-	(global_label "P0.12"
+	(global_label "P1.04"
 		(shape bidirectional)
 		(at 444.5 157.48 180)
 		(fields_autoplaced yes)
@@ -5880,7 +5738,7 @@
 		(stroke (width 0) (type default))
 		(uuid "db64b31a-d46f-57d3-8b0d-f8960bbfd41c")
 	)
-	(global_label "P0.27"
+	(global_label "P1.07"
 		(shape bidirectional)
 		(at 444.5 187.96 180)
 		(fields_autoplaced yes)
@@ -5915,7 +5773,7 @@
 		(stroke (width 0) (type default))
 		(uuid "4d7e4a58-9363-50d5-8f10-42c4ed370da1")
 	)
-	(global_label "P0.05"
+	(global_label "P1.05"
 		(shape bidirectional)
 		(at 508 66.04 180)
 		(fields_autoplaced yes)
@@ -5947,7 +5805,7 @@
 		(stroke (width 0) (type default))
 		(uuid "b8824cc9-fd58-5c4b-942d-0805b38c8bb6")
 	)
-	(global_label "P0.31"
+	(global_label "P0.02"
 		(shape bidirectional)
 		(at 508 81.28 180)
 		(fields_autoplaced yes)
@@ -5979,7 +5837,7 @@
 		(stroke (width 0) (type default))
 		(uuid "50ecb3dc-8d0c-578e-aab1-0aa9e474c37b")
 	)
-	(global_label "P0.13"
+	(global_label "P1.01"
 		(shape bidirectional)
 		(at 508 96.52 180)
 		(fields_autoplaced yes)
@@ -6011,7 +5869,7 @@
 		(stroke (width 0) (type default))
 		(uuid "e8952fc0-ac70-532f-9d82-603ac2b1f242")
 	)
-	(global_label "P0.11"
+	(global_label "P1.06"
 		(shape bidirectional)
 		(at 508 111.76 180)
 		(fields_autoplaced yes)
@@ -6043,7 +5901,7 @@
 		(stroke (width 0) (type default))
 		(uuid "fcab072d-d9d3-5f4d-a4cd-2b078bbbcf38")
 	)
-	(global_label "P1.04"
+	(global_label "P1.03"
 		(shape bidirectional)
 		(at 508 127 180)
 		(fields_autoplaced yes)
@@ -6078,7 +5936,7 @@
 		(stroke (width 0) (type default))
 		(uuid "fe5704b6-5f6f-56e2-a0b5-655541632117")
 	)
-	(global_label "P1.10"
+	(global_label "P1.15"
 		(shape bidirectional)
 		(at 508 157.48 180)
 		(fields_autoplaced yes)
@@ -6110,7 +5968,7 @@
 		(stroke (width 0) (type default))
 		(uuid "fc624e64-594c-5c7f-883e-092eafabebcc")
 	)
-	(global_label "P1.11"
+	(global_label "P1.12"
 		(shape bidirectional)
 		(at 508 172.72 180)
 		(fields_autoplaced yes)
@@ -6180,156 +6038,6 @@
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)))
 		(uuid "8be588d1-efe8-592a-acad-032d44ba7068")
-	)
-	(text "REGOUT0. UICR.REGOUT0.VOUT must be written to 3.3 V, field value 5 at offset 0x304."
-		(exclude_from_sim no)
-		(at 304.8 266.7 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "54c475d2-df74-58cf-b672-baa3381d7c50")
-	)
-	(text "The factory default is 1.8 V, so a board that skips the write brings every GPIO and"
-		(exclude_from_sim no)
-		(at 304.8 271.145 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "4a7c06f1-e65c-527d-831c-799f2d432b81")
-	)
-	(text "the 3V3 pad up at 1.8 V and browns out under load. ERASEALL and --recover both wipe"
-		(exclude_from_sim no)
-		(at 304.8 275.59 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "2b9537da-f986-57ab-a15f-a03cb865aab3")
-	)
-	(text "UICR, so the write has to be repeated after any debug recovery."
-		(exclude_from_sim no)
-		(at 304.8 280.035 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "34478e9e-6a31-55be-9eb7-a9336900e0dc")
-	)
-	(text "High voltage mode is a wiring decision and not a register write. VBUS reaches VDDH"
-		(exclude_from_sim no)
-		(at 304.8 288.925 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "99fe1218-5f16-595e-a230-bf5917b32a36")
-	)
-	(text "through R1 and nothing drives VDD, so REG0 regulates VDDH down and VDD becomes the"
-		(exclude_from_sim no)
-		(at 304.8 293.37 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "bcecbcee-68fd-5dbe-abb6-1b35e6823e90")
-	)
-	(text "3.3 V output. Never drive the 3V3 pad from outside."
-		(exclude_from_sim no)
-		(at 304.8 297.815 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "a2755ae8-62c3-54d1-8e31-da8dd75623f8")
-	)
-	(text "Never enable the DC/DC regulator. There is no external LC filter on this board and"
-		(exclude_from_sim no)
-		(at 304.8 306.705 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "20700834-dcad-5fe0-a556-92fc30c633d1")
-	)
-	(text "there is not going to be one; enabling it inhibits device operation including debug"
-		(exclude_from_sim no)
-		(at 304.8 311.15 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "471a5901-c9b1-5377-972f-bc16bb7182fe")
-	)
-	(text "access until a filter is fitted. DCC and DCCH stay open and no inductor is fitted."
-		(exclude_from_sim no)
-		(at 304.8 315.595 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "058fffec-1ba8-5c68-b00a-6b6f7ac399a6")
-	)
-	(text "The match is Nordic configuration 1 for the aQFN73, three components: C14 0.8 pF"
-		(exclude_from_sim no)
-		(at 304.8 324.485 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "caf506c6-e68a-5385-994b-fd9155ee30c1")
-	)
-	(text "shunt, L1 4.7 nH series, C15 0.5 pF shunt, NP0 at plus or minus 10 percent. That is"
-		(exclude_from_sim no)
-		(at 304.8 328.93 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "31d310d7-dba8-515c-9539-73f61916f0d5")
-	)
-	(text "the configuration whose supply topology this board has, VDDH from VBUS on the LDO"
-		(exclude_from_sim no)
-		(at 304.8 333.375 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "35460de8-87a6-5200-8001-3b763e777dc7")
-	)
-	(text "with no DC/DC and no NFC. The four component values that stood here are Nordic"
-		(exclude_from_sim no)
-		(at 304.8 337.82 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "f3b491b1-ba1a-525a-bacb-54baf469e090")
-	)
-	(text "configuration 7, the battery DC/DC arrangement, and they are struck. Nordic draws a"
-		(exclude_from_sim no)
-		(at 304.8 342.265 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "4bf07414-5093-59eb-b29a-962f660511de")
-	)
-	(text "third shunt C22 on the same node and leaves it unmounted; C16 already sits there."
-		(exclude_from_sim no)
-		(at 304.8 346.71 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "642eef5a-b585-5e18-bceb-04c54311ca12")
-	)
-	(text "C14 returns to U1 pin F23 VSS_PA and not to the plane. F23 is a ground pin and sits"
-		(exclude_from_sim no)
-		(at 304.8 355.6 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "45167322-264d-5f30-89b8-8800ebd1af4e")
-	)
-	(text "on GND, as Nordic draws it. The routing is what filters harmonics, not a split net."
-		(exclude_from_sim no)
-		(at 304.8 360.045 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "463a89b7-2ec9-58dd-b01d-b51e55cbb555")
-	)
-	(text "ANT_FEED ends at AE1, a custom 0.850 x 7.435 mm F.Cu radiator requiring EM and VNA validation."
-		(exclude_from_sim no)
-		(at 304.8 368.935 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "c76e3895-4072-5fec-b2d0-4245b342462a")
-	)
-	(text "APPROTECT follows the build code shipped under the -R order code. Dxx and earlier"
-		(exclude_from_sim no)
-		(at 304.8 377.825 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "08967560-c75f-5154-87a5-475633549551")
-	)
-	(text "attach over SWD with no ERASEALL; Fxx and later need an ERASEALL through CTRL-AP"
-		(exclude_from_sim no)
-		(at 304.8 382.27 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "dae638e3-648d-5fa6-aba1-b2faacf2fed2")
-	)
-	(text "first, then UICR.APPROTECT plus the APPROTECT.DISABLE register on every boot."
-		(exclude_from_sim no)
-		(at 304.8 386.715 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "d730a9f7-3a12-51d9-8c40-cc601b73a9d2")
-	)
-	(text "PSELRESET. The E7 pad is P0.18 and is a plain GPIO until UICR.PSELRESET[0] at 0x200"
-		(exclude_from_sim no)
-		(at 304.8 395.605 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "ed621b8c-10d7-57d8-aa43-2e0ed4ef8b11")
-	)
-	(text "and PSELRESET[1] at 0x204 both read 18. Until then the pad does nothing and the only"
-		(exclude_from_sim no)
-		(at 304.8 400.05 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "9ad95c73-ac0a-5d02-924a-ba1078b4a0df")
-	)
-	(text "way in is SWD. ERASEALL wipes it alongside REGOUT0, so both get rewritten together."
-		(exclude_from_sim no)
-		(at 304.8 404.495 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "8ffa6231-aba0-59da-aa8e-0101226b7614")
 	)
 	(symbol
 		(lib_id "meenie:SW_Push")
@@ -6416,7 +6124,7 @@
 		(stroke (width 0) (type default))
 		(uuid "a49a30ce-f14e-5c6b-b777-0a7f7811eb0d")
 	)
-	(global_label "P0.03"
+	(global_label "P1.10"
 		(shape bidirectional)
 		(at 283.21 170.18 180)
 		(fields_autoplaced yes)
@@ -6428,7 +6136,7 @@
 		(stroke (width 0) (type default))
 		(uuid "0fc36f61-aa1c-5129-b66b-966217db603b")
 	)
-	(global_label "P0.05"
+	(global_label "P1.05"
 		(shape bidirectional)
 		(at 374.65 233.68 0)
 		(fields_autoplaced yes)
@@ -6440,7 +6148,7 @@
 		(stroke (width 0) (type default))
 		(uuid "28759540-7ca3-584a-bbc9-4915638535b1")
 	)
-	(global_label "P0.11"
+	(global_label "P1.06"
 		(shape bidirectional)
 		(at 374.65 238.76 0)
 		(fields_autoplaced yes)
@@ -6452,7 +6160,7 @@
 		(stroke (width 0) (type default))
 		(uuid "18c1f419-e19b-5dcb-a751-765efce3dd96")
 	)
-	(global_label "P0.12"
+	(global_label "P1.04"
 		(shape bidirectional)
 		(at 374.65 228.6 0)
 		(fields_autoplaced yes)
@@ -6464,7 +6172,7 @@
 		(stroke (width 0) (type default))
 		(uuid "563346bf-2754-50d1-b05e-dfe5b6dfd4b9")
 	)
-	(global_label "P0.13"
+	(global_label "P1.01"
 		(shape bidirectional)
 		(at 374.65 215.9 0)
 		(fields_autoplaced yes)
@@ -6476,7 +6184,7 @@
 		(stroke (width 0) (type default))
 		(uuid "d8f32fbf-f07b-5014-a98f-73f86d3a7423")
 	)
-	(global_label "P0.27"
+	(global_label "P1.07"
 		(shape bidirectional)
 		(at 374.65 243.84 0)
 		(fields_autoplaced yes)
@@ -6488,7 +6196,7 @@
 		(stroke (width 0) (type default))
 		(uuid "9c8f348e-f4c5-532d-8e86-63073328f091")
 	)
-	(global_label "P0.28"
+	(global_label "P0.03"
 		(shape bidirectional)
 		(at 283.21 193.04 180)
 		(fields_autoplaced yes)
@@ -6500,7 +6208,7 @@
 		(stroke (width 0) (type default))
 		(uuid "45758380-633c-5e2e-a7c7-bc279ffe50f5")
 	)
-	(global_label "P0.31"
+	(global_label "P0.02"
 		(shape bidirectional)
 		(at 283.21 160.02 180)
 		(fields_autoplaced yes)
@@ -6524,7 +6232,7 @@
 		(stroke (width 0) (type default))
 		(uuid "4302b8e4-7927-52e9-9d2d-f3fb7b18ea70")
 	)
-	(global_label "P1.04"
+	(global_label "P1.03"
 		(shape bidirectional)
 		(at 374.65 226.06 0)
 		(fields_autoplaced yes)
@@ -6536,7 +6244,7 @@
 		(stroke (width 0) (type default))
 		(uuid "b00277ad-4142-5cdc-9c1e-158b49837495")
 	)
-	(global_label "P1.10"
+	(global_label "P1.15"
 		(shape bidirectional)
 		(at 283.21 162.56 180)
 		(fields_autoplaced yes)
@@ -6548,7 +6256,7 @@
 		(stroke (width 0) (type default))
 		(uuid "6c657cd6-e304-59da-a5fe-0f5973200b79")
 	)
-	(global_label "P1.11"
+	(global_label "P1.12"
 		(shape bidirectional)
 		(at 283.21 198.12 180)
 		(fields_autoplaced yes)
@@ -6560,7 +6268,7 @@
 		(stroke (width 0) (type default))
 		(uuid "6ad371b9-1b78-565f-a59d-687078a91354")
 	)
-	(global_label "P1.12"
+	(global_label "P1.11"
 		(shape bidirectional)
 		(at 283.21 200.66 180)
 		(fields_autoplaced yes)
@@ -6584,7 +6292,7 @@
 		(stroke (width 0) (type default))
 		(uuid "de4adee1-ebd6-5c64-b000-6fe75ac0496d")
 	)
-	(global_label "P1.15"
+	(global_label "P1.13"
 		(shape bidirectional)
 		(at 283.21 165.1 180)
 		(fields_autoplaced yes)

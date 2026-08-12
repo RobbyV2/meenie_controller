@@ -1,4 +1,4 @@
-import sys, os, re, uuid, copy, math
+import sys, os, re, uuid, copy, math, hashlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sexp
 
@@ -49,10 +49,10 @@ GAP = float(os.environ.get('MEENIE_PANEL_GAP_MM', '2.000'))
 MAX_W = float(os.environ.get('MEENIE_PANEL_MAX_WIDTH_MM', '100.000'))
 MAX_H = float(os.environ.get('MEENIE_PANEL_MAX_HEIGHT_MM', '100.000'))
 TAB_W = float(os.environ.get('MEENIE_PANEL_TAB_WIDTH_MM', '5.000'))
-BITE_D = float(os.environ.get('MEENIE_PANEL_BITE_DIAMETER_MM', '0.600'))
+BITE_D = float(os.environ.get('MEENIE_PANEL_BITE_DIAMETER_MM', '0.500'))
 BITE_P = float(os.environ.get('MEENIE_PANEL_BITE_PITCH_MM', '0.850'))
 BITE_N = int(os.environ.get('MEENIE_PANEL_BITES_PER_TAB', '5'))
-BITE_OFFSET = float(os.environ.get('MEENIE_PANEL_BITE_NORTH_OFFSET_MM', '0.350'))
+BITE_OFFSET = float(os.environ.get('MEENIE_PANEL_BITE_NORTH_OFFSET_MM', '0.500'))
 FID_EDGE = float(os.environ.get('MEENIE_PANEL_FID_EDGE_MM', '3.850'))
 
 if BW <= 0 or BH <= 0 or BW < 2 * TAB_W:
@@ -86,6 +86,13 @@ PANEL_NPTH = BOARDS * len(TABS) * BITE_N + TOOLING_NPTH
 OX, OY = 100.000, 200.000
 SKIP_LAYERS = {'Edge.Cuts', 'Margin'}
 XY_TAGS = {'at', 'start', 'end', 'mid', 'center', 'xy'}
+SOURCE_SHA256 = hashlib.sha256(open(BRD, 'rb').read()).hexdigest()
+UUID_NAMESPACE = uuid.uuid5(
+    uuid.NAMESPACE_URL,
+    'https://meenie.invalid/panel/%s/%.6f/%.6f/%d/%d' %
+    (SOURCE_SHA256, W, H, COLS, ROWS),
+)
+_MECH_UUID_INDEX = 0
 
 
 def placements():
@@ -102,7 +109,9 @@ def K(px, py):
 
 
 def U():
-    return str(uuid.uuid4())
+    global _MECH_UUID_INDEX
+    _MECH_UUID_INDEX += 1
+    return str(uuid.uuid5(UUID_NAMESPACE, 'mechanical:%d' % _MECH_UUID_INDEX))
 
 
 def xform(p):
@@ -140,15 +149,17 @@ def walk(node, f):
             walk(c, f)
 
 
-def reuuid(node):
+def reuuid(node, placement_index):
     if not isinstance(node, list):
         return
     if sexp.tag(node) == 'uuid' and len(node) == 2:
-        node[1] = '"%s"' % uuid.uuid4()
+        original = sexp.unq(node[1])
+        node[1] = '"%s"' % uuid.uuid5(
+            UUID_NAMESPACE, 'placement:%d:%s' % (placement_index, original))
         return
     for c in node:
         if isinstance(c, list):
-            reuuid(c)
+            reuuid(c, placement_index)
 
 
 def instance(item, p, idx):
@@ -168,7 +179,7 @@ def instance(item, p, idx):
                 pr[2] = '"%s_%02d"' % (sexp.unq(pr[2]), idx)
     else:
         walk(n, f)
-    reuuid(n)
+    reuuid(n, idx)
     return n
 
 

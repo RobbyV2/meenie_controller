@@ -1,0 +1,127 @@
+{
+  "critical_net_count": 22,
+  "gpio_breakout_count": 15,
+  "gpio_breakouts": {
+    "P0.02": [
+      "E3",
+      "A12"
+    ],
+    "P0.03": [
+      "W6",
+      "B13"
+    ],
+    "P1.00": [
+      "W1",
+      "AD22"
+    ],
+    "P1.01": [
+      "E4",
+      "Y23"
+    ],
+    "P1.03": [
+      "E6",
+      "V23"
+    ],
+    "P1.04": [
+      "W7",
+      "U24"
+    ],
+    "P1.05": [
+      "E2",
+      "T23"
+    ],
+    "P1.06": [
+      "E5",
+      "R24"
+    ],
+    "P1.07": [
+      "W9",
+      "P23"
+    ],
+    "P1.10": [
+      "W5",
+      "A20"
+    ],
+    "P1.11": [
+      "W2",
+      "B19"
+    ],
+    "P1.12": [
+      "E9",
+      "B17"
+    ],
+    "P1.13": [
+      "W4",
+      "A16"
+    ],
+    "P1.14": [
+      "W3",
+      "B15"
+    ],
+    "P1.15": [
+      "E8",
+      "A14"
+    ]
+  },
+  "issues": [],
+  "passed": true,
+  "power_mode": {
+    "dcdc_enabled": false,
+    "decusb": {
+      "mpn": "GRM188R61E475KE11D",
+      "nwp_030": true,
+      "reference": "C9"
+    },
+    "effective_capacitance_minimum_uf": {
+      "DECUSB": 2.35,
+      "VDD": 2.7
+    },
+    "nordic_product_specification_version": 1.9,
+    "nordic_reference_bom_version": 1.1,
+    "nrf52840_qiaa_reference_configuration": 1,
+    "regulator_mode": "LDO",
+    "uicr_pselreset_pin": "P0.18",
+    "uicr_pselreset_register_count": 2,
+    "uicr_regout0_erased_v": 1.8,
+    "uicr_regout0_required_v": 3.3,
+    "vdd_bulk": {
+      "dielectric": "X5R",
+      "mpn": "GRM188R61E475KE11D",
+      "nominal_uf": 4.7,
+      "package": "0603",
+      "rated_v": 25,
+      "reference": "C6"
+    },
+    "vdd_bypass": {
+      "nominal_uf": 0.1,
+      "quantity": 4
+    },
+    "vddh_source": "USB_VBUS"
+  },
+  "protection_and_polarity": {
+    "D1": {
+      "bidirectional": true,
+      "mpn": "TPD1E01B04DPLR",
+      "pin_1_net": "USB_D+",
+      "pin_2_net": "GND"
+    },
+    "D2": {
+      "mpn": "ESD441DPLR",
+      "pin_1_net": "VBUS",
+      "pin_2_net": "GND"
+    },
+    "D3": {
+      "anode_net": "LED_A",
+      "anode_pin": 2,
+      "cathode_net": "GND",
+      "cathode_pin": 1,
+      "mpn": "LTST-C281KRKT"
+    },
+    "D4": {
+      "bidirectional": true,
+      "mpn": "ESD5311Z-2/TR",
+      "pin_1_net": "GND",
+      "pin_2_net": "USB_D-"
+    }
+  }
+}

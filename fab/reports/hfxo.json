@@ -1,0 +1,127 @@
+{
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "frequency_budget": {
+    "calculated_load_pull_range_ppm": [
+      3.397,
+      -3.113
+    ],
+    "conservative_total_first_year_temperature_budget_ppm": 24.397,
+    "estimated_pcb_stray_per_leg_pf": [
+      0.5,
+      1.5
+    ],
+    "estimated_total_load_range_pf": [
+      7.63,
+      8.37
+    ],
+    "nrf52840_ble_limit_ppm": 30,
+    "nrf52840_pin_capacitance_pf_typical": 3.0,
+    "remaining_ble_margin_ppm": 5.603
+  },
+  "issues": [],
+  "parts": {
+    "crystal": {
+      "distributor_reference": "https://www.lcsc.com/product-detail/C255986.html",
+      "drive_max_uw": 100,
+      "drive_recommended_uw": 10,
+      "esr_max_ohm": 100,
+      "exact_order_reference": "https://www.epson.com.cn/ed/search/index.html",
+      "family_datasheet": "https://download.epsondevice.com/td/pdf/brief/FA-118T_en.pdf",
+      "first_year_aging_ppm": 1,
+      "frequency_mhz": 32,
+      "initial_tolerance_ppm": 10,
+      "load_capacitance_pf": 8.0,
+      "motional_capacitance_pf": 0.00126,
+      "mpn": "X1E0002510059",
+      "operating_temperature_c": [
+        -20,
+        75
+      ],
+      "reference": "Y1",
+      "shunt_capacitance_pf": 0.47,
+      "temperature_stability_ppm": 10
+    },
+    "crystal_land_pattern": {
+      "1": {
+        "net": "XC1",
+        "position_mm": [
+          0.55,
+          0.4
+        ],
+        "size_mm": [
+          0.65,
+          0.55
+        ]
+      },
+      "2": {
+        "net": "GND",
+        "position_mm": [
+          -0.55,
+          0.4
+        ],
+        "size_mm": [
+          0.65,
+          0.55
+        ]
+      },
+      "3": {
+        "net": "XC2",
+        "position_mm": [
+          -0.55,
+          -0.4
+        ],
+        "size_mm": [
+          0.65,
+          0.55
+        ]
+      },
+      "4": {
+        "net": "GND",
+        "position_mm": [
+          0.55,
+          -0.4
+        ],
+        "size_mm": [
+          0.65,
+          0.55
+        ]
+      }
+    },
+    "load_capacitors": {
+      "dielectric": "C0G/NP0",
+      "mpn": "GRM0335C1H120GA01D",
+      "nominal_pf": 12.0,
+      "references": [
+        "C1",
+        "C2"
+      ],
+      "tolerance_percent": 2.0
+    },
+    "observed_values": {
+      "C1": "12pF C0G 2%",
+      "C2": "12pF C0G 2%",
+      "Y1": "FA-118T 32MHz CL 8pF"
+    }
+  },
+  "passed": true,
+  "routing": {
+    "XC1": {
+      "copper_item_count": 15,
+      "copper_sha256": "a9ecba57ed54e6e814e796ffd1aef9cf6b80863aa5fa652a60ee36d48028e8d3",
+      "mcu_to_crystal_mm": 3.520411,
+      "mcu_to_load_capacitor_mm": 4.367428,
+      "nordic_configuration_1_mcu_to_crystal_mm": 4.464815
+    },
+    "XC2": {
+      "copper_item_count": 15,
+      "copper_sha256": "258f4daf6ef48a5f29922bf3db27bdb81a838e47d5ca0010d376eb11677c26a0",
+      "mcu_to_crystal_mm": 3.219209,
+      "mcu_to_load_capacitor_mm": 4.464105,
+      "nordic_configuration_1_mcu_to_crystal_mm": 3.255138
+    }
+  },
+  "zero_margin_component_limits": {
+    "crystal_drive_max_equals_mcu_limit": true,
+    "crystal_esr_max_equals_mcu_limit": true
+  }
+}

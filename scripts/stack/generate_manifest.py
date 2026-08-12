@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a schema-3 exact HDI manifest from a frozen Meenie candidate."""
+"""Generate a schema-4 exact HDI manifest from a frozen Meenie candidate."""
 
 from __future__ import annotations
 
@@ -18,7 +18,8 @@ from validate_stacks import (
     marker_rule,
     parse_layer_stack,
     parse_raw_vias,
-    via_drill_separation,
+    via_physical_clearance,
+    via_spacing_metrics,
 )
 
 CANONICAL = {
@@ -207,7 +208,6 @@ def main() -> int:
                 "stack": a[0] if a else None,
                 "tier_indices": sorted([a[1], b[1]]) if a and b else None,
                 "expected_report_count": count,
-                "reason": "reviewed adjacent sequential-lamination capture connection",
             }
         )
     board_rows = [
@@ -222,7 +222,7 @@ def main() -> int:
     project = json.loads(project_path.read_text())
     exclusions = project.get("board", {}).get("design_settings", {}).get("drc_exclusions", [])
     manifest = {
-        "schema": 3,
+        "schema": 4,
         "board": board_path.name,
         "project": project_path.name,
         "rules": rules_path.name,
@@ -232,7 +232,8 @@ def main() -> int:
             "rules_sha256": sha256(rules_path),
         },
         "layer_stack": parse_layer_stack(board_path.read_text()),
-        "via_drill_separation_mm": via_drill_separation(rules_path.read_text()),
+        "via_physical_clearance_rule_mm": via_physical_clearance(rules_path.read_text()),
+        "via_spacing_observed_mm": via_spacing_metrics(all_vias),
         "allowed_layer_sequences": {face: [list(pair) for pair in pairs] for face, pairs in CANONICAL.items()},
         "allowed_tier_counts": [1, 2, 3],
         "stacks": sorted(stacks, key=lambda stack: stack["name"]),
@@ -248,14 +249,9 @@ def main() -> int:
             for via in sorted(central, key=lambda via: via["uuid"])
         ],
         "central_capture_links": sorted(central_links, key=lambda item: (item["central_via_uuid"], item["microvia_uuid"])),
-        "expected_project_exclusions": exclusions,
+        "expected_project_exclusion_signatures": [exclusion[0] for exclusion in exclusions],
         "allowed_drc_markers": markers,
-        "reviewed_board_markers": {
-            "note": "Active markers outside the sequential-lamination stacks. Every listed rule must "
-                    "report and every reporting rule must be listed. Counts are evidence only: KiCad "
-                    "enumerates clearance and hole_clearance nondeterministically run to run.",
-            "rows": board_rows,
-        },
+        "reviewed_board_markers": board_rows,
     }
     output.write_text(json.dumps(manifest, indent=2) + "\n")
     print(

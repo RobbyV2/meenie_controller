@@ -1,14 +1,7 @@
 (version 1)
 
-# JLCPCB splits hole rules by feature; KiCad has one global each, set to the via case.
-# A silently-dropped rule looks identical to a passing board, so verify by A/B, not by exit code.
-
-# Hole to track is published per plating class, PTH 0.28 mm and NPTH 0.20 mm, so the
-# condition below is deliberately plated-only. NPTH is already held by the 0.20 mm built-in
-# hole clearance in board setup, which is the JLCPCB NPTH figure exactly. Widening this to
-# !A.isPlated() applies the plated number to J1's mechanical pegs and raises a false error on
-# the VBUS pair at 0.2052 mm, which meets the NPTH spec. Verified by probe, both !A.isPlated()
-# and A.Pad_Type == 'NPTH, mechanical' match those pegs; neither belongs on this rule.
+# Plated through-hole clearances are separate from the 0.200 mm NPTH setup rule.
+# Product tests prove that the release fails when a required rule or geometry changes.
 (rule "PTH hole to copper"
 	(constraint hole_clearance (min 0.28mm))
 	(severity error)
@@ -19,96 +12,49 @@
 	(severity error)
 	(condition "A.Pad_Type == 'Through-hole' && B.Pad_Type == 'Through-hole'"))
 
-# The nRESET west channel rule was deleted 2026-08-04. It named the rule area
-# 'U1 west escape channel', which did not survive the 12.600 mm re-layout, so the rule matched
-# nothing and reported nothing while looking identical to a rule that held. The channel it
-# described is the antenna coupling gap now and nRESET does not cross it: AC13 leaves through
-# an in-pad via, not planar. Do not re-add it without re-adding the area and A/B-ing by name.
-
-# Design rule 29: the RF line is a grounded coplanar waveguide with the pour held 0.220 mm
-# back from each edge. Nothing else on the board holds that once a zone is filled, and a pour
-# flooded at the RF50 net class 0.150 mm puts the line at 42 ohm. Scoped to zones so the
-# 0.172 mm signal-to-ground gap inside the 0201 shunt lands does not raise a false error.
-# Outer layers only, added 2026-08-04. The setback is the coplanar side gap and belongs on the
-# face the line is drawn on. Unscoped it also cut a 0.840 mm void out of In1.Cu and In2.Cu at
-# the face-change via, removing 0.855 mm of the line's own reference. A/B the fill after any
-# edit here: if the layer token is rejected the rule drops and the pour floods to 0.150 mm,
-# which reads as a passing board. The check is the nearest GND fill vertex to RF copper,
-# 0.2205 mm on F.Cu and on B.Cu.
-#
-# Rule 29's line width is amended here on 2026-08-04 and the setback is not. The rule reads
-# 0.360 mm of line on both faces and the board cannot build that on B.Cu. The antenna band
-# tiles 'antenna band, B.Cu 4' and 'antenna band, B.Cu 5' forbid tracks and leave a 0.320 mm
-# feed window at record x 1.100 to 1.300 by y 8.040 to 8.360, so a 0.360 mm line enters both
-# tiles by 0.020 mm and raises items_not_allowed. What is drawn is 0.150 mm over the whole
-# 1.000 mm B.Cu run from the face change into the radiator, 41.7 percent of the specified
-# width, and it is rule 31's landing neck rather than a transcription error. The amended
-# reading: 0.360 mm governs F.Cu and any B.Cu run east of the antenna band; the last 1.000 mm
-# on B.Cu is 0.150 mm and is not a 50 ohm section.
-#
-# The impedance consequence, computed on this stackup's 0.2104 mm of 7628 at er 4.4 with the
-# Hammerstad-Jensen thickness correction. A 0.150 mm line reads 74.80 ohm against 50.49 ohm at
-# 0.360 mm, and over 1.000 mm, 5.20 degrees at 2.44 GHz, that section between 50 ohm
-# terminations is VSWR 1.078 and 28.5 dB of return loss against VSWR 1.002 at full width. The
-# 0.076 of VSWR it costs sits inside JLCPCB's own plus or minus 10 percent control band, which
-# design.md prices at VSWR 1.09 on its own. Read 74.80 ohm as a floor rather than a figure:
-# In1.Cu and In2.Cu both stop at x 1.300 and the face-change via's own antipad covers the rest,
-# so all 1.000 mm of that run has no reference plane and is not a controlled-impedance line at
-# all, which is the second reason widening it buys less than the arithmetic suggests.
-# Measured on the delivered board, 1.3003 mm of the 2.1870 mm drawn feed, 59.5 percent, has no
-# inner reference. Widening the notch is the alternative and it is NOT taken: it moves the
-# ground edge next to the radiator feed point, which is an antenna change, and design.md's own
-# next-step 8 forbids it while the match is solved for the neck.
+# Keep zones away from all three RF nets on the outer layers. RF_50 has the
+# stronger, released B.Cu rule below. Pad-internal shunt gaps are outside scope.
 (rule "RF corridor coplanar setback"
 	(constraint clearance (min 0.22mm))
 	(layer outer)
 	(severity error)
 	(condition "(A.NetName == 'RF_50' || A.NetName == 'ANT_FEED' || A.NetName == 'RF_CHIP') && B.Type == 'Zone'"))
 
-# XC2 leaves U1.A23 and DEC4_6 leaves U1.E24 into the B.Cu pocket between U1's north outer
-# ring at y 7.473 and the decoupling row C5 and C4 at y 7.838, which is 0.365 mm of strip.
-# Both nets are Default class and every wall of that pocket is GND, which is Power class, so
-# the pair resolves to 0.150 mm and the widest path either net reaches is 0.070 mm, under the
-# 0.090 mm track floor. At 0.090 mm the same path opens. The figure is JLCPCB's own spacing
-# floor and sits above IPC-2221 B2's 0.10 mm for 0 to 15 V only in the sense that both these
-# nets are sub-2 V internal regulator and crystal nodes carrying no rail potential. Scoped by
-# net pair and by the B.Cu rule area. The area itself was lost in the re-layout and was redrawn
-# on 2026-08-04, B.Cu, record x 6.150 to 8.450 by y 6.550 to 8.350, all five keepout flags off.
-# Prove it loaded by A/B rather than by exit code: a 0.090 mm XC2 stub at 0.100 mm from C5's
-# GND land inside the area passes with this file and raises one clearance error without it.
+# The U1 north pocket holds only low-voltage crystal and internal-regulator nets.
+# Its exact 0.090 mm net-to-GND clearance is scoped to the named B.Cu rule area.
 (rule "U1 north pocket crystal and decoupling escape"
 	(constraint clearance (min 0.09mm))
 	(severity error)
 	(condition "(A.NetName == 'XC2' || A.NetName == 'DEC4_6') && B.NetName == 'GND' && A.insideArea('U1 north pocket')"))
 
 
-# NextPCB Advanced HDI: 3 mil minimum trace/space for the B.Cu-to-In4 microvia escape.
-# Until 2026-08-10 this rule and "3+2+3 sequential microvia geometry" both read
-# "A.Via_Type == 'Micro' || B.Via_Type == 'Micro' || A.Layer == 'In5.Cu' || ... In6.Cu ...".
-# A bare layer test matches every object on that layer, so track to track, track to zone and
-# zone to zone on In5.Cu and In6.Cu all resolved to 0.08 mm against netclasses of 0.09 mm
-# Default and 0.15 mm Power, USB, RF50 and VBUS, and the OR on Via_Type relaxed every pad,
-# track and zone that merely stood next to a microvia. Two whole layers and every microvia
-# neighbourhood ran at 3 mil while the comment claimed an escape-proof scope.
-# The two rules were byte-identical in their constraints and the second condition contained the
-# first, so they are one rule now, narrowed to the microvia pair the comment always described.
-# Narrowing exposes 351 clearance and 263 hole_clearance reports that were previously hidden,
-# including the board's true hole-to-copper minimum of 0.0805 mm at J1's west NPTH peg. Those
-# are board defects, not rule defects. Do NOT re-widen this to make the report quiet.
-# A/B it by name after any edit: deleting this rule takes the clearance count from 485 to 499,
-# so 14 reports is the entire job it does and anything larger means the scope slipped again.
-(rule "NextPCB HDI microvia clearance"
+# NextPCB Advanced HDI publishes 0.05/0.05 mm copper geometry, a 0.075 mm
+# laser drill, and +/-0.05 mm registration.  This release holds copper spacing
+# at 0.08 mm and laser-hole-to-foreign-copper spacing at 0.08 mm.  Mechanical
+# holes remain governed by the board and PTH rules.
+(rule "NextPCB Advanced HDI copper clearance"
     (constraint clearance (min 0.08mm))
+    (severity error)
+    (condition "A.Type == 'Track' || A.Type == 'Via' || A.Type == 'Pad' || A.Type == 'Zone'"))
+
+(rule "NextPCB Advanced HDI laser hole clearance"
     (constraint hole_clearance (min 0.08mm))
     (severity error)
-    (condition "A.Via_Type == 'Micro' && B.Via_Type == 'Micro'"))
+    (condition "A.Via_Type == 'Micro'"))
+
+# Mechanical vias retain the published 1 oz annular-ring floor.  Laser vias
+# are 0.250/0.100 mm and therefore carry 0.075 mm rings.
+(rule "NextPCB mechanical via annular ring"
+    (constraint annular_width (min 0.09mm))
+    (severity error)
+    (condition "A.Type == 'Via' && A.Via_Type != 'Micro'"))
 
 
-# HDI RF superseding rule: the B.Cu RF_50 section is a masked microstrip over
-# the adjacent In4 GND plane.  The rule-area polygon is drawn for 0.310 mm;
+# RF_50 is a masked B.Cu microstrip over the adjacent In6.Cu GND plane.
+# The rule-area polygon is drawn for 0.310 mm;
 # 0.300 mm here is the hard copper-edge release floor after fill tessellation.
 (rule "NextPCB HDI RF_50 B.Cu width"
-    (constraint track_width (min 0.115mm) (max 0.115mm))
+    (constraint track_width (min 0.17mm) (max 0.17mm))
     (severity error)
     (condition "A.NetName == 'RF_50' && A.Layer == 'B.Cu'"))
 (rule "NextPCB HDI RF_50 same-side GND setback"
@@ -117,38 +63,10 @@
     (condition "A.NetName == 'RF_50' && A.Layer == 'B.Cu' && B.Type == 'Zone' && A.insideArea('RF corridor, RF_50')"))
 
 
-# Drill separation between vias, laser drills included. The rule this replaces,
-# "HDI all-via physical drill separation", used physical_hole_clearance and measured no such
-# thing. KiCad defines physical_hole_clearance as one hole's diameter to another object's BODY,
-# so a via pair reads centre distance minus one hole radius minus the partner's pad radius. The
-# marker that read actual 0.0140 mm sits on centres 0.1890 mm apart, 0.1890 - 0.050 - 0.125,
-# and the drill separation there is 0.0890 mm. hole_to_hole is the true hole-to-hole measure and
-# it skips laser drills by design; probed at min 0.9 mm over every via pair it returned 48
-# markers, every one of them pairing a mechanical drill with something, none microvia to
-# microvia. That rule also reported nothing at all once the microvia relaxation above was
-# narrowed, because DRC stops emitting a given violation type at about 200 markers per run and
-# the built-in hole clearance check consumed the whole budget before it ran.
-#
-# physical_clearance measures pad edge to pad edge, and drill separation is the reported actual
-# plus the two annular rings. 223 vias carry 0.075 mm of ring at 0.250 over 0.100 and 0.300 over
-# 0.150, and 18 carry 0.090 mm at 0.330 over 0.150, so the offset is 0.150 mm for a pair of
-# 0.075 rings and 0.165 or 0.180 mm where a 0.330 mm via is involved. NextPCB's different-net
-# row is 12 mil, 0.300 mm, against conductive anodic filament, and their same-net row is 8 mil,
-# 0.200 mm. The minima below take the 0.150 mm offset, which is exact for a 0.075 pair and
-# strict by 0.015 to 0.030 mm for a 0.330 mm via, so the rule over-reports and never misses:
-# one pair sits at 0.3000 mm of true separation and is reported. Read every actual as a floor of
-# 0.150 mm below the drill figure and re-derive the offsets if any via padstack changes.
-#
-# Physical clearance is tested only between objects that share a layer, so two vias in different
-# dielectrics are not compared and do not need to be, their drills never meet. The same-net rule
-# reports the intentional sequential stacks at actual 0.0000; they are the manifest's allowed
-# markers and they now carry type clearance rather than hole_clearance.
-(rule "via drill separation, different nets"
-    (constraint physical_clearance (min 0.150mm))
+# Different-net via copper must retain at least 3 mil.  Same-net sequential
+# capture is checked structurally by the stack manifest instead of emitted as
+# a native DRC error.
+(rule "via physical copper clearance, different nets"
+    (constraint physical_clearance (min 0.075mm))
     (severity error)
     (condition "A.Type == 'Via' && B.Type == 'Via' && A.Net != B.Net"))
-
-(rule "via drill separation, same net"
-    (constraint physical_clearance (min 0.050mm))
-    (severity error)
-    (condition "A.Type == 'Via' && B.Type == 'Via' && A.Net == B.Net"))

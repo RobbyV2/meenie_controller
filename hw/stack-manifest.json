@@ -1,12 +1,12 @@
 {
-  "schema": 3,
+  "schema": 4,
   "board": "meenie.kicad_pcb",
   "project": "meenie.kicad_pro",
   "rules": "meenie.kicad_dru",
   "source_hashes": {
-    "board_sha256": "97c4a63564938adcd18c2af0a84366fbe6d760e7ce6a62b88a90f4ca6699db35",
-    "project_sha256": "e63a8ed034c3724aa692a14afeded6e54c0d8dc904560e54031578d14149e84e",
-    "rules_sha256": "4987921b58a9348390d6a6d7672917dd5b9a6b799cb05b4c8a2ef03d39deb5f7"
+    "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+    "project_sha256": "1822075384e4babf7607cc748968ee74fac47721f26b2656fdb9deaf76d87300",
+    "rules_sha256": "8bffd5c4c4aedca6be3a425d4cd3743684b1d18ce22eed8e9babb8322735e754"
   },
   "layer_stack": {
     "finished_thickness_mm": 0.991,
@@ -103,9 +103,43 @@
       }
     ]
   },
-  "via_drill_separation_mm": {
-    "different_nets": 0.15,
-    "same_net": 0.05
+  "via_physical_clearance_rule_mm": {
+    "different_nets": 0.075
+  },
+  "via_spacing_observed_mm": {
+    "minimum_center_mm": {
+      "value": 0.33575,
+      "via_uuids": [
+        "57759008-1b76-4ff1-bcf4-32cae132befd",
+        "5b991bb9-c340-4572-8560-5567a3544960"
+      ],
+      "common_layers": [
+        "In5.Cu",
+        "In6.Cu"
+      ]
+    },
+    "minimum_copper_edge_mm": {
+      "value": 0.083522,
+      "via_uuids": [
+        "947a200e-ccd3-44c6-bb3f-490980c8948a",
+        "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+      ],
+      "common_layers": [
+        "B.Cu",
+        "In6.Cu"
+      ]
+    },
+    "minimum_hole_edge_mm": {
+      "value": 0.23575,
+      "via_uuids": [
+        "57759008-1b76-4ff1-bcf4-32cae132befd",
+        "5b991bb9-c340-4572-8560-5567a3544960"
+      ],
+      "common_layers": [
+        "In5.Cu",
+        "In6.Cu"
+      ]
+    }
   },
   "allowed_layer_sequences": {
     "top": [
@@ -836,59 +870,6 @@
       ]
     },
     {
-      "name": "bottom-decusb-102.3057-97.3084",
-      "net": "DECUSB",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In4.Cu",
-            "In5.Cu"
-          ],
-          "center_mm": [
-            102.3057,
-            97.3084
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "5a23a936-1ef5-4f54-a990-057835229504"
-        },
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            102.3057,
-            97.3084
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "9bcaf8fa-08d5-4f97-b681-92b8221158fa"
-        }
-      ]
-    },
-    {
-      "name": "bottom-decusb-102.8196-97.3819",
-      "net": "DECUSB",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            102.8196,
-            97.3819
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "5edd2194-d15e-4c18-852e-c4d017554430"
-        }
-      ]
-    },
-    {
       "name": "bottom-gnd-101.6378-98.5804",
       "net": "GND",
       "face": "bottom",
@@ -949,7 +930,7 @@
       ]
     },
     {
-      "name": "bottom-gnd-101.7200-96.4300",
+      "name": "bottom-gnd-101.7200-97.0000",
       "net": "GND",
       "face": "bottom",
       "tiers": [
@@ -960,7 +941,7 @@
           ],
           "center_mm": [
             101.72,
-            96.43
+            97.0
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
@@ -1005,6 +986,86 @@
           "pad_mm": 0.25,
           "hole_mm": 0.1,
           "via_uuid": "42154f84-303d-4ec9-9568-9916a454731a"
+        }
+      ]
+    },
+    {
+      "name": "bottom-gnd-104.5000-96.2500",
+      "net": "GND",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            104.5,
+            96.25
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "fe783f78-3669-4659-8353-2136c47de7a0"
+        }
+      ]
+    },
+    {
+      "name": "bottom-gnd-104.5000-97.2500",
+      "net": "GND",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            104.5,
+            97.25
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "bf468e2b-03bd-482c-9f13-94bcc1bd554e"
+        }
+      ]
+    },
+    {
+      "name": "bottom-gnd-105.5000-96.2500",
+      "net": "GND",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            105.5,
+            96.25
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "37d5f99c-f9af-4e80-ab62-c4942bc38a96"
+        }
+      ]
+    },
+    {
+      "name": "bottom-gnd-105.5000-97.2500",
+      "net": "GND",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            105.5,
+            97.25
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "4c947910-cace-428c-b98f-3ec6908ddd69"
         }
       ]
     },
@@ -1475,233 +1536,8 @@
       ]
     },
     {
-      "name": "bottom-p0-03-109.5000-94.2740",
-      "net": "P0.03",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            109.5,
-            94.274
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "9b0f94e0-cb9f-4d50-8bfd-8d02429b79c4"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-03-109.6065-92.4660",
-      "net": "P0.03",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            109.6065,
-            92.466
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "8e31ab9d-d8a6-42e4-8852-b09ffdf71e44"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-05-104.8628-93.0203",
-      "net": "P0.05",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            104.8628,
-            93.0203
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "8d5d8bce-82a2-4228-ba44-b3fad7f200b2"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            104.8628,
-            93.0203
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "7a7bbe5e-760e-4787-a698-bd8615c660db"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-11-105.0217-92.6293",
-      "net": "P0.11",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            105.0217,
-            92.6293
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "eca2fe9a-6657-415b-9580-7f49b88d101b"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            105.0217,
-            92.6293
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "941ecd2c-6516-44f6-b223-9c8a7dcd2091"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-12-104.5528-92.4190",
-      "net": "P0.12",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            104.5528,
-            92.419
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            104.5528,
-            92.419
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-13-103.7700-92.9318",
-      "net": "P0.13",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            103.77,
-            92.9318
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "effe0d36-6b0f-4e2f-8d09-ed95d90fddcb"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            103.77,
-            92.9318
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "92885bf1-3e93-4758-9c7e-8e1841decd52"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-27-105.6207-93.2610",
-      "net": "P0.27",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            105.6207,
-            93.261
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "0e2da429-e8db-4f03-b3d6-c4418f98b13e"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            105.6207,
-            93.261
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "8733b468-cb55-4b6e-97c9-869953c09b77"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-28-108.6546-95.7516",
-      "net": "P0.28",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            108.6546,
-            95.7516
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "c842a5f0-94ef-4271-8d31-3bf2ac92cbc2"
-        }
-      ]
-    },
-    {
-      "name": "bottom-p0-31-110.8353-96.0859",
-      "net": "P0.31",
+      "name": "bottom-p0-02-110.8353-96.0859",
+      "net": "P0.02",
       "face": "bottom",
       "tiers": [
         {
@@ -1720,8 +1556,8 @@
       ]
     },
     {
-      "name": "bottom-p0-31-111.3852-94.8540",
-      "net": "P0.31",
+      "name": "bottom-p0-02-111.3852-94.8540",
+      "net": "P0.02",
       "face": "bottom",
       "tiers": [
         {
@@ -1736,6 +1572,26 @@
           "pad_mm": 0.25,
           "hole_mm": 0.1,
           "via_uuid": "062de296-27a8-43aa-9404-0a1b682d027e"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p0-03-108.6546-95.7516",
+      "net": "P0.03",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            108.6546,
+            95.7516
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "c842a5f0-94ef-4271-8d31-3bf2ac92cbc2"
         }
       ]
     },
@@ -1769,6 +1625,39 @@
           "pad_mm": 0.25,
           "hole_mm": 0.1,
           "via_uuid": "da84461a-10c9-49fd-9e43-60ff231b787a"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-01-103.7700-92.9318",
+      "net": "P1.01",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In5.Cu",
+            "In6.Cu"
+          ],
+          "center_mm": [
+            103.77,
+            92.9318
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "effe0d36-6b0f-4e2f-8d09-ed95d90fddcb"
+        },
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            103.77,
+            92.9318
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "92885bf1-3e93-4758-9c7e-8e1841decd52"
         }
       ]
     },
@@ -1846,8 +1735,8 @@
       ]
     },
     {
-      "name": "bottom-p1-04-104.2542-93.2409",
-      "net": "P1.04",
+      "name": "bottom-p1-03-104.2542-93.2409",
+      "net": "P1.03",
       "face": "bottom",
       "tiers": [
         {
@@ -1892,7 +1781,139 @@
       ]
     },
     {
-      "name": "bottom-p1-10-109.2596-95.3864",
+      "name": "bottom-p1-04-104.5528-92.4190",
+      "net": "P1.04",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In5.Cu",
+            "In6.Cu"
+          ],
+          "center_mm": [
+            104.5528,
+            92.419
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155"
+        },
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            104.5528,
+            92.419
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-05-104.8628-93.0203",
+      "net": "P1.05",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In5.Cu",
+            "In6.Cu"
+          ],
+          "center_mm": [
+            104.8628,
+            93.0203
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "8d5d8bce-82a2-4228-ba44-b3fad7f200b2"
+        },
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            104.8628,
+            93.0203
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "7a7bbe5e-760e-4787-a698-bd8615c660db"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-06-105.0217-92.6293",
+      "net": "P1.06",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In5.Cu",
+            "In6.Cu"
+          ],
+          "center_mm": [
+            105.0217,
+            92.6293
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "eca2fe9a-6657-415b-9580-7f49b88d101b"
+        },
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            105.0217,
+            92.6293
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "941ecd2c-6516-44f6-b223-9c8a7dcd2091"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-07-105.6207-93.2610",
+      "net": "P1.07",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In5.Cu",
+            "In6.Cu"
+          ],
+          "center_mm": [
+            105.6207,
+            93.261
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "0e2da429-e8db-4f03-b3d6-c4418f98b13e"
+        },
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            105.6207,
+            93.261
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "8733b468-cb55-4b6e-97c9-869953c09b77"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-10-109.5000-94.2740",
       "net": "P1.10",
       "face": "bottom",
       "tiers": [
@@ -1902,17 +1923,17 @@
             "B.Cu"
           ],
           "center_mm": [
-            109.2596,
-            95.3864
+            109.5,
+            94.274
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
-          "via_uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
+          "via_uuid": "9b0f94e0-cb9f-4d50-8bfd-8d02429b79c4"
         }
       ]
     },
     {
-      "name": "bottom-p1-10-110.6635-94.1692",
+      "name": "bottom-p1-10-109.6065-92.4660",
       "net": "P1.10",
       "face": "bottom",
       "tiers": [
@@ -1922,18 +1943,18 @@
             "B.Cu"
           ],
           "center_mm": [
-            110.6635,
-            94.1692
+            109.6065,
+            92.466
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
-          "via_uuid": "b0f3eefb-7f7a-4dbc-8686-0e268274f840"
+          "via_uuid": "8e31ab9d-d8a6-42e4-8852-b09ffdf71e44"
         }
       ]
     },
     {
-      "name": "bottom-p1-11-108.1520-93.2610",
-      "net": "P1.11",
+      "name": "bottom-p1-12-108.1520-93.2610",
+      "net": "P1.12",
       "face": "bottom",
       "tiers": [
         {
@@ -1952,8 +1973,8 @@
       ]
     },
     {
-      "name": "bottom-p1-11-108.4090-94.7184",
-      "net": "P1.11",
+      "name": "bottom-p1-12-108.4090-94.7184",
+      "net": "P1.12",
       "face": "bottom",
       "tiers": [
         {
@@ -1968,6 +1989,46 @@
           "pad_mm": 0.25,
           "hole_mm": 0.1,
           "via_uuid": "da3af843-5d36-40bf-ab85-9fbfadfb4428"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-13-109.0874-94.9822",
+      "net": "P1.13",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            109.0874,
+            94.9822
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+        }
+      ]
+    },
+    {
+      "name": "bottom-p1-13-110.6603-93.5312",
+      "net": "P1.13",
+      "face": "bottom",
+      "tiers": [
+        {
+          "layers": [
+            "In6.Cu",
+            "B.Cu"
+          ],
+          "center_mm": [
+            110.6603,
+            93.5312
+          ],
+          "pad_mm": 0.25,
+          "hole_mm": 0.1,
+          "via_uuid": "9d62a70e-97f9-4c01-a06e-b3eb8363d062"
         }
       ]
     },
@@ -2012,7 +2073,7 @@
       ]
     },
     {
-      "name": "bottom-p1-15-109.0874-94.9822",
+      "name": "bottom-p1-15-109.2596-95.3864",
       "net": "P1.15",
       "face": "bottom",
       "tiers": [
@@ -2022,17 +2083,17 @@
             "B.Cu"
           ],
           "center_mm": [
-            109.0874,
-            94.9822
+            109.2596,
+            95.3864
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
-          "via_uuid": "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+          "via_uuid": "a613fbea-f9ee-4fd6-a9c8-2f79e4ffd30b"
         }
       ]
     },
     {
-      "name": "bottom-p1-15-110.6603-93.5312",
+      "name": "bottom-p1-15-110.6635-94.1692",
       "net": "P1.15",
       "face": "bottom",
       "tiers": [
@@ -2042,12 +2103,12 @@
             "B.Cu"
           ],
           "center_mm": [
-            110.6603,
-            93.5312
+            110.6635,
+            94.1692
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
-          "via_uuid": "9d62a70e-97f9-4c01-a06e-b3eb8363d062"
+          "via_uuid": "b0f3eefb-7f7a-4dbc-8686-0e268274f840"
         }
       ]
     },
@@ -2259,85 +2320,6 @@
           "pad_mm": 0.25,
           "hole_mm": 0.1,
           "via_uuid": "9538781c-3460-4028-925c-738f656e0963"
-        }
-      ]
-    },
-    {
-      "name": "bottom-usb-d-110.1400-99.2350",
-      "net": "USB_D-",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            110.14,
-            99.235
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "d66a9e30-7028-4096-b337-8614de152961"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            110.14,
-            99.235
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "116fb517-7c46-446a-831c-a769820b1816"
-        }
-      ]
-    },
-    {
-      "name": "bottom-usb-d-111.7500-97.9550",
-      "net": "USB_D+",
-      "face": "bottom",
-      "tiers": [
-        {
-          "layers": [
-            "In4.Cu",
-            "In5.Cu"
-          ],
-          "center_mm": [
-            111.75,
-            97.955
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "2359172a-ac30-45b3-a4f9-64ff19d18d90"
-        },
-        {
-          "layers": [
-            "In5.Cu",
-            "In6.Cu"
-          ],
-          "center_mm": [
-            111.75,
-            97.955
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "a69611d7-8797-4097-acf7-517d4ec80a06"
-        },
-        {
-          "layers": [
-            "In6.Cu",
-            "B.Cu"
-          ],
-          "center_mm": [
-            111.75,
-            97.955
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "12fe5f0e-eef7-43fa-9528-3643f0bfc907"
         }
       ]
     },
@@ -3226,41 +3208,8 @@
       ]
     },
     {
-      "name": "top-decusb-101.4040-97.3900",
-      "net": "DECUSB",
-      "face": "top",
-      "tiers": [
-        {
-          "layers": [
-            "In1.Cu",
-            "In2.Cu"
-          ],
-          "center_mm": [
-            101.404,
-            97.39
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "6865cce4-0363-4ad4-8257-5002e054bd3c"
-        },
-        {
-          "layers": [
-            "In2.Cu",
-            "In3.Cu"
-          ],
-          "center_mm": [
-            101.404,
-            97.39
-          ],
-          "pad_mm": 0.25,
-          "hole_mm": 0.1,
-          "via_uuid": "c476f9f5-c7dc-4940-b842-5e80b2372ece"
-        }
-      ]
-    },
-    {
-      "name": "top-decusb-102.3600-97.2220",
-      "net": "DECUSB",
+      "name": "top-gnd-101.7000-95.4800",
+      "net": "GND",
       "face": "top",
       "tiers": [
         {
@@ -3269,12 +3218,12 @@
             "In1.Cu"
           ],
           "center_mm": [
-            102.36,
-            97.222
+            101.7,
+            95.48
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
-          "via_uuid": "f3f71d0a-9d31-402e-96ca-a25292373434"
+          "via_uuid": "fc428698-e1d6-4346-bd63-1d6216384c4e"
         }
       ]
     },
@@ -3392,7 +3341,7 @@
       ]
     },
     {
-      "name": "top-gnd-108.0590-92.5680",
+      "name": "top-gnd-107.8300-92.2400",
       "net": "GND",
       "face": "top",
       "tiers": [
@@ -3402,8 +3351,8 @@
             "In1.Cu"
           ],
           "center_mm": [
-            108.059,
-            92.568
+            107.83,
+            92.24
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
@@ -3412,7 +3361,7 @@
       ]
     },
     {
-      "name": "top-gnd-113.2450-96.6600",
+      "name": "top-gnd-109.7200-92.2600",
       "net": "GND",
       "face": "top",
       "tiers": [
@@ -3422,8 +3371,8 @@
             "In1.Cu"
           ],
           "center_mm": [
-            113.245,
-            96.66
+            109.72,
+            92.26
           ],
           "pad_mm": 0.25,
           "hole_mm": 0.1,
@@ -3934,20 +3883,6 @@
       "via_uuid": "88c579a8-e4bc-4e02-a424-88697f3d6228"
     },
     {
-      "net": "DECUSB",
-      "layers": [
-        "In3.Cu",
-        "In4.Cu"
-      ],
-      "center_mm": [
-        103.258,
-        97.8522
-      ],
-      "pad_mm": 0.33,
-      "hole_mm": 0.15,
-      "via_uuid": "9a133032-c835-48a4-abb3-058bd00debec"
-    },
-    {
       "net": "+3V3",
       "layers": [
         "In3.Cu",
@@ -4082,1718 +4017,9 @@
       "interface": "top"
     }
   ],
-  "expected_project_exclusions": [
-    [
-      "npth_inside_courtyard|104430000|94720000|9975e04a-a69e-4e64-8470-7cca97045659|7c7fb09b-a960-4d8f-912f-ec65519f8564",
-      "J1 west NPTH locating peg at (104.430, 94.720) intentionally lies inside U1's courtyard in the compact 13.570 x 9.435 mm placement. The peg-to-U1 overlap is the mechanically reviewed notch-aligned placement; this exact exclusion is keyed to the fresh DRC position, J1 pad UUID, and U1 footprint UUID. Regenerate and re-review if any key changes."
-    ]
+  "expected_project_exclusion_signatures": [
+    "npth_inside_courtyard|104430000|94720000|9975e04a-a69e-4e64-8470-7cca97045659|7c7fb09b-a960-4d8f-912f-ec65519f8564"
   ],
-  "allowed_drc_markers": [
-    {
-      "type": "clearance",
-      "position_mm": [
-        101.404,
-        97.39
-      ],
-      "via_uuids": [
-        "6865cce4-0363-4ad4-8257-5002e054bd3c",
-        "c476f9f5-c7dc-4940-b842-5e80b2372ece"
-      ],
-      "stack": "top-decusb-101.4040-97.3900",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        101.729,
-        92.568
-      ],
-      "via_uuids": [
-        "13bee9c7-f164-498d-b048-2c49df062570",
-        "99b945a8-de34-4875-bb97-269af67f5bbe"
-      ],
-      "stack": "top-3v3-101.7290-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        101.97,
-        94.07
-      ],
-      "via_uuids": [
-        "39074007-e539-46e2-ae5c-47bfc64fb122",
-        "6db0b026-c558-460a-8d6d-0b270c707546"
-      ],
-      "stack": "bottom-vbus-mcu-101.9700-94.0700",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        101.97,
-        94.07
-      ],
-      "via_uuids": [
-        "39074007-e539-46e2-ae5c-47bfc64fb122",
-        "b3e9421a-ba6d-4a78-9473-2efda17aff10"
-      ],
-      "stack": "bottom-vbus-mcu-101.9700-94.0700",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.3035,
-        95.525
-      ],
-      "via_uuids": [
-        "3d7423b3-a1ec-4cde-855b-e21a4211a3c4",
-        "cd870f74-2797-4d6e-afcb-081f93f5363f"
-      ],
-      "stack": "bottom-3v3-102.3035-95.5250",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.3035,
-        95.525
-      ],
-      "via_uuids": [
-        "7aaaab84-dd9f-418d-9dbe-7c34a7db7dd1",
-        "cd870f74-2797-4d6e-afcb-081f93f5363f"
-      ],
-      "stack": "bottom-3v3-102.3035-95.5250",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.3057,
-        97.3084
-      ],
-      "via_uuids": [
-        "5a23a936-1ef5-4f54-a990-057835229504",
-        "9bcaf8fa-08d5-4f97-b681-92b8221158fa"
-      ],
-      "stack": "bottom-decusb-102.3057-97.3084",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.3593,
-        92.9585
-      ],
-      "via_uuids": [
-        "0691ceb2-7967-441e-a4ec-ac3066d0dbf5",
-        "abceefad-2848-4c1f-a4bf-9f6553f42bbd"
-      ],
-      "stack": "bottom-3v3-102.3593-92.9585",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.3593,
-        92.9585
-      ],
-      "via_uuids": [
-        "87a48c9d-8737-4b01-8838-fd8da418af67",
-        "abceefad-2848-4c1f-a4bf-9f6553f42bbd"
-      ],
-      "stack": "bottom-3v3-102.3593-92.9585",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.504,
-        97.7
-      ],
-      "via_uuids": [
-        "5c36f345-a86d-4385-9f60-12cab70f4a04",
-        "b3e27571-c4ae-44dd-9f1c-669ddf31bad1"
-      ],
-      "stack": "bottom-usb-d-102.5040-97.7000",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.504,
-        97.7
-      ],
-      "via_uuids": [
-        "b3e27571-c4ae-44dd-9f1c-669ddf31bad1",
-        "e77c97a6-d896-4cae-8688-0403b595a092"
-      ],
-      "stack": "bottom-usb-d-102.5040-97.7000",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.51,
-        96.45
-      ],
-      "via_uuids": [
-        "760dc1ba-4a64-4e1d-b762-33a7dbe4cc08",
-        "8ffb4df9-e9a5-4188-982e-e0ad630e99fd"
-      ],
-      "stack": "top-3v3-102.5100-96.4500",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.51,
-        96.45
-      ],
-      "via_uuids": [
-        "78281f62-07d4-434b-af72-e1b69538c9b9",
-        "8ffb4df9-e9a5-4188-982e-e0ad630e99fd"
-      ],
-      "stack": "top-3v3-102.5100-96.4500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.52,
-        98.15
-      ],
-      "via_uuids": [
-        "3466f3ae-98d7-4952-8c1a-1a0a148bced8",
-        "9538781c-3460-4028-925c-738f656e0963"
-      ],
-      "stack": "bottom-usb-d-102.5200-98.1500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.7951,
-        98.9964
-      ],
-      "via_uuids": [
-        "094f7fea-9fa3-4568-9238-bbac11f4f001",
-        "8a4775c5-bfba-4799-9893-0f215d07ace9"
-      ],
-      "stack": "bottom-vbus-mcu-102.7951-98.9964",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.7951,
-        98.9964
-      ],
-      "via_uuids": [
-        "2cfd36a8-510d-4d5e-9dc7-2fd54fa42bbf",
-        "8a4775c5-bfba-4799-9893-0f215d07ace9"
-      ],
-      "stack": "bottom-vbus-mcu-102.7951-98.9964",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.8018,
-        93.3426
-      ],
-      "via_uuids": [
-        "9c484f93-a757-4323-a915-8dcc64a629cd",
-        "da84461a-10c9-49fd-9e43-60ff231b787a"
-      ],
-      "stack": "bottom-p1-00-102.8018-93.3426",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        102.887,
-        92.568
-      ],
-      "via_uuids": [
-        "54160f70-6e2c-45ba-8391-5d822e22f2f4",
-        "6e5ea26e-0ca6-4e24-8f93-13c63a9802ba"
-      ],
-      "stack": "top-3v3-102.8870-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.163,
-        92.5266
-      ],
-      "via_uuids": [
-        "553fbc51-47eb-429b-85d7-a751ef128203",
-        "e8259f1f-303e-456c-a096-961ef5e0c399"
-      ],
-      "stack": "bottom-swdio-103.1630-92.5266",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.163,
-        92.5266
-      ],
-      "via_uuids": [
-        "b4f79c5c-0d4c-4c9d-baf3-7f83067fc497",
-        "e8259f1f-303e-456c-a096-961ef5e0c399"
-      ],
-      "stack": "bottom-swdio-103.1630-92.5266",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.645,
-        98.8665
-      ],
-      "via_uuids": [
-        "03e35674-b80c-4e9a-a48e-4c5ff397c522",
-        "8572cc44-16e4-4150-8ef9-04a303ce1360"
-      ],
-      "stack": "bottom-vbus-mcu-103.6450-98.8665",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.645,
-        98.8665
-      ],
-      "via_uuids": [
-        "8572cc44-16e4-4150-8ef9-04a303ce1360",
-        "944fec3c-a304-4b0c-ba4e-1245fe4f3dfb"
-      ],
-      "stack": "bottom-vbus-mcu-103.6450-98.8665",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.77,
-        92.9318
-      ],
-      "via_uuids": [
-        "92885bf1-3e93-4758-9c7e-8e1841decd52",
-        "effe0d36-6b0f-4e2f-8d09-ed95d90fddcb"
-      ],
-      "stack": "bottom-p0-13-103.7700-92.9318",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.9046,
-        99.3718
-      ],
-      "via_uuids": [
-        "388d0bf6-a390-4747-8bcc-5f5515347edb",
-        "9b1061ad-9f51-4f28-b3b6-cd232152006d"
-      ],
-      "stack": "bottom-3v3-103.9046-99.3718",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        103.9046,
-        99.3718
-      ],
-      "via_uuids": [
-        "560710ff-8d21-4a6c-b094-9ca9ab7687eb",
-        "9b1061ad-9f51-4f28-b3b6-cd232152006d"
-      ],
-      "stack": "bottom-3v3-103.9046-99.3718",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.02,
-        92.5721
-      ],
-      "via_uuids": [
-        "78329a13-25ab-4d1f-934f-8713c1e167c6",
-        "c4978a99-b8d9-47f2-a90b-69da652622e8"
-      ],
-      "stack": "bottom-p1-02-104.0200-92.5721",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.2542,
-        93.2409
-      ],
-      "via_uuids": [
-        "1ec9363a-96e4-43d1-afaa-08fd436fe730",
-        "539cd515-ff15-407a-b609-b1fcd102f788"
-      ],
-      "stack": "bottom-p1-04-104.2542-93.2409",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.2542,
-        93.2409
-      ],
-      "via_uuids": [
-        "1ec9363a-96e4-43d1-afaa-08fd436fe730",
-        "62aee16f-4195-4597-a6c9-bfe68d6b0670"
-      ],
-      "stack": "bottom-p1-04-104.2542-93.2409",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.5528,
-        92.419
-      ],
-      "via_uuids": [
-        "a4a44fd9-d5c0-4a6f-ac60-5ce9458ec155",
-        "af398d4c-e164-4ee7-b9eb-8afda3bb372c"
-      ],
-      "stack": "bottom-p0-12-104.5528-92.4190",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.585,
-        92.568
-      ],
-      "via_uuids": [
-        "4f4a51a2-cc0e-4f50-8814-a9faeea09e89",
-        "5fe098e6-591f-4c2f-8594-2aa3965bab1e"
-      ],
-      "stack": "top-cc1-104.5850-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        104.8628,
-        93.0203
-      ],
-      "via_uuids": [
-        "7a7bbe5e-760e-4787-a698-bd8615c660db",
-        "8d5d8bce-82a2-4228-ba44-b3fad7f200b2"
-      ],
-      "stack": "bottom-p0-05-104.8628-93.0203",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.0217,
-        92.6293
-      ],
-      "via_uuids": [
-        "941ecd2c-6516-44f6-b223-9c8a7dcd2091",
-        "eca2fe9a-6657-415b-9580-7f49b88d101b"
-      ],
-      "stack": "bottom-p0-11-105.0217-92.6293",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.1418,
-        93.5891
-      ],
-      "via_uuids": [
-        "739c3392-46d5-4ada-bce8-01a0a2ce856c",
-        "d27efb50-d65e-4f70-8f6d-d626c4c0186f"
-      ],
-      "stack": "top-vbus-105.1418-93.5891",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.1418,
-        93.5891
-      ],
-      "via_uuids": [
-        "a4b5b604-9e78-47b9-963b-4cb31e8681d5",
-        "d27efb50-d65e-4f70-8f6d-d626c4c0186f"
-      ],
-      "stack": "top-vbus-105.1418-93.5891",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.52,
-        92.65
-      ],
-      "via_uuids": [
-        "2c1e1bff-f843-48ff-9599-b4fc93bb6925",
-        "ccc4af0e-3fe9-4527-b821-7ee5204aadb2"
-      ],
-      "stack": "bottom-dec5-105.5200-92.6500",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.52,
-        92.65
-      ],
-      "via_uuids": [
-        "66af26a1-c08e-4c31-9b01-c17b6f981c01",
-        "ccc4af0e-3fe9-4527-b821-7ee5204aadb2"
-      ],
-      "stack": "bottom-dec5-105.5200-92.6500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.6207,
-        93.261
-      ],
-      "via_uuids": [
-        "0e2da429-e8db-4f03-b3d6-c4418f98b13e",
-        "8733b468-cb55-4b6e-97c9-869953c09b77"
-      ],
-      "stack": "bottom-p0-27-105.6207-93.2610",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.743,
-        92.568
-      ],
-      "via_uuids": [
-        "00ae1d35-967f-4386-846c-b865c8c6c834",
-        "4b33c5c1-b1df-4766-a58a-7f6b6cea692b"
-      ],
-      "stack": "top-dec5-105.7430-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        105.743,
-        92.568
-      ],
-      "via_uuids": [
-        "00ae1d35-967f-4386-846c-b865c8c6c834",
-        "526ec2bd-471a-4f69-bbb6-e681dd2dbe75"
-      ],
-      "stack": "top-dec5-105.7430-92.5680",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.07,
-        93.63
-      ],
-      "via_uuids": [
-        "ebf7b936-f355-41cc-930b-c3e9dfe095d7",
-        "ede8e942-9339-4fd1-bf10-1df5c15632bb"
-      ],
-      "stack": "top-cc1-106.0700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.4154,
-        92.835
-      ],
-      "via_uuids": [
-        "2305f691-7ab0-4681-aab7-6b2317c62e21",
-        "d9991e3b-67c6-4f1a-8086-35c56fa1594e"
-      ],
-      "stack": "top-gnd-106.4154-92.8350",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.4154,
-        92.835
-      ],
-      "via_uuids": [
-        "484029b2-3a47-4512-ae63-e07e58116524",
-        "d9991e3b-67c6-4f1a-8086-35c56fa1594e"
-      ],
-      "stack": null,
-      "tier_indices": null,
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.4265,
-        93.1829
-      ],
-      "via_uuids": [
-        "10980a8c-a635-4f7d-8653-4eec93aaae72",
-        "a921166b-475a-4a92-ae1e-76c5b35c74c4"
-      ],
-      "stack": "bottom-gnd-106.4265-93.1829",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.57,
-        93.63
-      ],
-      "via_uuids": [
-        "64ee7e8b-2cc3-4564-a39d-6a3f1a399c28",
-        "a4a63683-9a9d-488e-88f4-6ace7def9c39"
-      ],
-      "stack": "top-usb-d-106.5700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.901,
-        92.568
-      ],
-      "via_uuids": [
-        "09b8e96d-f6ae-4b9d-9191-d99d35e386bf",
-        "714f1dd6-89bc-476c-b369-d450ac39068a"
-      ],
-      "stack": "top-dec3-106.9010-92.5680",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        106.901,
-        92.568
-      ],
-      "via_uuids": [
-        "714f1dd6-89bc-476c-b369-d450ac39068a",
-        "dc69142e-71da-4a54-ab3b-8187ab993763"
-      ],
-      "stack": "top-dec3-106.9010-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.07,
-        93.63
-      ],
-      "via_uuids": [
-        "201f4eb4-423e-41ce-ac9f-e119f4941f16",
-        "458744be-3652-43ba-93fd-378376269d28"
-      ],
-      "stack": "top-usb-d-107.0700-93.6300",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.07,
-        93.63
-      ],
-      "via_uuids": [
-        "28468cdf-fde4-4554-b35c-b2bcc5f74258",
-        "458744be-3652-43ba-93fd-378376269d28"
-      ],
-      "stack": "top-usb-d-107.0700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.52,
-        92.65
-      ],
-      "via_uuids": [
-        "15b61323-2e9e-400d-858e-6d69f5d47cc2",
-        "1f97fc43-6e7a-4941-992e-22e9ee9201ff"
-      ],
-      "stack": "bottom-dec4-6-107.5200-92.6500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.57,
-        93.63
-      ],
-      "via_uuids": [
-        "4ab5216c-7195-472a-85f3-a3f1324d57a2",
-        "a280e1bd-c29a-4164-a653-021bf35537ef"
-      ],
-      "stack": "top-usb-d-107.5700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.77,
-        93.15
-      ],
-      "via_uuids": [
-        "322f822d-7a75-49dc-b56e-2cee95829337",
-        "e26f9537-5e80-4fb3-b795-3614102b740a"
-      ],
-      "stack": "bottom-dec3-107.7700-93.1500",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        107.77,
-        93.15
-      ],
-      "via_uuids": [
-        "adf7d405-7103-4619-8e81-934ea21e0e72",
-        "e26f9537-5e80-4fb3-b795-3614102b740a"
-      ],
-      "stack": "bottom-dec3-107.7700-93.1500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.02,
-        99.15
-      ],
-      "via_uuids": [
-        "a37a285f-4c4b-4f26-8bd5-13c9d105a63d",
-        "c9c5d6db-2f3a-4002-b72e-ac430d9d97a5"
-      ],
-      "stack": "bottom-dec1-108.0200-99.1500",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.07,
-        93.63
-      ],
-      "via_uuids": [
-        "9f56269b-7e11-4cb0-b440-9c70a4d72cb6",
-        "c3e65ffc-68ec-4f2a-bd95-6d4e5b54aa8e"
-      ],
-      "stack": "top-usb-d-108.0700-93.6300",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.07,
-        93.63
-      ],
-      "via_uuids": [
-        "a864f593-2cb4-4fe7-94c3-b8879f26a0d9",
-        "c3e65ffc-68ec-4f2a-bd95-6d4e5b54aa8e"
-      ],
-      "stack": "top-usb-d-108.0700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.4678,
-        99.5466
-      ],
-      "via_uuids": [
-        "8a688933-68bb-4c62-9b3d-26017cb410d6",
-        "956a3264-e1c8-4042-97d9-86c87ba7fa73"
-      ],
-      "stack": "bottom-3v3-108.4678-99.5466",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.4805,
-        92.643
-      ],
-      "via_uuids": [
-        "22dee90b-bd6f-4f83-8750-c19c539b9e73",
-        "cdeef5d9-5f9b-4490-8cad-7b984ca0a2db"
-      ],
-      "stack": "bottom-xc1-108.4805-92.6430",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.4805,
-        92.643
-      ],
-      "via_uuids": [
-        "cdeef5d9-5f9b-4490-8cad-7b984ca0a2db",
-        "fb988a67-60c2-40e5-86b7-b6dadd72ae8d"
-      ],
-      "stack": "bottom-xc1-108.4805-92.6430",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.52,
-        97.9
-      ],
-      "via_uuids": [
-        "e16296a2-6b3f-492f-9ac8-99a6425537cf",
-        "f7685b28-f930-4071-87d3-7d9e40690587"
-      ],
-      "stack": "bottom-dec4-6-108.5200-97.9000",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.9312,
-        97.9825
-      ],
-      "via_uuids": [
-        "4ec4b9e0-d8f0-4daf-9cd6-50082879ff79",
-        "a4d0fc91-f2ea-4877-b8f9-1242bf043d48"
-      ],
-      "stack": "bottom-3v3-108.9312-97.9825",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        108.9312,
-        97.9825
-      ],
-      "via_uuids": [
-        "4ec4b9e0-d8f0-4daf-9cd6-50082879ff79",
-        "c156fc4b-24ae-4bac-a0d9-f1456c06d247"
-      ],
-      "stack": "bottom-3v3-108.9312-97.9825",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.0438,
-        93.0993
-      ],
-      "via_uuids": [
-        "252d35f7-2a6e-48e0-8f58-986b9b9c1f4b",
-        "79ba0b39-b285-44e4-ba3a-b49d860946b8"
-      ],
-      "stack": "bottom-xc2-109.0438-93.0993",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.048,
-        93.7289
-      ],
-      "via_uuids": [
-        "73e6bebc-51c0-4a1e-adff-a8e455a1b814",
-        "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
-      ],
-      "stack": "bottom-3v3-109.0480-93.7289",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.048,
-        93.7289
-      ],
-      "via_uuids": [
-        "7baa01c4-8dd1-49b1-acaa-54a6b24f14b1",
-        "a22ede7c-ed76-4a62-8bad-f819f45aaa41"
-      ],
-      "stack": "bottom-3v3-109.0480-93.7289",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.07,
-        93.63
-      ],
-      "via_uuids": [
-        "58fd4dff-dce1-4658-9086-83919931a946",
-        "6977ee2d-cfc6-43b2-8d6f-a7decc528f63"
-      ],
-      "stack": "top-cc2-109.0700-93.6300",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.07,
-        93.63
-      ],
-      "via_uuids": [
-        "6977ee2d-cfc6-43b2-8d6f-a7decc528f63",
-        "79b743d9-b126-4186-9e2e-6c9d1f58ec17"
-      ],
-      "stack": "top-cc2-109.0700-93.6300",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.575,
-        99.615
-      ],
-      "via_uuids": [
-        "38177b14-448c-478a-b50b-a2ae6c536173",
-        "ec90cc08-8eff-4745-8d62-6798d891704b"
-      ],
-      "stack": "bottom-dec1-109.5750-99.6150",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.72,
-        93.3
-      ],
-      "via_uuids": [
-        "30cea297-38a6-4462-95c2-8a42f6c69c92",
-        "5ad4a519-e4d4-476f-a437-2cb30b98ede8"
-      ],
-      "stack": "top-vbus-109.7200-93.3000",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.72,
-        93.3
-      ],
-      "via_uuids": [
-        "5ad4a519-e4d4-476f-a437-2cb30b98ede8",
-        "b7121be1-05bd-4a33-8589-650b64a9d1ec"
-      ],
-      "stack": "top-vbus-109.7200-93.3000",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        109.735,
-        93.77
-      ],
-      "via_uuids": [
-        "74b665e8-f3c1-4dbc-87d8-da25a4a8648c",
-        "760d8737-5e50-4adf-80e1-cbee88b2f850"
-      ],
-      "stack": "bottom-dec4-6-109.7350-93.7700",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        110.14,
-        99.235
-      ],
-      "via_uuids": [
-        "116fb517-7c46-446a-831c-a769820b1816",
-        "d66a9e30-7028-4096-b337-8614de152961"
-      ],
-      "stack": "bottom-usb-d-110.1400-99.2350",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.36,
-        94.275
-      ],
-      "via_uuids": [
-        "5a0272a1-d210-4eb3-84f3-715b506b090c",
-        "d73649c6-7c5c-40f0-8ae1-afe80e3eec69"
-      ],
-      "stack": "bottom-xc1-111.3600-94.2750",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.36,
-        94.275
-      ],
-      "via_uuids": [
-        "d73649c6-7c5c-40f0-8ae1-afe80e3eec69",
-        "f3e3b7ab-19cc-46be-8df5-831c2c7a4fc2"
-      ],
-      "stack": "bottom-xc1-111.3600-94.2750",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.533,
-        92.568
-      ],
-      "via_uuids": [
-        "10eddcce-7b00-49d3-b844-cea7ffeef848",
-        "9e054b20-c185-42c1-9311-817a3d26a1d8"
-      ],
-      "stack": "top-xc1-111.5330-92.5680",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.533,
-        92.568
-      ],
-      "via_uuids": [
-        "9e054b20-c185-42c1-9311-817a3d26a1d8",
-        "f7d5b55e-c554-4379-95fc-7c2108df6ecf"
-      ],
-      "stack": "top-xc1-111.5330-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.75,
-        97.955
-      ],
-      "via_uuids": [
-        "12fe5f0e-eef7-43fa-9528-3643f0bfc907",
-        "a69611d7-8797-4097-acf7-517d4ec80a06"
-      ],
-      "stack": "bottom-usb-d-111.7500-97.9550",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.75,
-        97.955
-      ],
-      "via_uuids": [
-        "2359172a-ac30-45b3-a4f9-64ff19d18d90",
-        "a69611d7-8797-4097-acf7-517d4ec80a06"
-      ],
-      "stack": "bottom-usb-d-111.7500-97.9550",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.8156,
-        99.1604
-      ],
-      "via_uuids": [
-        "b048a504-3818-43d8-908e-7b320af1c6a0",
-        "b34404dd-ad81-401c-9377-a301bc30b4a0"
-      ],
-      "stack": "bottom-swdio-111.8156-99.1604",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        111.8156,
-        99.1604
-      ],
-      "via_uuids": [
-        "b34404dd-ad81-401c-9377-a301bc30b4a0",
-        "f61425b0-884c-4142-acfc-69bf442552bb"
-      ],
-      "stack": "bottom-swdio-111.8156-99.1604",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.1548,
-        96.8518
-      ],
-      "via_uuids": [
-        "57759008-1b76-4ff1-bcf4-32cae132befd",
-        "9b153bd1-603b-4655-9e3f-4a8e47693cb3"
-      ],
-      "stack": "bottom-gnd-112.1548-96.8518",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.16,
-        93.175
-      ],
-      "via_uuids": [
-        "1eda818b-dda8-4e27-8189-7f780c17339f",
-        "681c0063-fcdc-4c68-8dbd-2536b7c49b7a"
-      ],
-      "stack": "bottom-xc2-112.1600-93.1750",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.3179,
-        98.5452
-      ],
-      "via_uuids": [
-        "504b3dde-f624-4b48-b54f-66b33849b418",
-        "98d95b0a-4a82-47f0-9e79-f6a7f8999339"
-      ],
-      "stack": "bottom-vbus-112.3179-98.5452",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.3179,
-        98.5452
-      ],
-      "via_uuids": [
-        "98d95b0a-4a82-47f0-9e79-f6a7f8999339",
-        "e381f00a-2123-4ba2-ad74-31a4a4527cbf"
-      ],
-      "stack": "bottom-vbus-112.3179-98.5452",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.3833,
-        97.0978
-      ],
-      "via_uuids": [
-        "5b991bb9-c340-4572-8560-5567a3544960",
-        "9e8d657c-dff9-43d7-9ba9-997fbaeec4f5"
-      ],
-      "stack": "bottom-3v3-112.3833-97.0978",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.3833,
-        97.0978
-      ],
-      "via_uuids": [
-        "5b991bb9-c340-4572-8560-5567a3544960",
-        "d00b4396-f94b-46ff-8a1a-01918a7df35b"
-      ],
-      "stack": "bottom-3v3-112.3833-97.0978",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.465,
-        95.61
-      ],
-      "via_uuids": [
-        "04c91ff5-930b-4ae0-a96c-a989bb79ce2c",
-        "6c53ed74-3e7a-4b71-81d6-e52f5401c3e8"
-      ],
-      "stack": "bottom-3v3-112.4650-95.6100",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.465,
-        95.61
-      ],
-      "via_uuids": [
-        "6c53ed74-3e7a-4b71-81d6-e52f5401c3e8",
-        "97cc6308-3619-437f-96f1-25d3445c74b9"
-      ],
-      "stack": "bottom-3v3-112.4650-95.6100",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.691,
-        92.568
-      ],
-      "via_uuids": [
-        "1117dc38-bdc8-43ae-9c6d-0b80b3953e98",
-        "d663204f-f770-49bc-8ce1-edcfa88158ae"
-      ],
-      "stack": "top-xc2-112.6910-92.5680",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.691,
-        92.568
-      ],
-      "via_uuids": [
-        "8ad22d85-5c9f-4523-bfe2-6391258c27e8",
-        "d663204f-f770-49bc-8ce1-edcfa88158ae"
-      ],
-      "stack": "top-xc2-112.6910-92.5680",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.715,
-        96.88
-      ],
-      "via_uuids": [
-        "759a12a6-00a6-422f-9b76-ddf346da71ed",
-        "a678beeb-7536-4c87-949c-56469387bb8b"
-      ],
-      "stack": "top-vbus-112.7150-96.8800",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        112.715,
-        96.88
-      ],
-      "via_uuids": [
-        "759a12a6-00a6-422f-9b76-ddf346da71ed",
-        "ed72943b-5c64-4243-be10-1423c24e884d"
-      ],
-      "stack": "top-vbus-112.7150-96.8800",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        113.1958,
-        98.5278
-      ],
-      "via_uuids": [
-        "134cf44b-849f-47e4-9e11-3fcff01fbce9",
-        "e49d65f1-6001-40ab-b3ed-1588fdf0c5d0"
-      ],
-      "stack": "bottom-vbus-mcu-113.1958-98.5278",
-      "tier_indices": [
-        1,
-        2
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    },
-    {
-      "type": "clearance",
-      "position_mm": [
-        113.1958,
-        98.5278
-      ],
-      "via_uuids": [
-        "e49d65f1-6001-40ab-b3ed-1588fdf0c5d0",
-        "f4a99392-a9a7-4509-b118-a9f040d0a73c"
-      ],
-      "stack": "bottom-vbus-mcu-113.1958-98.5278",
-      "tier_indices": [
-        0,
-        1
-      ],
-      "expected_report_count": 1,
-      "reason": "reviewed adjacent sequential-lamination capture connection"
-    }
-  ],
-  "reviewed_board_markers": {
-    "note": "Active markers outside the sequential-lamination stacks. Every listed rule must report and every reporting rule must be listed. Counts are evidence only: KiCad enumerates clearance and hole_clearance nondeterministically run to run.",
-    "rows": [
-      {
-        "type": "clearance",
-        "rule": "netclass 'Default'",
-        "observed_count": 6
-      },
-      {
-        "type": "clearance",
-        "rule": "netclass 'Power'",
-        "observed_count": 33
-      },
-      {
-        "type": "clearance",
-        "rule": "netclass 'USB'",
-        "observed_count": 5
-      },
-      {
-        "type": "clearance",
-        "rule": "netclass 'VBUS'",
-        "observed_count": 1
-      },
-      {
-        "type": "clearance",
-        "rule": "rule 'via drill separation, different nets'",
-        "observed_count": 19
-      },
-      {
-        "type": "hole_clearance",
-        "rule": "board setup constraints",
-        "observed_count": 29
-      }
-    ]
-  }
+  "allowed_drc_markers": [],
+  "reviewed_board_markers": []
 }

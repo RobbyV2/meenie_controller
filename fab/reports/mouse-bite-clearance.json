@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "label": "0.500 mm drawn",
+      "margin_delta_mm": 0.10050000000000525,
+      "minimum_margin_mm": 0.45050000000000523,
+      "radius_mm": 0.25,
+      "required_margin_mm": 0.35
+    },
+    {
+      "label": "0.600 mm process envelope",
+      "margin_delta_mm": 0.05050000000000526,
+      "minimum_margin_mm": 0.40050000000000524,
+      "radius_mm": 0.3,
+      "required_margin_mm": 0.35
+    }
+  ]
+}

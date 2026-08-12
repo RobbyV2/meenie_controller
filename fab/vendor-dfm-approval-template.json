@@ -1,0 +1,455 @@
+{
+  "approved": true,
+  "assembly_aoi_percent": 100,
+  "assembly_inspection_report_required": true,
+  "assembly_procurement_routes_approved": true,
+  "assembly_solder_alloy": "SAC305_lead_free",
+  "assembly_spi_percent": 100,
+  "bare_board_electrical_test_golden_netlist": "fab/netlist.ipc",
+  "bare_board_electrical_test_netlist_format": "IPC-D-356",
+  "bare_board_electrical_test_percent": 100,
+  "bare_board_electrical_test_step_repeat_isolated_units": 35,
+  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "c19_characterization_excludes_temperature_and_aging": true,
+  "c19_dc_bias_characterization_source": "Samsung CL05A475MO5NUNC official DC Bias Characteristics",
+  "c19_effective_capacitance_at_5p5v_after_negative_initial_tolerance_uf": 1.313,
+  "c19_effective_capacitance_typical_at_5p5v_uf": 1.642,
+  "c19_first_article_vbus_hotplug_and_load_transient_test": true,
+  "c19_no_substitution": true,
+  "c19_nordic_reference_dielectric": "X7S",
+  "c19_nordic_reference_package": "0603",
+  "c19_nordic_reference_tolerance_percent": 10,
+  "c19_package_and_dielectric_deviation_acknowledged": true,
+  "c19_total_nominal_connector_vbus_capacitance_uf": 9.4,
+  "c19_vddh_input_capacitor_dielectric": "X5R",
+  "c19_vddh_input_capacitor_lcsc_part": "C318563",
+  "c19_vddh_input_capacitor_mpn": "CL05A475MO5NUNC",
+  "c19_vddh_input_capacitor_nominal_uf": 4.7,
+  "c19_vddh_input_capacitor_package": "0402",
+  "c19_vddh_input_capacitor_rated_voltage_v": 16,
+  "c19_vddh_input_capacitor_tolerance_percent": 20,
+  "cam_change_delta_checkplot_and_customer_reapproval_required": true,
+  "central_in3_in4": true,
+  "central_transition_core_thickness_mm": 0.226,
+  "central_transition_count": 17,
+  "central_transition_geometries_mm": [
+    [
+      0.33,
+      0.15
+    ]
+  ],
+  "central_transition_maximum_aspect_ratio": 1.506667,
+  "central_transition_process": "mechanically_drilled_buried_core_via",
+  "construction": "8L 3+2+3",
+  "copper_filled_planarized_sequential_tiers": true,
+  "d2_ground_return_visual_and_xray_inspection": true,
+  "d2_vbus_esd_mpn": "ESD441DPLR",
+  "d2_vbus_esd_reverse_standoff_v": 5.5,
+  "d3_cathode_pad1_ground_and_solder_wetting_inspection": true,
+  "d3_compact_land_deviation_approved": true,
+  "d3_land_length_mm": 0.65,
+  "d3_land_terminal_gap_mm": 0.35,
+  "d3_land_width_mm": 0.65,
+  "d3_led_mpn": "LTST-C281KRKT",
+  "d3_manufacturer_suggested_land_width_mm": 0.9,
+  "d3_minimum_copper_to_board_edge_mm": 0.21,
+  "dec5_capacitor_dielectric": "C0G/NP0",
+  "dec5_capacitor_mpn": "GRM0335C1E821JA01D",
+  "dec5_capacitor_tolerance_percent": 5,
+  "different_net_via_hole_edge_clearance_deviation_approved": true,
+  "different_net_via_spacing_observed_mm": {
+    "minimum_center_mm": {
+      "common_layers": [
+        "In5.Cu",
+        "In6.Cu"
+      ],
+      "value": 0.33575,
+      "via_uuids": [
+        "57759008-1b76-4ff1-bcf4-32cae132befd",
+        "5b991bb9-c340-4572-8560-5567a3544960"
+      ]
+    },
+    "minimum_copper_edge_mm": {
+      "common_layers": [
+        "B.Cu",
+        "In6.Cu"
+      ],
+      "value": 0.083522,
+      "via_uuids": [
+        "947a200e-ccd3-44c6-bb3f-490980c8948a",
+        "cf49439d-21ed-49e8-afb9-84e89eabf4df"
+      ]
+    },
+    "minimum_hole_edge_mm": {
+      "common_layers": [
+        "In5.Cu",
+        "In6.Cu"
+      ],
+      "value": 0.23575,
+      "via_uuids": [
+        "57759008-1b76-4ff1-bcf4-32cae132befd",
+        "5b991bb9-c340-4572-8560-5567a3544960"
+      ]
+    }
+  },
+  "double_sided_turnkey_assembly": true,
+  "drill_programs": [
+    "NPTH",
+    "PTH",
+    "back-in6",
+    "front-in1",
+    "in1-in2",
+    "in2-in3",
+    "in3-in4",
+    "in4-in5",
+    "in5-in6"
+  ],
+  "electrical_test_netlist_sha256": "31d94d812c04544e054c2b80daebb79798e331e8e7dbb2de6173f0d6c066d772",
+  "filled_capped_planarized_drill_programs": [
+    {
+      "count": 24,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "F.Cu-In1.Cu"
+    },
+    {
+      "count": 18,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "In1.Cu-In2.Cu"
+    },
+    {
+      "count": 20,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "In2.Cu-In3.Cu"
+    },
+    {
+      "count": 24,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "In4.Cu-In5.Cu"
+    },
+    {
+      "count": 47,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "In5.Cu-In6.Cu"
+    },
+    {
+      "count": 77,
+      "hole_mm": 0.1,
+      "pad_mm": 0.25,
+      "program": "In6.Cu-B.Cu"
+    },
+    {
+      "count": 17,
+      "hole_mm": 0.15,
+      "pad_mm": 0.33,
+      "program": "in3-in4"
+    },
+    {
+      "count": 7,
+      "hole_mm": 0.15,
+      "pad_mm": 0.33,
+      "program": "PTH"
+    }
+  ],
+  "finished_thickness_mm": 0.991,
+  "first_article_assembly_sha256": {
+    "assembly/B-4n7-0p8/panel-bom.csv": "3ac50ce41be8ec4b7a87753a02e04648197a628ec6019cb0111c118b6704710c",
+    "assembly/B-4n7-0p8/panel-centroid.csv": "6f28bdcda41b0ccef2a2a4eea9bf814f1b280abeefb2cf1183d870d2f4ca706d"
+  },
+  "first_article_delivered_unprogrammed": true,
+  "first_article_impedance_coupon_required": true,
+  "first_article_rf_population": "B-4n7-0p8",
+  "first_article_stack_microsection": true,
+  "first_article_stack_microsection_faces": [
+    "top",
+    "bottom"
+  ],
+  "first_article_tdr_report_required": true,
+  "hfxo_conservative_ble_budget_ppm": 24.397,
+  "hfxo_crystal_esr_max_ohm": 100,
+  "hfxo_crystal_frequency_tolerance_ppm": 10,
+  "hfxo_crystal_load_capacitance_pf": 8,
+  "hfxo_crystal_mpn": "X1E0002510059",
+  "hfxo_crystal_operating_temperature_c": [
+    -20,
+    75
+  ],
+  "hfxo_crystal_shunt_capacitance_pf": 0.47,
+  "hfxo_first_article_startup_and_frequency_test": true,
+  "hfxo_foreign_inner_copper_qualification_required": true,
+  "hfxo_load_capacitor_mpn": "GRM0335C1H120GA01D",
+  "hfxo_load_capacitor_tolerance_percent": 2,
+  "hfxo_load_capacitor_value_pf": 12,
+  "ipc_6012_class_3_fabrication": true,
+  "ipc_a_610_class_3_assembly": true,
+  "j1_locating_post_maximum_mm": 0.75,
+  "j1_locating_post_minimum_board_containment_mm": 0.241,
+  "j1_locating_post_nominal_mm": 0.6,
+  "j1_minimum_post_containment_at_accepted_thickness_mm": 0.15,
+  "j1_usb_connector_external_procurement_route": "LCSC C5187472",
+  "j1_usb_connector_fit_and_shell_solder_inspection": true,
+  "j1_usb_connector_lcsc_part": "C5187472",
+  "j1_usb_connector_mpn": "TYPE-C 16P QTWT",
+  "j1_usb_connector_no_substitution": true,
+  "j_std_001_class_3_assembly": true,
+  "laminate_caf_resistant": true,
+  "laminate_minimum_td_c": 340,
+  "laminate_minimum_tg_c": 170,
+  "layer_stack": {
+    "finished_thickness_mm": 0.991,
+    "rows": [
+      {
+        "material": "",
+        "name": "F.Cu",
+        "thickness_mm": 0.035,
+        "type": "copper"
+      },
+      {
+        "material": "2313",
+        "name": "dielectric 1",
+        "thickness_mm": 0.1,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "In1.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "FR4",
+        "name": "dielectric 2",
+        "thickness_mm": 0.1,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "In2.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "1080",
+        "name": "dielectric 3",
+        "thickness_mm": 0.095,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "In3.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "FR4",
+        "name": "dielectric 4",
+        "thickness_mm": 0.226,
+        "type": "core"
+      },
+      {
+        "material": "",
+        "name": "In4.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "1080",
+        "name": "dielectric 5",
+        "thickness_mm": 0.095,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "In5.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "FR4",
+        "name": "dielectric 6",
+        "thickness_mm": 0.1,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "In6.Cu",
+        "thickness_mm": 0.0175,
+        "type": "copper"
+      },
+      {
+        "material": "2313",
+        "name": "dielectric 7",
+        "thickness_mm": 0.1,
+        "type": "prepreg"
+      },
+      {
+        "material": "",
+        "name": "B.Cu",
+        "thickness_mm": 0.035,
+        "type": "copper"
+      }
+    ]
+  },
+  "manifest_sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd",
+  "maximum_actual_microvia_tier_aspect_ratio": 1.0,
+  "maximum_filled_via_dimple_um": 10,
+  "maximum_microvia_tiers": 3,
+  "mechanical_pth_finished_hole_count": 7,
+  "mechanical_pth_finished_hole_mm": 0.15,
+  "microvia_geometries_mm": [
+    [
+      0.25,
+      0.1
+    ]
+  ],
+  "microvia_land_breakout_allowed": false,
+  "minimum_accepted_finished_thickness_mm": 0.9,
+  "minimum_advanced_hdi_copper_clearance_mm": 0.08,
+  "minimum_assembly_package": "0201 imperial / 0603 metric",
+  "minimum_different_net_via_physical_copper_clearance_rule_mm": 0.075,
+  "minimum_laser_hole_to_foreign_copper_mm": 0.08,
+  "minimum_mechanical_via_annular_ring_mm": 0.09,
+  "nextpcb_general_different_net_hole_edge_clearance_mm": 0.3,
+  "nordic_decusb_effective_capacitance_minimum_uf": 2.35,
+  "nordic_regulator_decoupling_lcsc_part": "C90057",
+  "nordic_regulator_decoupling_mpn": "GRM188R61E475KE11D",
+  "nordic_regulator_decoupling_no_substitution": true,
+  "nordic_regulator_decoupling_references": [
+    "C6",
+    "C9",
+    "C11"
+  ],
+  "nordic_vdd_effective_capacitance_minimum_uf": 2.7,
+  "order_assembled_unit_quantity": 35,
+  "order_customer_panel_quantity": 1,
+  "order_delivery_format": "depanelled_individual_units",
+  "panel_discard_damaged_units_required": true,
+  "panel_edge_breakout_pth_count": 15,
+  "panel_edge_breakout_pth_fill_cap_requirement": false,
+  "panel_edge_profile_tolerance_maximum_mm": 0.05,
+  "panel_edge_pth_actual_post_depanel_minimum_copper_to_edge_mm": 0.2,
+  "panel_edge_pth_copper_to_edge_mm": 0.249999,
+  "panel_edge_pth_count": 15,
+  "panel_edge_pth_post_depanel_inspection_required": true,
+  "panel_edge_pth_vendor_minimum_copper_to_edge_mm": 0.2,
+  "panel_generated_ipc_d_356_prohibited": true,
+  "panel_global_fiducial_count": 3,
+  "panel_hand_snapping_prohibited": true,
+  "panel_mouse_bite_hole_mm": 0.5,
+  "panel_mouse_bite_minimum_copper_gap_mm": 0.35,
+  "panel_mouse_bite_pitch_mm": 0.85,
+  "panel_mouse_bite_process_envelope_mm": 0.6,
+  "panel_sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e",
+  "panel_supported_low_stress_cut_or_nibble_depaneling_required": true,
+  "panel_tooling_hole_count": 4,
+  "parts_substitution_policy": "none_without_written_customer_approval_and_release_rerun",
+  "quote_approved": true,
+  "representative_three_tier_top_bottom_microsections_required": true,
+  "rf_50_artwork_length_mm": 4.113,
+  "rf_50_field_solve_report_reference": "",
+  "rf_50_field_solve_report_reference_required": true,
+  "rf_50_field_solved_impedance_ohms": null,
+  "rf_50_field_solved_impedance_required_range_ohms": [
+    45,
+    55
+  ],
+  "rf_50_field_solved_width_mm": 0.17,
+  "rf_50_in6_reference_preserved": true,
+  "rf_50_target_ohms": 50,
+  "rf_50_tolerance_percent": 10,
+  "rf_first_article_vna_and_ota_required": true,
+  "rf_matching_inner_keepout_deviation_acknowledged": true,
+  "service": "Advanced PCB",
+  "small_unit_inside_customer_panel_approved": true,
+  "solder_mask_back_color": "green",
+  "solder_mask_front_color": "green",
+  "solder_mask_nominal_thickness_mm": 0.01,
+  "stacked_microvia_columns_approved": true,
+  "surface_finish": "ENIG",
+  "sw1_land_pitch_mm": 2.3,
+  "sw1_land_size_mm": [
+    0.5,
+    1.4
+  ],
+  "sw1_maximum_reflow_passes": 2,
+  "sw1_paste_thickness_mm": 0.08,
+  "sw1_paste_thickness_tolerance_mm": 0.01,
+  "sw1_switch_mpn": "GSNANOT000102",
+  "target_microvia_annular_ring_mm": 0.075,
+  "target_microvia_geometry_mm": [
+    0.25,
+    0.1
+  ],
+  "target_microvia_tier_aspect_ratio": 1.0,
+  "thin_stock_procurement": [
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPD1E01B04DPLR",
+      "quantity": 39,
+      "reference": "D1",
+      "route": "DigiKey 296-47363-1-ND"
+    },
+    {
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-072R2L",
+      "quantity": 39,
+      "reference": "R1",
+      "route": "DigiKey 311-2.20LRCT-ND"
+    },
+    {
+      "manufacturer": "Yageo",
+      "mpn": "RC0201FR-075K1L",
+      "quantity": 77,
+      "reference": "R2,R3",
+      "route": "LCSC C274341"
+    },
+    {
+      "manufacturer": "C&K/Littelfuse",
+      "mpn": "GSNANOT000102",
+      "quantity": 39,
+      "reference": "SW1",
+      "route": "DigiKey 108-NANOT160ASCT-ND"
+    }
+  ],
+  "three_tier_stack_count": 31,
+  "three_tier_stacked_microvia_process_qualified": true,
+  "u1_active_successor_order_code": "NRF52840-QIAA-F-R",
+  "u1_active_successor_requires_firmware_security_requalification": true,
+  "u1_assembly_axi_percent": 100,
+  "u1_first_article_mpn": "NRF52840-QIAA-R",
+  "u1_first_article_nrnd_status_acknowledged": true,
+  "u1_first_article_xray_and_solderability_inspection": true,
+  "u1_nordic_recommended_copper_pad_diameter_mm": 0.275,
+  "u1_reduced_copper_land_deviation_approved": true,
+  "u1_signal_copper_pad_diameter_mm": 0.25,
+  "u1_signal_pad_count": 73,
+  "u1_signal_paste_mask_opening_mm": 0.3,
+  "u1_signal_solder_mask_opening_mm": 0.375,
+  "undocumented_cam_geometry_edits_prohibited": true,
+  "usb_c_sink_vbus_capacitance_maximum_uf": 10.0,
+  "usb_connector_system_esd_qualification": true,
+  "usb_full_speed_first_article_function_test": true,
+  "vendor": "NextPCB",
+  "vendor_cam_checkplot_reference": "",
+  "vendor_depanel_responsibility": true,
+  "vendor_edge_clearance_inspection_reference": "",
+  "vendor_evidence_sha256": {},
+  "vendor_ipc_class_3_certificate_reference": "",
+  "vendor_material_reference": "",
+  "vendor_material_reference_required": true,
+  "vendor_microsection_reference": "",
+  "vendor_pressed_stack_reference": "",
+  "vendor_pressed_stack_reference_required": true,
+  "vendor_quote_number": "",
+  "vendor_signed_at": "",
+  "vendor_signer_email": "",
+  "vendor_signer_name": "",
+  "vendor_stencil_and_paste_process_approval_required": true,
+  "vendor_stencil_plan_must_meet_sw1_and_u1_j1_volume_requirements": true,
+  "vendor_stencil_process_reference": "",
+  "vendor_three_tier_stack_process_qualification_reference": ""
+}
