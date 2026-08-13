@@ -1,5 +1,5 @@
 {
-  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "board_sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a",
   "board_thickness_mm": 0.991,
   "connector": {
     "drawing_post_maximum_mm": 0.75,

@@ -9,7 +9,7 @@
   "bare_board_electrical_test_netlist_format": "IPC-D-356",
   "bare_board_electrical_test_percent": 100,
   "bare_board_electrical_test_step_repeat_isolated_units": 35,
-  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "board_sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a",
   "c19_characterization_excludes_temperature_and_aging": true,
   "c19_dc_bias_characterization_source": "Samsung CL05A475MO5NUNC official DC Bias Characteristics",
   "c19_effective_capacitance_at_5p5v_after_negative_initial_tolerance_uf": 1.313,
@@ -85,7 +85,7 @@
         "In5.Cu",
         "In6.Cu"
       ],
-      "value": 0.23575,
+      "value": 0.18575,
       "via_uuids": [
         "57759008-1b76-4ff1-bcf4-32cae132befd",
         "5b991bb9-c340-4572-8560-5567a3544960"
@@ -104,41 +104,41 @@
     "in4-in5",
     "in5-in6"
   ],
-  "electrical_test_netlist_sha256": "31d94d812c04544e054c2b80daebb79798e331e8e7dbb2de6173f0d6c066d772",
+  "electrical_test_netlist_sha256": "7757980ddf5fc3954d15e284b1451f818be23f97b117b0a1743e67a84e288fee",
   "filled_capped_planarized_drill_programs": [
     {
       "count": 24,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "F.Cu-In1.Cu"
     },
     {
       "count": 18,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "In1.Cu-In2.Cu"
     },
     {
       "count": 20,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "In2.Cu-In3.Cu"
     },
     {
       "count": 24,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "In4.Cu-In5.Cu"
     },
     {
       "count": 47,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "In5.Cu-In6.Cu"
     },
     {
       "count": 77,
-      "hole_mm": 0.1,
+      "hole_mm": 0.15,
       "pad_mm": 0.25,
       "program": "In6.Cu-B.Cu"
     },
@@ -294,8 +294,8 @@
       }
     ]
   },
-  "manifest_sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd",
-  "maximum_actual_microvia_tier_aspect_ratio": 1.0,
+  "manifest_sha256": "45b5154dd12bff9cad698a3d36552feb631e5e9bdc1c4b3d27b095eb31b2ea79",
+  "maximum_actual_microvia_tier_aspect_ratio": 0.666667,
   "maximum_filled_via_dimple_um": 10,
   "maximum_microvia_tiers": 3,
   "mechanical_pth_finished_hole_count": 7,
@@ -303,7 +303,7 @@
   "microvia_geometries_mm": [
     [
       0.25,
-      0.1
+      0.15
     ]
   ],
   "microvia_land_breakout_allowed": false,
@@ -343,7 +343,7 @@
   "panel_mouse_bite_minimum_copper_gap_mm": 0.35,
   "panel_mouse_bite_pitch_mm": 0.85,
   "panel_mouse_bite_process_envelope_mm": 0.6,
-  "panel_sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e",
+  "panel_sha256": "83839fedf285b78f204e7be7f248b22b678a80009dd1f3bdb372c364ae1a5841",
   "panel_supported_low_stress_cut_or_nibble_depaneling_required": true,
   "panel_tooling_hole_count": 4,
   "parts_substitution_policy": "none_without_written_customer_approval_and_release_rerun",
@@ -379,12 +379,12 @@
   "sw1_paste_thickness_mm": 0.08,
   "sw1_paste_thickness_tolerance_mm": 0.01,
   "sw1_switch_mpn": "GSNANOT000102",
-  "target_microvia_annular_ring_mm": 0.075,
+  "target_microvia_annular_ring_mm": 0.05,
   "target_microvia_geometry_mm": [
     0.25,
-    0.1
+    0.15
   ],
-  "target_microvia_tier_aspect_ratio": 1.0,
+  "target_microvia_tier_aspect_ratio": 0.666667,
   "thin_stock_procurement": [
     {
       "manufacturer": "Texas Instruments",

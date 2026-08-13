@@ -88,56 +88,56 @@
       "file_function": "Plated,7,8,Blind",
       "panel_hits": 2695,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 77
+        "0.15": 77
       },
       "unit_hits": 77,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     },
     "front-in1": {
       "file_function": "Plated,1,2,Blind",
       "panel_hits": 840,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 24
+        "0.15": 24
       },
       "unit_hits": 24,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     },
     "in1-in2": {
       "file_function": "Plated,2,3,Buried",
       "panel_hits": 630,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 18
+        "0.15": 18
       },
       "unit_hits": 18,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     },
     "in2-in3": {
       "file_function": "Plated,3,4,Buried",
       "panel_hits": 700,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 20
+        "0.15": 20
       },
       "unit_hits": 20,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     },
     "in3-in4": {
@@ -158,28 +158,28 @@
       "file_function": "Plated,5,6,Buried",
       "panel_hits": 840,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 24
+        "0.15": 24
       },
       "unit_hits": 24,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     },
     "in5-in6": {
       "file_function": "Plated,6,7,Buried",
       "panel_hits": 1645,
       "panel_tools_mm": [
-        0.1
+        0.15
       ],
       "unit_hit_counts_by_tool_mm": {
-        "0.1": 47
+        "0.15": 47
       },
       "unit_hits": 47,
       "unit_tools_mm": [
-        0.1
+        0.15
       ]
     }
   },
@@ -198,20 +198,20 @@
     "issues": [],
     "passed": true,
     "report": "reports/hfxo.json",
-    "sha256": "27ff73b71be9faa1a5189a8358f0a93a7b2dcfd4dff79e18ca0e66456b39f45d"
+    "sha256": "22d5d6b586f6cb414578951e8735351e5fbbebcb686303c9e5089089b226d263"
   },
   "mechanical_fit": {
     "issues": [],
     "passed": true,
     "report": "reports/mechanical-fit.json",
-    "sha256": "aa05cbbc0372f048fe5d75fcd2d66b42392c3c2bbe91bbc9bf823554c606cf56"
+    "sha256": "18e7d14ae423577abce2e11791a04c6bf1104ce6e4ac7eaae8201fab84ff1f10"
   },
   "orderable": false,
   "panel_assembly": {
     "issues": [],
     "passed": true,
     "report": "reports/panel-assembly.json",
-    "sha256": "bad94dc62b22cf53e1555d69e36cbe89013c58931cf960c29d875ff106f1f249"
+    "sha256": "451a1aabd0c6f4653dd02b1d04eceb91b08dfac010b82745401c53a1121f2469"
   },
   "panel_mm": [
     89.85,
@@ -221,7 +221,7 @@
     "issues": [],
     "passed": true,
     "report": "reports/power-geometry.json",
-    "sha256": "60969a2caa88feba9be2514be479a5a517108b98acb8cda06b81644603ec5b04"
+    "sha256": "b126416e25ead88c588c00c10ad6f5324c0ce561151106e254dd22b2d2a81ab5"
   },
   "production_orderable": false,
   "production_release_blockers": [
@@ -238,7 +238,7 @@
   "release_class": "DFM_REVIEW",
   "required_vendor_approval": {
     "path": "fab/vendor-dfm-approval-template.json",
-    "sha256": "ded8ed9396a4b26aac1fd68a2d38643b46bd362815a6e179c1b2e7537d22e74e"
+    "sha256": "c7ce9d032391964957495884ce6d4dc8f5d39c70e6ddba8703b2e1cb2bcc8577"
   },
   "rf_50_geometry": {
     "artwork_length_mm": 4.113,
@@ -321,18 +321,18 @@
     "issues": [],
     "passed": true,
     "report": "reports/rf-reference.json",
-    "sha256": "b798fbfa545d247ccb6897ac8e9ad68059904104563f904af75a77ded102f01b"
+    "sha256": "7cccdd9d559231c7b2fa1cbd387581948db4dc0a66da185b24a2842ab5b3bcf0"
   },
   "source": {
-    "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
-    "manifest_sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd"
+    "board_sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a",
+    "manifest_sha256": "45b5154dd12bff9cad698a3d36552feb631e5e9bdc1c4b3d27b095eb31b2ea79"
   },
   "stack_gate": {
     "issues": [],
     "passed": true
   },
   "stock_audit": {
-    "checked_utc": "2026-08-12T16:24:40.372179+00:00",
+    "checked_utc": "2026-08-13T14:38:00.360302+00:00",
     "issues": [],
     "part_count": 22,
     "passed": true,
@@ -345,7 +345,7 @@
     "issues": [],
     "passed": true,
     "report": "reports/usb-interface.json",
-    "sha256": "0caf11d06764303b2f7704521c39e7eb9c3288b5f79496c3fa4d4279b88bbc89"
+    "sha256": "239828bc5b10018340fe5bbde7909d737b52432bef7518d60383df31ea0ef8d6"
   },
   "vendor_dfm": {
     "issue_codes": [

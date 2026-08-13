@@ -1,12 +1,12 @@
 {
-  "checked_utc": "2026-08-12T16:24:40.372179+00:00",
+  "checked_utc": "2026-08-13T14:38:00.360302+00:00",
   "issues": [],
   "parts": [
     {
-      "available_snapshot": 8819100,
+      "available_snapshot": 10000,
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL05B104KO5NNNC",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -15,10 +15,10 @@
       "url": "https://www.lcsc.com/product-detail/C1525.html"
     },
     {
-      "available_snapshot": 183400,
+      "available_snapshot": 179600,
       "manufacturer": "Murata",
       "mpn": "GRM0335C1H120GA01D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 70,
       "passed": true,
       "required_with_10_percent_overage": 77,
@@ -27,10 +27,10 @@
       "url": "https://www.lcsc.com/product-detail/C161404.html"
     },
     {
-      "available_snapshot": 53969,
+      "available_snapshot": 52915,
       "manufacturer": "Nordic Semiconductor",
       "mpn": "NRF52840-QIAA-R",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -39,10 +39,10 @@
       "url": "https://www.lcsc.com/product-detail/C190794.html"
     },
     {
-      "available_snapshot": 9360,
+      "available_snapshot": 9355,
       "manufacturer": "Texas Instruments",
       "mpn": "ESD441DPLR",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -54,7 +54,7 @@
       "available_snapshot": 14380,
       "manufacturer": "Murata Electronics",
       "mpn": "GJM0335C1HR50WB01D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -66,7 +66,7 @@
       "available_snapshot": 4240,
       "manufacturer": "Murata Electronics",
       "mpn": "LQP03HQ4N7H02D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 70,
       "passed": true,
       "required_with_10_percent_overage": 77,
@@ -75,10 +75,10 @@
       "url": "https://www.lcsc.com/product-detail/C237443.html"
     },
     {
-      "available_snapshot": 9520,
+      "available_snapshot": 9240,
       "manufacturer": "Will Semiconductor",
       "mpn": "ESD5311Z-2/TR",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -90,7 +90,7 @@
       "available_snapshot": 4340,
       "manufacturer": "Seiko Epson",
       "mpn": "X1E0002510059",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -99,10 +99,10 @@
       "url": "https://www.lcsc.com/product-detail/C255986.html"
     },
     {
-      "available_snapshot": 961600,
+      "available_snapshot": 872200,
       "manufacturer": "Uniroyal Electronics",
       "mpn": "0201WMF1001TEE",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -111,10 +111,10 @@
       "url": "https://www.lcsc.com/product-detail/C270365.html"
     },
     {
-      "available_snapshot": 616200,
+      "available_snapshot": 564000,
       "manufacturer": "Yageo",
       "mpn": "CC0201JRNPO9BN101",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -123,10 +123,10 @@
       "url": "https://www.lcsc.com/product-detail/C272870.html"
     },
     {
-      "available_snapshot": 11600,
+      "available_snapshot": 11500,
       "manufacturer": "Yageo",
       "mpn": "RC0201FR-075K1L",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 70,
       "passed": true,
       "required_with_10_percent_overage": 77,
@@ -135,10 +135,10 @@
       "url": "https://www.lcsc.com/product-detail/C274341.html"
     },
     {
-      "available_snapshot": 381480,
+      "available_snapshot": 315480,
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL05A475MO5NUNC",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -147,10 +147,10 @@
       "url": "https://www.lcsc.com/product-detail/C318563.html"
     },
     {
-      "available_snapshot": 63620,
+      "available_snapshot": 63880,
       "manufacturer": "Lite-On",
       "mpn": "LTST-C281KRKT",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -162,7 +162,7 @@
       "available_snapshot": 2900,
       "manufacturer": "Murata Electronics",
       "mpn": "GRM0335C1E821JA01D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -174,7 +174,7 @@
       "available_snapshot": 14840,
       "manufacturer": "Murata Electronics",
       "mpn": "GJM0335C1ER80WB01D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 70,
       "passed": true,
       "required_with_10_percent_overage": 77,
@@ -183,10 +183,10 @@
       "url": "https://www.lcsc.com/product-detail/C408126.html"
     },
     {
-      "available_snapshot": 54045,
+      "available_snapshot": 54060,
       "manufacturer": "SHOU HAN",
       "mpn": "TYPE-C 16P QTWT",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -195,10 +195,10 @@
       "url": "https://www.lcsc.com/product-detail/C5187472.html"
     },
     {
-      "available_snapshot": 82250,
+      "available_snapshot": 141850,
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL05A105KA5NQNC",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -207,10 +207,10 @@
       "url": "https://www.lcsc.com/product-detail/C52923.html"
     },
     {
-      "available_snapshot": 1000800,
+      "available_snapshot": 950950,
       "manufacturer": "Murata Electronics",
       "mpn": "GRM033C71C104KE14D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 35,
       "passed": true,
       "required_with_10_percent_overage": 39,
@@ -219,10 +219,10 @@
       "url": "https://www.lcsc.com/product-detail/C85923.html"
     },
     {
-      "available_snapshot": 84900,
+      "available_snapshot": 83290,
       "manufacturer": "Murata Electronics",
       "mpn": "GRM188R61E475KE11D",
-      "observed_utc": "2026-08-12T16:24:40.372179+00:00",
+      "observed_utc": "2026-08-13T14:38:00.360302+00:00",
       "panel_quantity_max": 105,
       "passed": true,
       "required_with_10_percent_overage": 116,

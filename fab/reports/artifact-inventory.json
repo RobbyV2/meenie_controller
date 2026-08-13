@@ -5,19 +5,19 @@
       "files": 2
     },
     "board": {
-      "bytes": 341628,
+      "bytes": 341578,
       "files": 25
     },
     "dfm-review.zip": {
-      "bytes": 6715756,
+      "bytes": 6716013,
       "files": 1
     },
     "meenie-board.kicad_pcb": {
-      "bytes": 560553,
+      "bytes": 560704,
       "files": 1
     },
     "meenie-panel.kicad_pcb": {
-      "bytes": 21244856,
+      "bytes": 21249791,
       "files": 1
     },
     "netlist.ipc": {
@@ -25,15 +25,15 @@
       "files": 1
     },
     "panel": {
-      "bytes": 11663007,
+      "bytes": 11661187,
       "files": 25
     },
     "reports": {
-      "bytes": 49849,
+      "bytes": 49865,
       "files": 16
     },
     "stack-manifest.json": {
-      "bytes": 84933,
+      "bytes": 85142,
       "files": 1
     },
     "stackup.csv": {
@@ -41,11 +41,11 @@
       "files": 1
     },
     "vendor-dfm-approval-template.json": {
-      "bytes": 14511,
+      "bytes": 14528,
       "files": 1
     }
   },
-  "bytes_excluding_inventory": 40772655,
+  "bytes_excluding_inventory": 40776370,
   "files": [
     {
       "bytes": 8668,
@@ -60,272 +60,272 @@
     {
       "bytes": 86303,
       "path": "board/gerbers/meenie-B_Cu.gbl",
-      "sha256": "dc1321ab6cf8cd6e81d1ac66a0e96b3a753810301c094352e89bb8337a5a98fb"
+      "sha256": "ed551212722cd0da2502c3df3cb3e568680872b8b9e2eef1d0e1431a9bc0ae3d"
     },
     {
       "bytes": 5576,
       "path": "board/gerbers/meenie-B_Mask.gbs",
-      "sha256": "c4c00887c6b416dd0201d6aea069389cff2a0f6f1d8e4c12c8770bf1b9fad23b"
+      "sha256": "76776cf0fc14df0c79c578a3109aad733e6108569ec271ef6cdc9ed0ad82fef1"
     },
     {
       "bytes": 4680,
       "path": "board/gerbers/meenie-B_Paste.gbp",
-      "sha256": "29b3c91e79a40d28bd25ccc76777ea9dfef1f4a8441b0f4a043988288b60d874"
+      "sha256": "f1e06fbd4e11b10544d3043906238d7caaf0dcb1d851a71c25918f9ff1bf667d"
     },
     {
       "bytes": 5586,
       "path": "board/gerbers/meenie-B_Silkscreen.gbo",
-      "sha256": "764e9953ccd3092f6de27b624e003bcbab41875230d2271836a7b0f8e6f9d508"
+      "sha256": "2829e882bb3ffc19a773e20ed8cc51fd0c0314d05ee4770fd9f012e50e93cd3f"
     },
     {
       "bytes": 25290,
       "path": "board/gerbers/meenie-CORE_ROUTE_L5.g4",
-      "sha256": "a701762d4f702643df202f01d24ec129a81f0edefff52d63e8514f471b73227d"
+      "sha256": "5abff1550fc73901855cf5e17e17f81af7f16c395f05a365fffdf16d29cc0521"
     },
     {
       "bytes": 685,
       "path": "board/gerbers/meenie-Edge_Cuts.gm1",
-      "sha256": "20b47fc7dd33f199567107230c6d5657bd701d433da51046ebfc04478d27b610"
+      "sha256": "8b36059d0d3cf61bc894dba3c11bdb4214d47831fdea276858387f21d650e17d"
     },
     {
       "bytes": 33901,
       "path": "board/gerbers/meenie-F_Cu.gtl",
-      "sha256": "11671cbfb555252761dbc44a2523f38d7418ce9fb4779fb9af397ed08878b0c7"
+      "sha256": "7b58ab1c1358d289cd8b36d89e0980fe7b4068a9e25adeed94aa042e47283957"
     },
     {
       "bytes": 2869,
       "path": "board/gerbers/meenie-F_Mask.gts",
-      "sha256": "484cab9084e7a91d0e19436e65d4361de3556fff3c2c8fcf5d538037c796a598"
+      "sha256": "4c39d795775e2334ef927483c6079263d1d71fd1a6e969fedf1ddfd39c9707b4"
     },
     {
       "bytes": 2170,
       "path": "board/gerbers/meenie-F_Paste.gtp",
-      "sha256": "d3ab148e385197c8b049416bb7e92e6fdba9c97c7993111c74bb1c7da337fc65"
+      "sha256": "7b31f493f81b238d91c9ebaecf72559efce19a2d18c9ea8ceacb3ac11dfc0a6f"
     },
     {
       "bytes": 2879,
       "path": "board/gerbers/meenie-F_Silkscreen.gto",
-      "sha256": "00541aaeb59de87f7c62d61e9e1004ae3ed65d9c44cf6692aa81cff64dab3001"
+      "sha256": "49bb14bbe67a3bafdcacea81874fb8455b4959bf0a7b0df690c6710009e537bd"
     },
     {
       "bytes": 26530,
       "path": "board/gerbers/meenie-GND.g1",
-      "sha256": "5e1d5115258990660ce29d33d40ab4edea059eec6b8deb5d9939fc1480e87a4b"
+      "sha256": "5c986eb35eed22ddd90cf6a79025fe18748761b24561c232523edb9aa880548a"
     },
     {
       "bytes": 29825,
       "path": "board/gerbers/meenie-GND2.g2",
-      "sha256": "9df6ee7460e06720661287766e689d9cb243f03dc991202837f84b9c72c80442"
+      "sha256": "55936dbb73274d8e8df43e42cbd137dc8ae7e26bbf851aab589ad152de7eddaf"
     },
     {
       "bytes": 7039,
       "path": "board/gerbers/meenie-GPIO_ROUTE_L6.g5",
-      "sha256": "1a8afa37b86a0616949a1e6400ebf28973cb4e08754f8a5c66da31fc71967e90"
+      "sha256": "c4c99567cf564a34ad486a0ff9cca93634ecd626f33503b25e7916921fc75020"
     },
     {
-      "bytes": 37475,
+      "bytes": 37425,
       "path": "board/gerbers/meenie-HDI_PWR.g3",
-      "sha256": "1cc2a975a2fa4cdd22eed72784364ab8b891be4177cce724c242090a6748da04"
+      "sha256": "0f59bb8f2cec5d3bdcfe6b9ebe4cc9b4b53b41096570c6cfa2c05f60c23e0595"
     },
     {
       "bytes": 358,
       "path": "board/gerbers/meenie-NPTH.drl",
-      "sha256": "3ad65b0561178a331e9e6b96660802272bd016fabab88c0911a93c838d0f5543"
+      "sha256": "b73f463f612c99defea3eaeee8e755a037941f59e68f2154401169a375c3fae4"
     },
     {
       "bytes": 739,
       "path": "board/gerbers/meenie-PTH.drl",
-      "sha256": "9516f6036938174d7fa2d710be1349fd3747ac9bc0e0f6b6a8fbdab1995fd561"
+      "sha256": "1897ea8be476165aead7e833c1e11da33083726cff5598ca8602ae0c15b36a7c"
     },
     {
       "bytes": 58441,
       "path": "board/gerbers/meenie-RF_GND_L7.g6",
-      "sha256": "b0c448db7eeaa51530d199a2b15dbb7e5f351ba126d4dee0bbc4921552541201"
+      "sha256": "d3da5371bb1591b9eaf52e6b8b2e20a800d7f9c7be5eed8f627ece1f959d6772"
     },
     {
       "bytes": 1567,
       "path": "board/gerbers/meenie-back-in6.drl",
-      "sha256": "18b07a74e6e1a8ec488e95300b932ed3415e134eb7ea215fcc6b916497da582c"
+      "sha256": "870ec0b22a230c5bfa31d89c5389aa8aedd2777ded2164a22ff28952bbae5f35"
     },
     {
       "bytes": 699,
       "path": "board/gerbers/meenie-front-in1.drl",
-      "sha256": "cd6870057dd02029257cde22c986c60c062cde44eb9b56c803578dbfc6d1feb1"
+      "sha256": "435b3fce9be9adf77eafcacfff112da831ac9c658b5daeae48c08515fc6fda31"
     },
     {
       "bytes": 608,
       "path": "board/gerbers/meenie-in1-in2.drl",
-      "sha256": "a7f97bb4363ebbb2bdad938aa6f8aa6560b69bfb13c99eb8ab237865a8813cbb"
+      "sha256": "31bc9875455764ad3e9b0aa447eeda92326230bdf5d3b1e6971a91c75ce2ea4a"
     },
     {
       "bytes": 645,
       "path": "board/gerbers/meenie-in2-in3.drl",
-      "sha256": "b6128d7e3206703749139562a74e4bfaa3433b2907bddf47a56b212cd456c453"
+      "sha256": "489e60acbf9d2f2b6d04ff44d7ea5529075557168fc2c506427e3edf503b5649"
     },
     {
       "bytes": 594,
       "path": "board/gerbers/meenie-in3-in4.drl",
-      "sha256": "cd183a25c0674122db2fcb65f1c38643c588430b5f241ed040d5ddae203df63c"
+      "sha256": "c59b1e5adf71d2810f56adf6447f27d52eee8f9c3a63b7e840eddd956f336113"
     },
     {
       "bytes": 714,
       "path": "board/gerbers/meenie-in4-in5.drl",
-      "sha256": "067e862e89a615bdc2aed563d114dff4ca2d381207b62412a9470eba616f66bb"
+      "sha256": "0ab6644318c034dddde06675682078b9c399fb6f602bdb2c34b9dd429338ae1f"
     },
     {
       "bytes": 1091,
       "path": "board/gerbers/meenie-in5-in6.drl",
-      "sha256": "14b4dcdb23806904bec6bf07c593ebe587c0c6638be6f96b783c277e6d207e94"
+      "sha256": "d54bdc50afd205c04e28fb025eea1e2ae9449e8ed5d550933827a8bf7db5fb20"
     },
     {
       "bytes": 5364,
       "path": "board/gerbers/meenie-job.gbrjob",
-      "sha256": "67fcbbdc1414c3af2013a887f0ba3bf5d913dda2a2e11fdd71c77de6492c960b"
+      "sha256": "05178c6ca9326d6c3b4c995a3b2abd1ad2462a5c2b3cb2e91d86b8b9c51081b2"
     },
     {
-      "bytes": 6715756,
+      "bytes": 6716013,
       "path": "dfm-review.zip",
-      "sha256": "7498f979f16bce30e661ef8d5015e6cca99226258de1a312b4f71b5a7e73f036"
+      "sha256": "11e16ecca6911c269b9bfe00d4da63bbadfd38780e8674bddb9b8a18ebc0d807"
     },
     {
-      "bytes": 560553,
+      "bytes": 560704,
       "path": "meenie-board.kicad_pcb",
-      "sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e"
+      "sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a"
     },
     {
-      "bytes": 21244856,
+      "bytes": 21249791,
       "path": "meenie-panel.kicad_pcb",
-      "sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e"
+      "sha256": "83839fedf285b78f204e7be7f248b22b678a80009dd1f3bdb372c364ae1a5841"
     },
     {
       "bytes": 30387,
       "path": "netlist.ipc",
-      "sha256": "31d94d812c04544e054c2b80daebb79798e331e8e7dbb2de6173f0d6c066d772"
+      "sha256": "7757980ddf5fc3954d15e284b1451f818be23f97b117b0a1743e67a84e288fee"
     },
     {
       "bytes": 3055370,
       "path": "panel/gerbers/meenie-panel-B_Cu.gbl",
-      "sha256": "9cf678c4b716817b52da33a12639659bc0902de716d7eba63245f4c9a4cd11bc"
+      "sha256": "7e96e5db451605400ca814cbe1d1eb2314875960d65c15e9d168e7b7080a8043"
     },
     {
       "bytes": 166968,
       "path": "panel/gerbers/meenie-panel-B_Mask.gbs",
-      "sha256": "ab8ddb55ea35913c309a312ae63d72e1dfc7d345121366199cd27e13c94c300c"
+      "sha256": "5a657ae21e6a3986e3e5ab09617702cbf72a1d6d759e1339cc4c34e03361b2df"
     },
     {
       "bytes": 119398,
       "path": "panel/gerbers/meenie-panel-B_Paste.gbp",
-      "sha256": "dd15ccf05e8574f4b048b2a9691f8d36aa657d9fcac84f4e50b8f70e7b342c80"
+      "sha256": "fbff2f147ccb9c981269912d6229831b624f59c76617a299a03aba55388c226e"
     },
     {
       "bytes": 166978,
       "path": "panel/gerbers/meenie-panel-B_Silkscreen.gbo",
-      "sha256": "15378680b15647bbe8d9330c590e8ab017c0c64c45f05b5f56f4485d6c6246c6"
+      "sha256": "d0d3e89b5690e07e651ce44a34d4c974d160b9fe03fc3a980fa348418c86f5b7"
     },
     {
       "bytes": 890488,
       "path": "panel/gerbers/meenie-panel-CORE_ROUTE_L5.g4",
-      "sha256": "5946b41a992f25e602de11a7b9836f067c7e35e3dce9940426f314b55a59c98b"
+      "sha256": "2138b79a46ac5125de335088ca111848076bc0a5bcf944e3c7033a77c0981bdb"
     },
     {
       "bytes": 9743,
       "path": "panel/gerbers/meenie-panel-Edge_Cuts.gm1",
-      "sha256": "0e09689012f9f36a91cf984102903533672c67a4ee1f5eee131f175866003369"
+      "sha256": "977aec0e1d0bfd44c85a6ff3ead684591de59c6f7a9b48da168f538b86d431c5"
     },
     {
       "bytes": 1177296,
       "path": "panel/gerbers/meenie-panel-F_Cu.gtl",
-      "sha256": "190be845bfedb24c38fed4e1d30321235b62a1a80f89e0d4e7d1914258193e61"
+      "sha256": "ebf6f7545bb450f63bbf82a81ef8dd56f23673bcbd5fa0b6165eb42c0fbe04d0"
     },
     {
       "bytes": 95079,
       "path": "panel/gerbers/meenie-panel-F_Mask.gts",
-      "sha256": "cadc8f080b32673a6e513433d71383af2be37ef9658481863de7eacdd6068794"
+      "sha256": "aeb6f229ce3522ef6f8210ef9b97d9d68878fb76a329f2ce823e0739882452da"
     },
     {
       "bytes": 53125,
       "path": "panel/gerbers/meenie-panel-F_Paste.gtp",
-      "sha256": "f7121cfd5ce2fb383ed0903fa357faf0a6bff81fde9c3f98406dce676c8ff069"
+      "sha256": "0e8d7ec3cdbb51b410ad345acfefadf9a40169fbd6cda12481301623fb4a0e1c"
     },
     {
       "bytes": 95089,
       "path": "panel/gerbers/meenie-panel-F_Silkscreen.gto",
-      "sha256": "c18db4e8cb0e12cde5ffe1f41e755775720d751b43e7e0cc15b8f1353a2185bc"
+      "sha256": "607f493202c4fd97b0c70516c4d1d31f2545335ad794bf7c427ae8b2ee65b4b9"
     },
     {
       "bytes": 944056,
       "path": "panel/gerbers/meenie-panel-GND.g1",
-      "sha256": "af1a85fc3985ff87d20f2dc639c9f238102bb1a991ddf53f46af030e7c299c5e"
+      "sha256": "5b913dacbc44d0512ac5aacfd92910a0ad51b9ef46ad50e3b49831622bfd4a22"
     },
     {
       "bytes": 1059915,
       "path": "panel/gerbers/meenie-panel-GND2.g2",
-      "sha256": "cfa71a690e022bd41e337bfe600b27fd554e757a961f6e7eda3819b51a070229"
+      "sha256": "45c853f06cffa790fc34213975f75bb94ef317818e271bcdb794514eccfb3ca2"
     },
     {
       "bytes": 229795,
       "path": "panel/gerbers/meenie-panel-GPIO_ROUTE_L6.g5",
-      "sha256": "167e55c1bcc3e035344fcff07b0c1060980ff8417078bdd691328f75f42c0584"
+      "sha256": "c9b6b1b00b64260ed3e2a1eaeeb896aa4199eb5474104532a9a12c0b84fb2e1d"
     },
     {
-      "bytes": 1334353,
+      "bytes": 1332533,
       "path": "panel/gerbers/meenie-panel-HDI_PWR.g3",
-      "sha256": "f953436323ef7351af7577421a63ffa63b923ede76668ff261e1017a35775024"
+      "sha256": "d7f11e0c3b6386c42785cf343958d9fb96809e1e64e48d3db7ec787ef3fc1e5e"
     },
     {
       "bytes": 7426,
       "path": "panel/gerbers/meenie-panel-NPTH.drl",
-      "sha256": "16bdb24e2574e95f0aa0bffddb85584f768caced4f96519a8ee090cd0b82e539"
+      "sha256": "441a17f6d0c4c3eae3689ff50459ecfd9ecb7c2e7b69c86d042b6a67a2e5f822"
     },
     {
       "bytes": 13760,
       "path": "panel/gerbers/meenie-panel-PTH.drl",
-      "sha256": "581d4bb2cccbf37ff7f038071b7a9a1b2028a0b2d293f8297477727e8817bcc9"
+      "sha256": "bcd8bc012e69c33cbe88095824e228cd28760505b94818360d1ebb4e78e6d71f"
     },
     {
       "bytes": 2098599,
       "path": "panel/gerbers/meenie-panel-RF_GND_L7.g6",
-      "sha256": "16b7f7e1fd408ca8a681510ef03b8dd1276e819c1887ae646b459b277c53827b"
+      "sha256": "1319d04d08811a8a83567a8b5af33c59bdddaacbb6b6314f7f1f0a6939c16a43"
     },
     {
       "bytes": 47002,
       "path": "panel/gerbers/meenie-panel-back-in6.drl",
-      "sha256": "6cb428dbd0be9e51acfecebbad386db5f030cdf2a5b08282c91a956936d98e4f"
+      "sha256": "1712b366fd4a430573c79c90ed3ea22adaf49e200af3cb86789b709e391b2f08"
     },
     {
       "bytes": 14691,
       "path": "panel/gerbers/meenie-panel-front-in1.drl",
-      "sha256": "e07695ebfab699f8819d66c489705986e921e86128ccbb0331d371512b02a102"
+      "sha256": "8f258a4851cd5f804f04da9fed0f1e905c16d68b937aed7dbc08410e2918279f"
     },
     {
       "bytes": 11168,
       "path": "panel/gerbers/meenie-panel-in1-in2.drl",
-      "sha256": "a95a9a450ddb29d82fd68ed92dad4a26a6b7c3ee7b9852989482718f68fcd77b"
+      "sha256": "309dd85ae11b9f98c7c76a74cd77bf817e7b345fd643e792b03df95b466e0a1d"
     },
     {
       "bytes": 12528,
       "path": "panel/gerbers/meenie-panel-in2-in3.drl",
-      "sha256": "7406cc21359659f3303b801550b376c13f0ababaa71e95e409f4d75ec8310242"
+      "sha256": "3021302b4bd5cc59aba30ccf837f0df3900b2ba27de62566dac92ec98da71797"
     },
     {
       "bytes": 10672,
       "path": "panel/gerbers/meenie-panel-in3-in4.drl",
-      "sha256": "36ed06eb0d2445a86f471357f0ab7c3b8fa092fc57d86bc6e4435e87a1bff26f"
+      "sha256": "8e9270200b8ff043e3487d53ae09a917b8daeda6373411c166d10d9b6a0cd6a6"
     },
     {
       "bytes": 14996,
       "path": "panel/gerbers/meenie-panel-in4-in5.drl",
-      "sha256": "3d253d1c89f3467b657c29c2211b4ce2147af99f0d5528f026d750822881ed98"
+      "sha256": "8cfa5f67abb13b08434b62addf6ba094a2065359ba87ce8ab441f290d8a9d66c"
     },
     {
       "bytes": 29059,
       "path": "panel/gerbers/meenie-panel-in5-in6.drl",
-      "sha256": "fec328aff47ae008f4c963a0622cb0b176172ce87332d3f5f12275f7980ab756"
+      "sha256": "a0fe331f961d31be958019204be875f0b63914a6d139ef37f22d19eaa676e7f4"
     },
     {
       "bytes": 5453,
       "path": "panel/gerbers/meenie-panel-job.gbrjob",
-      "sha256": "f80ab31ab806491ae0ce90ab3a8ededc621b6d0306acfc239b02b9930c6908e3"
+      "sha256": "03af46f4164371d4f0a3630cb9bdb636b7c1a2c798148c7115413f8b9b6560bb"
     },
     {
       "bytes": 164,
@@ -340,22 +340,22 @@
     {
       "bytes": 2139,
       "path": "reports/drc.json",
-      "sha256": "c899827852e435a62b1f57cbaa7ab25827ed544d30870bb57e8507253ce1733a"
+      "sha256": "8f719cef31a54eb932725fb7cff09bd577e00008d7dc24ef1ad3f3130ee7bf76"
     },
     {
       "bytes": 1000,
       "path": "reports/erc.json",
-      "sha256": "d39f2da0e2dea3fadc2c29b846dd3d5a061bedc65104d46b172257c25f701f82"
+      "sha256": "66919563932f9e29c66ca4d1c2394c813248a1b619566eb54644235810c7da3e"
     },
     {
       "bytes": 3078,
       "path": "reports/hfxo.json",
-      "sha256": "27ff73b71be9faa1a5189a8358f0a93a7b2dcfd4dff79e18ca0e66456b39f45d"
+      "sha256": "22d5d6b586f6cb414578951e8735351e5fbbebcb686303c9e5089089b226d263"
     },
     {
       "bytes": 602,
       "path": "reports/mechanical-fit.json",
-      "sha256": "aa05cbbc0372f048fe5d75fcd2d66b42392c3c2bbe91bbc9bf823554c606cf56"
+      "sha256": "18e7d14ae423577abce2e11791a04c6bf1104ce6e4ac7eaae8201fab84ff1f10"
     },
     {
       "bytes": 446,
@@ -365,27 +365,27 @@
     {
       "bytes": 5662,
       "path": "reports/panel-assembly.json",
-      "sha256": "bad94dc62b22cf53e1555d69e36cbe89013c58931cf960c29d875ff106f1f249"
+      "sha256": "451a1aabd0c6f4653dd02b1d04eceb91b08dfac010b82745401c53a1121f2469"
     },
     {
       "bytes": 185,
       "path": "reports/panel-audit.json",
-      "sha256": "d7a575e27951504dfc5446fc4baaa6a0c400b0ff3d66defb3929b2aa08d8a653"
+      "sha256": "37f7942a29bae8b6eab0e525750406cb1f78cf5248d146f813608c2af206f56b"
     },
     {
       "bytes": 1169,
       "path": "reports/power-geometry.json",
-      "sha256": "60969a2caa88feba9be2514be479a5a517108b98acb8cda06b81644603ec5b04"
+      "sha256": "b126416e25ead88c588c00c10ad6f5324c0ce561151106e254dd22b2d2a81ab5"
     },
     {
-      "bytes": 7640,
+      "bytes": 7658,
       "path": "reports/release.json",
-      "sha256": "2296b71b13cd8bfd89a806ca930b18163bca752787b3966b01fec479678432d3"
+      "sha256": "26d04d5b9a8bcd6afe4d4fbb4dd6c1f73d3a549f788b339a868742a235a8dd52"
     },
     {
       "bytes": 4226,
       "path": "reports/rf-reference.json",
-      "sha256": "b798fbfa545d247ccb6897ac8e9ad68059904104563f904af75a77ded102f01b"
+      "sha256": "7cccdd9d559231c7b2fa1cbd387581948db4dc0a66da185b24a2842ab5b3bcf0"
     },
     {
       "bytes": 10484,
@@ -395,22 +395,22 @@
     {
       "bytes": 471,
       "path": "reports/source-sha256.json",
-      "sha256": "906b1d5638d09ae19dc2fd1cf70e36b42b3b49d5e44b2ead42e750f6b9b095ec"
+      "sha256": "faff4f56c906a4a4686774d8d47ca931de74ad558e016e287db0f4ae6467ddda"
     },
     {
-      "bytes": 8966,
+      "bytes": 8964,
       "path": "reports/stock-audit.json",
-      "sha256": "7a673ac7cd8e30d0f394d0ddd0994a56cd12f40080af227841a96821b6a856e0"
+      "sha256": "dc0da93ace739f509cbd3653f2cf314149ceb6ebb12b723c95f4c529abb0f90f"
     },
     {
       "bytes": 1419,
       "path": "reports/usb-interface.json",
-      "sha256": "0caf11d06764303b2f7704521c39e7eb9c3288b5f79496c3fa4d4279b88bbc89"
+      "sha256": "239828bc5b10018340fe5bbde7909d737b52432bef7518d60383df31ea0ef8d6"
     },
     {
-      "bytes": 84933,
+      "bytes": 85142,
       "path": "stack-manifest.json",
-      "sha256": "5f683d8bb368c66128d397bb41237cfd1b10d6cd3270a16793952871d95d4bcd"
+      "sha256": "45b5154dd12bff9cad698a3d36552feb631e5e9bdc1c4b3d27b095eb31b2ea79"
     },
     {
       "bytes": 471,
@@ -418,9 +418,9 @@
       "sha256": "8905e817f7a3e4895daa6691c049d2471f1fbe81f8f622054862f1cf295d9260"
     },
     {
-      "bytes": 14511,
+      "bytes": 14528,
       "path": "vendor-dfm-approval-template.json",
-      "sha256": "ded8ed9396a4b26aac1fd68a2d38643b46bd362815a6e179c1b2e7537d22e74e"
+      "sha256": "c7ce9d032391964957495884ce6d4dc8f5d39c70e6ddba8703b2e1cb2bcc8577"
     }
   ],
   "files_excluding_inventory": 75,

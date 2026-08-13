@@ -1,5 +1,5 @@
 {
-  "board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e",
+  "board_sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a",
   "frequency_budget": {
     "calculated_load_pull_range_ppm": [
       3.397,
@@ -107,14 +107,14 @@
   "routing": {
     "XC1": {
       "copper_item_count": 15,
-      "copper_sha256": "a9ecba57ed54e6e814e796ffd1aef9cf6b80863aa5fa652a60ee36d48028e8d3",
+      "copper_sha256": "4377f9d1c668f936b4fe35fd5f861114f33db0836f381b7fe6f279f44681a0c1",
       "mcu_to_crystal_mm": 3.520411,
       "mcu_to_load_capacitor_mm": 4.367428,
       "nordic_configuration_1_mcu_to_crystal_mm": 4.464815
     },
     "XC2": {
       "copper_item_count": 15,
-      "copper_sha256": "258f4daf6ef48a5f29922bf3db27bdb81a838e47d5ca0010d376eb11677c26a0",
+      "copper_sha256": "48c4bd95c32972dc041597d55e992d53a3cfed4be434b2b8eef85a0cfed24070",
       "mcu_to_crystal_mm": 3.219209,
       "mcu_to_load_capacitor_mm": 4.464105,
       "nordic_configuration_1_mcu_to_crystal_mm": 3.255138

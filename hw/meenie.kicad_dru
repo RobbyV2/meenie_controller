@@ -28,8 +28,8 @@
 	(condition "(A.NetName == 'XC2' || A.NetName == 'DEC4_6') && B.NetName == 'GND' && A.insideArea('U1 north pocket')"))
 
 
-# NextPCB Advanced HDI publishes 0.05/0.05 mm copper geometry, a 0.075 mm
-# laser drill, and +/-0.05 mm registration.  This release holds copper spacing
+# NextPCB Advanced HDI publishes 0.05/0.05 mm copper geometry and +/-0.05 mm
+# registration.  This release holds copper spacing
 # at 0.08 mm and laser-hole-to-foreign-copper spacing at 0.08 mm.  Mechanical
 # holes remain governed by the board and PTH rules.
 (rule "NextPCB Advanced HDI copper clearance"
@@ -43,7 +43,7 @@
     (condition "A.Via_Type == 'Micro'"))
 
 # Mechanical vias retain the published 1 oz annular-ring floor.  Laser vias
-# are 0.250/0.100 mm and therefore carry 0.075 mm rings.
+# are 0.250/0.150 mm and therefore carry 0.050 mm rings.
 (rule "NextPCB mechanical via annular ring"
     (constraint annular_width (min 0.09mm))
     (severity error)

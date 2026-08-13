@@ -288,7 +288,7 @@
     "per_tab": 5,
     "pitch_mm": 0.85
   },
-  "panel_board_sha256": "e8fd1f078a1cdd867624ce382b2152a4dcd480e14e44add92703f66ea9fed37e",
+  "panel_board_sha256": "83839fedf285b78f204e7be7f248b22b678a80009dd1f3bdb372c364ae1a5841",
   "panel_mm": [
     89.85,
     92.045
@@ -313,5 +313,5 @@
     13.57,
     9.435
   ],
-  "unit_board_sha256": "1a0efcd2128c46149d4a71e3aa5254ec01348d69cf5d40e074410e34c628524e"
+  "unit_board_sha256": "a032680ef7742f1b0e054ff1fc8f123df8618051aa1ef6543c172d79aea6997a"
 }

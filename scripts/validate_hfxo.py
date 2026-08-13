@@ -18,8 +18,8 @@ EXPECTED_VALUES = {
     "Y1": "FA-118T 32MHz CL 8pF",
 }
 EXPECTED_ROUTE_SHA256 = {
-    "XC1": "a9ecba57ed54e6e814e796ffd1aef9cf6b80863aa5fa652a60ee36d48028e8d3",
-    "XC2": "258f4daf6ef48a5f29922bf3db27bdb81a838e47d5ca0010d376eb11677c26a0",
+    "XC1": "4377f9d1c668f936b4fe35fd5f861114f33db0836f381b7fe6f279f44681a0c1",
+    "XC2": "48c4bd95c32972dc041597d55e992d53a3cfed4be434b2b8eef85a0cfed24070",
 }
 EXPECTED_PATHS_MM = {
     "XC1": {"mcu_to_crystal": 3.520411, "mcu_to_load_capacitor": 4.367428},

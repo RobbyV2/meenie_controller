@@ -328,8 +328,8 @@ def validate(board_dir: Path, manifest_path: Path, drc_path: Path | None) -> lis
     if len(micro_by_uuid) != len(microvias):
         fail(errors, "board has duplicate microvia UUIDs")
     for via in microvias:
-        if not math.isclose(via["size"], 0.25, abs_tol=TOL) or not math.isclose(via["drill"], 0.1, abs_tol=TOL):
-            fail(errors, f"microvia geometry {via['uuid']} is {via['size']}/{via['drill']}mm, approved 0.25/0.10mm")
+        if not math.isclose(via["size"], 0.25, abs_tol=TOL) or not math.isclose(via["drill"], 0.15, abs_tol=TOL):
+            fail(errors, f"microvia geometry {via['uuid']} is {via['size']}/{via['drill']}mm, approved 0.25/0.15mm")
     for via in (item for item in all_vias if item["kind"] != "micro"):
         ring = (via["size"] - via["drill"]) / 2.0
         if ring < 0.09 - TOL:
